@@ -1,0 +1,50 @@
+---
+/**
+ * <Foto bild="implantologie" sprache="de" /> – jedes Bild der Website kommt über diese Komponente.
+ * - Datei, Quelle und Alt-Texte (alle vier Sprachen) aus src/assets/fotos/bilder.json
+ * - Astro-Bildpipeline: AVIF/WebP, srcset, Lazy-Loading (außer prioritaet → Hero/LCP)
+ * - Fehlt das Bild im Manifest oder auf der Platte: Fläche „Foto folgt“ statt kaputtem Bild
+ * Bild tauschen = Datei + Manifest-Eintrag ändern, kein Code.
+ */
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import type { Sprache } from "../config/site";
+import manifest from "../assets/fotos/bilder.json";
+import FotoFolgt from "./FotoFolgt.astro";
+
+interface Props {
+  bild: string;
+  sprache: Sprache;
+  /** CSS-sizes, z. B. "(min-width: 768px) 50vw, 100vw" */
+  sizes?: string;
+  /** Hero/LCP: sofort laden, hohe Priorität */
+  prioritaet?: boolean;
+  /** Seitenverhältnis des Ausschnitts, z. B. "4/3" */
+  format?: string;
+  class?: string;
+}
+const { bild, sprache, sizes = "(min-width: 1024px) 50vw, 100vw", prioritaet = false, format = "4/3", class: klasse = "" } = Astro.props;
+
+const dateien = import.meta.glob<{ default: ImageMetadata }>("../assets/fotos/*.{jpg,jpeg,png,webp}", { eager: true });
+type Eintrag = { datei: string; alt: Record<Sprache, string> };
+const eintrag = (manifest as unknown as Record<string, Eintrag>)[bild];
+const datei = eintrag ? dateien[`../assets/fotos/${eintrag.datei}`]?.default : undefined;
+const alt = eintrag?.alt?.[sprache] ?? "";
+// Seitenverhältnis über Klassen (keine Inline-Styles → CSP)
+const formatKlasse = { "4/3": "aspect-[4/3]", "3/4": "aspect-[3/4]", "1/1": "aspect-square", "16/9": "aspect-video", "3/2": "aspect-[3/2]" }[format] ?? "aspect-[4/3]";
+---
+{datei ? (
+  <Picture
+    src={datei}
+    alt={alt}
+    formats={["avif", "webp"]}
+    widths={[480, 768, 1024, 1440, 1920].filter((w) => w <= datei.width)}
+    sizes={sizes}
+    loading={prioritaet ? "eager" : "lazy"}
+    fetchpriority={prioritaet ? "high" : "auto"}
+    decoding={prioritaet ? "sync" : "async"}
+    class:list={["block w-full object-cover", formatKlasse, klasse]}
+  />
+) : (
+  <FotoFolgt sprache={sprache} format={format} class={klasse} />
+)}

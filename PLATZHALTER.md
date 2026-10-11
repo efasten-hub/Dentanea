@@ -53,7 +53,7 @@ So geht es: Seite lesen, Korrekturen notieren, danach in der Datei `uebersetzung
 
 <!-- AUTO:UEBERSETZUNGEN:START -->
 
-_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-08._
+_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-11._
 
 **English** – zu prüfen: 2
 
@@ -85,6 +85,12 @@ Zusätzlich zu prüfen: die Oberflächentexte `src/i18n/en.json`, `es.json` und 
 
 ### Stockfotos, die durch eigene Fotos ersetzt werden sollen
 Diese Liste füllt sich in Phase 3 aus dem Bildmanifest (`src/assets/fotos/bilder.json`, Feld `ersetzen_durch_eigenes`).
+
+<!-- AUTO:STOCKFOTOS:START -->
+
+- noch keine Stockfotos eingebaut
+
+<!-- AUTO:STOCKFOTOS:ENDE -->
 
 ### Shotliste für das Fotoshooting
 Natürliches, warmes Licht, ruhig, aufgeräumt, Querformat. Keine Patientinnen oder Patienten ohne schriftliche Einwilligung.

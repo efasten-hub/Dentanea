@@ -1,0 +1,197 @@
+{
+  "_hinweise": "Bildpositionen und Kandidaten für die Auswahlseite /_bildauswahl (nur lokal, nie im Deployment). Kandidaten werden mit `npm run bilder:laden` von Unsplash/Pexels geladen: per API (Schlüssel in .env) oder über die offiziellen Download-Links der eingetragenen Fotoseiten. Nach der Auswahl: `auswahl` setzen, dann `npm run bilder:laden -- --uebernehmen` → Original nach bilder/original/, Eintrag ins Manifest, `npm run bilder` für den Look.",
+  "regeln": {
+    "nie_stock": ["Porträt Dr. Adali", "Team", "Praxisräume, Empfang, Hauseingang (als „unsere Praxis“)", "Vorher/Nachher, Patientenfälle"],
+    "bevorzugt": "Hände bei präziser Arbeit, Materialien (Keramik, Instrumente in Ruhe, Abdruck, Schiene), Beratung aus Distanz, natürliches Lächeln im Alltag, ruhige Details, Licht auf Oberflächen. Warm, Tageslicht, Querformat, viel Luft.",
+    "nie": "gebleichte Grinse-Gebisse, Daumen hoch, 3D-Zahn-Renderings, Zahnbürsten in Bonbonfarben, kalte Blau-Weiß-Kliniken, Logos, fremde Praxisnamen, erkennbare Orte außerhalb Berlins, KI-generierte Bilder von Menschen/Zähnen/Behandlungen, frontal erkennbare Personen in Behandlungssituationen, erkennbare Kindergesichter in Behandlung"
+  },
+  "positionen": [
+    {
+      "id": "hero-atmosphaere",
+      "titel": "Hero Startseite – Atmosphäre ohne Personen",
+      "verwendung": ["Startseite Hero"],
+      "stock_erlaubt": true,
+      "hinweis": "Laut Auftrag: echtes Porträt oder Praxisfoto; reicht die Qualität nicht, atmosphärisches Stockfoto ohne Personen – Porträt dann im Teaser. Porträt: 1362 px, Studioweiß → Empfehlung Stock im Hero. [[PRÜFEN]]",
+      "suche": {
+        "unsplash": ["warm light interior minimal", "sunlight wall shadow calm", "ceramic texture warm light"],
+        "pexels": ["warm sunlight interior minimal", "calm light shadow wall"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "zahnersatz",
+      "titel": "Zahnersatz / Prothetik",
+      "verwendung": ["Leistung Zahnersatz", "Schwerpunkt-Raster", "Zielgruppe Zahnverlust"],
+      "stock_erlaubt": true,
+      "hinweis": "Krone/Brücke aus Keramik in der Hand des Zahntechnikers; Farbbestimmung mit Farbring",
+      "suche": {
+        "unsplash": ["dental technician ceramic crown", "dental lab hands prosthesis", "tooth shade guide"],
+        "pexels": ["dental technician", "dental prosthesis lab", "dental shade guide"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "implantologie",
+      "titel": "Implantologie",
+      "verwendung": ["Leistung Implantologie", "Schwerpunkt-Raster", "Ratgeber Sofortimplantate"],
+      "stock_erlaubt": true,
+      "hinweis": "Digitale Planung am Monitor ohne lesbare Patientendaten; Implantat-Detail neutral",
+      "suche": {
+        "unsplash": ["dental implant model", "dentist computer planning", "dental x-ray screen"],
+        "pexels": ["dental implant", "dentist monitor planning"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "adhaesivbruecke",
+      "titel": "Adhäsivbrücke / Implantat-Alternative",
+      "verwendung": ["Leistung Klebebrücke", "Leistung Implantat-Alternativen", "Ratgeber Implantat oder Klebebrücke"],
+      "stock_erlaubt": true,
+      "hinweis": "Detail einer feinen Keramikarbeit; Beratungsgespräch aus Distanz",
+      "suche": {
+        "unsplash": ["dental ceramic veneer detail", "dentist consultation patient"],
+        "pexels": ["dental ceramics", "dentist consultation"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "aesthetik",
+      "titel": "Ästhetik (Veneers, Bleaching, Aligner)",
+      "verwendung": ["Leistung Ästhetik", "Schwerpunkt-Raster", "Zielgruppe Ästhetik"],
+      "stock_erlaubt": true,
+      "hinweis": "Natürliches, nicht übertriebenes Lächeln im Tageslicht; transparenter Aligner",
+      "suche": {
+        "unsplash": ["natural smile daylight woman", "clear aligner hand", "laughing outdoors natural"],
+        "pexels": ["natural smile daylight", "clear aligner"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "cmd-schienen",
+      "titel": "CMD & Schienen",
+      "verwendung": ["Leistung CMD & Schienen", "Schwerpunkt-Raster", "Zielgruppe CMD", "Ratgeber Knirschen"],
+      "stock_erlaubt": true,
+      "hinweis": "Aufbissschiene; Person mit Hand an der Wange im Alltag (nicht leidend-dramatisch)",
+      "suche": {
+        "unsplash": ["night guard dental splint", "woman hand on cheek thoughtful"],
+        "pexels": ["dental night guard", "hand on jaw"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "zahnerhalt",
+      "titel": "Endodontie, Parodontologie, Füllungen, PZR",
+      "verwendung": ["Leistung Endodontie", "Leistung Parodontologie", "Leistung Füllungen", "Leistung Prophylaxe"],
+      "stock_erlaubt": true,
+      "hinweis": "Ruhige Detailaufnahmen von Instrumenten bzw. Behandlung, Person nicht frontal erkennbar",
+      "suche": {
+        "unsplash": ["dental instruments tray calm", "dentist hands gloves detail", "dental mirror probe"],
+        "pexels": ["dental instruments", "dentist hands"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "oralchirurgie",
+      "titel": "Oralchirurgie",
+      "verwendung": ["Leistung Oralchirurgie"],
+      "stock_erlaubt": true,
+      "hinweis": "Steriles, ruhiges Instrumententablett, keine Blutbilder",
+      "suche": {
+        "unsplash": ["sterile surgical instruments tray"],
+        "pexels": ["sterile surgical instruments"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "kinder",
+      "titel": "Kinder / MIH / Syndrome",
+      "verwendung": ["Leistung Zahnersatz bei Kindern", "Leistung MIH & Syndrome", "Zielgruppe Eltern", "Ratgeber MIH"],
+      "stock_erlaubt": true,
+      "hinweis": "Eltern mit Kind im Alltag, freundliche Detailaufnahmen; keine erkennbaren Kindergesichter in Behandlungssituationen",
+      "suche": {
+        "unsplash": ["parent child walking back view", "mother daughter hands everyday", "family kitchen morning"],
+        "pexels": ["parent child back view", "family everyday warm"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "labor-digital",
+      "titel": "Labor & digitaler Workflow",
+      "verwendung": ["Leistung Dentallabor & digital", "Startseite Labor-Sektion"],
+      "stock_erlaubt": true,
+      "hinweis": "Intraoralscanner, CAD/CAM-Fräse, Zahntechniker-Hände – nie als „unser Labor“ beschriften",
+      "suche": {
+        "unsplash": ["intraoral scanner", "cad cam dental milling", "dental technician hands"],
+        "pexels": ["intraoral scanner", "dental milling machine"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "international",
+      "titel": "Internationale Patienten",
+      "verwendung": ["Zielgruppe International", "Ratgeber Deutsches System"],
+      "stock_erlaubt": true,
+      "hinweis": "Beratungsgespräch; Berlin-Stimmung neutral (Altbaufassade, Licht), keine Sehenswürdigkeiten-Klischees",
+      "suche": {
+        "unsplash": ["berlin altbau facade light", "consultation conversation table hands"],
+        "pexels": ["berlin building facade", "conversation hands table"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "ratgeber-kosten",
+      "titel": "Ratgeber: Was kostet Zahnersatz?",
+      "verwendung": ["Ratgeber Kosten Zahnersatz"],
+      "stock_erlaubt": true,
+      "hinweis": "Ruhiges Motiv zu Planung/Unterlagen – keine Geldscheine, keine Zahn-Sparschweine",
+      "suche": {
+        "unsplash": ["paperwork desk calm pen", "planning notes table warm light"],
+        "pexels": ["documents desk pen warm"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "praxis-atmosphaere",
+      "titel": "Praxis-Detail ohne Wiedererkennung",
+      "verwendung": ["Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet"],
+      "stock_erlaubt": true,
+      "hinweis": "Nur neutrale Details (Lichtstimmung, Material). Echte Raumfotos kommen aus dem Fotoshooting; bis dahin Platzhalter „FOTO FOLGT“.",
+      "suche": {
+        "unsplash": ["linen texture sunlight", "plant shadow wall"],
+        "pexels": ["linen sunlight texture"]
+      },
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "team",
+      "titel": "Team",
+      "verwendung": ["Praxis & Team"],
+      "stock_erlaubt": false,
+      "hinweis": "Keine Stock-Gesichter. Echte Fotos aus dem Shooting, bis dahin „FOTO FOLGT“.",
+      "kandidaten": [],
+      "auswahl": null
+    },
+    {
+      "id": "praxisraeume",
+      "titel": "Empfang, Wartebereich, Behandlungszimmer, Hauseingang",
+      "verwendung": ["Praxis & Team", "Kontakt (Hauseingang)", "Schema.org Dentist.image"],
+      "stock_erlaubt": false,
+      "hinweis": "Nur echte Fotos. Die alte Website hat keine Raumfotos (Galerie = Stock). Bis zum Shooting „FOTO FOLGT“.",
+      "kandidaten": [],
+      "auswahl": null
+    }
+  ]
+}

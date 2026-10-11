@@ -1,0 +1,15 @@
+---
+/**
+ * Platzhalterfläche „Foto folgt“ – nur dort, wo weder ein echtes Foto noch ein zulässiges
+ * Stockfoto vorhanden ist (Team, Praxisräume). Nie Stock-Gesichter als Ersatz.
+ */
+import type { Sprache } from "../config/site";
+import { t } from "../i18n";
+
+interface Props { sprache: Sprache; format?: string; class?: string }
+const { sprache, format = "4/3", class: klasse = "" } = Astro.props;
+const formatKlasse = { "4/3": "aspect-[4/3]", "3/4": "aspect-[3/4]", "1/1": "aspect-square", "16/9": "aspect-video", "3/2": "aspect-[3/2]" }[format] ?? "aspect-[4/3]";
+---
+<div class:list={["foto-folgt w-full", formatKlasse, klasse]} role="img" aria-label={t(sprache, "team.foto_folgt")}>
+  <span class="label" aria-hidden="true">{t(sprache, "team.foto_folgt")}</span>
+</div>

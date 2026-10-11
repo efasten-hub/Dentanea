@@ -1,0 +1,29 @@
+---
+/**
+ * Vorher/Nachher – STANDARDMÄSSIG DEAKTIVIERT (site.ts → schalter.vorher_nachher = false).
+ *
+ * Darf erst eingeschaltet werden nach
+ *  1. rechtlicher Prüfung (Heilmittelwerbegesetz § 11 Abs. 1 Nr. 5, Berufsordnung der ZÄK Berlin) [[PRÜFEN: HWG § 11 und Berufsordnung]]
+ *  2. schriftlicher Einwilligung der Patientin/des Patienten (DSGVO Art. 9) – je Bild dokumentiert
+ *  3. Nur eigene Fälle, NIE Stockfotos (prüft npm run pruefen über das Manifest: stock: false).
+ * Bilder als Manifest-Schlüssel; beide Bilder werden nebeneinander gezeigt (kein Schieberegler-JS).
+ */
+import { site, type Sprache } from "../config/site";
+import manifest from "../assets/fotos/bilder.json";
+import Foto from "./Foto.astro";
+
+interface Props { sprache: Sprache; vorher: string; nachher: string; beschriftung: { vorher: string; nachher: string; fall: string } }
+const { sprache, vorher, nachher, beschriftung } = Astro.props;
+type E = { stock?: boolean; einwilligung_dokumentiert?: boolean };
+const m = manifest as unknown as Record<string, E>;
+const zulaessig =
+  site.schalter.vorher_nachher &&
+  [vorher, nachher].every((k) => m[k] && m[k].stock === false && m[k].einwilligung_dokumentiert === true);
+---
+{zulaessig && (
+  <figure class="grid gap-12 md:grid-cols-2">
+    <div><Foto bild={vorher} sprache={sprache} format="4/3" /><p class="caption mt-8">{beschriftung.vorher}</p></div>
+    <div><Foto bild={nachher} sprache={sprache} format="4/3" /><p class="caption mt-8">{beschriftung.nachher}</p></div>
+    <figcaption class="caption md:col-span-2">{beschriftung.fall}</figcaption>
+  </figure>
+)}

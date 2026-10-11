@@ -1,0 +1,97 @@
+---
+/**
+ * /_bildauswahl – INTERNE Seite zur Freigabe der Bilder (Phase 3).
+ * - noindex, nicht in der Sitemap
+ * - existiert nur im Entwicklungsmodus (npm run dev) oder mit BILDAUSWAHL=1 npm run build;
+ *   ein normaler Produktions-Build erzeugt sie nicht → nie im Deployment.
+ * Zeigt je Bildposition die Kandidaten nebeneinander mit Quelle und Lizenz.
+ */
+import type { GetStaticPaths, ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import "../styles/global.css";
+import kandidatenDaten from "../../bilder/kandidaten.json";
+import manifest from "../assets/fotos/bilder.json";
+
+export const getStaticPaths = (() =>
+  import.meta.env.DEV || process.env.BILDAUSWAHL === "1" ? [{ params: { intern: "_bildauswahl" } }] : []) satisfies GetStaticPaths;
+
+type Kandidat = { quelle: string; id: string; seite_url: string; fotograf?: string; fotograf_url?: string; lizenz?: string; beschreibung?: string; breite?: number; hoehe?: number; vorschau?: string };
+type Position = { id: string; titel: string; verwendung: string[]; stock_erlaubt: boolean; hinweis: string; kandidaten: Kandidat[]; auswahl: number | string | null };
+const positionen = (kandidatenDaten as unknown as { positionen: Position[] }).positionen;
+const vorschauen = import.meta.glob<{ default: ImageMetadata }>("../../bilder/kandidaten/**/*.jpg", { eager: true });
+const fotos = import.meta.glob<{ default: ImageMetadata }>("../assets/fotos/*.jpg", { eager: true });
+type M = { datei: string; quelle: string; stock: boolean; lizenz: string; fotograf: string; position: string[] };
+const imManifest = Object.entries(manifest as unknown as Record<string, M>).filter(([k]) => !k.startsWith("_"));
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Bildauswahl (intern) · Dentaviva</title>
+  </head>
+  <body>
+    <main class="container-page section">
+      <p class="caption">Intern · nicht öffentlich · nicht im Deployment</p>
+      <h1 class="mt-12">Bildauswahl</h1>
+      <p class="mt-24 max-w-text">
+        Je Position stehen die Kandidaten nebeneinander. Bitte je Position eine Nummer nennen (z. B. „Implantologie: 2“).
+        Alle Bilder bekommen beim Einbau denselben warmen Look. Stockfotos werden nie als Praxis, Arzt, Team oder Patientenfall beschriftet.
+      </p>
+
+      <section class="mt-60">
+        <div class="sektion-kopf">
+          <p class="label">Bereits im Manifest</p>
+          <ul class="grid gap-24 sm:grid-cols-2 lg:grid-cols-4">
+            {imManifest.map(([k, e]) => {
+              const f = fotos[`../assets/fotos/${e.datei}`]?.default;
+              return (
+                <li>
+                  {f && <Image src={f} alt="" width={480} class="aspect-[4/3] w-full object-cover" />}
+                  <p class="mt-8 text-nav">{k}</p>
+                  <p class="caption">{e.quelle} · {e.stock ? "Stock" : "eigen/echt"} · {e.lizenz.replace(/\[\[.*?\]\]/g, "")}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      {positionen.map((pos) => (
+        <section class="mt-80" id={pos.id}>
+          <div class="sektion-kopf">
+            <p class="label">{pos.stock_erlaubt ? "Stock zulässig" : "nur echte Fotos"}</p>
+            <div>
+              <h2>{pos.titel}</h2>
+              <p class="caption mt-8">Verwendung: {pos.verwendung.join(" · ")}</p>
+              <p class="mt-12 max-w-text text-nav">{pos.hinweis}</p>
+              {pos.kandidaten.length === 0 ? (
+                <div class="foto-folgt mt-24 aspect-[4/1] w-full">
+                  <span class="label">{pos.stock_erlaubt ? "Noch keine Kandidaten geladen" : "Foto folgt (Fotoshooting)"}</span>
+                </div>
+              ) : (
+                <ol class="mt-24 grid gap-24 sm:grid-cols-2 lg:grid-cols-3">
+                  {pos.kandidaten.map((k, i) => {
+                    const v = k.vorschau ? vorschauen[`../../bilder/kandidaten/${k.vorschau}`]?.default : undefined;
+                    const gewaehlt = pos.auswahl === i || pos.auswahl === k.id;
+                    return (
+                      <li class:list={["border p-12", gewaehlt ? "border-oxblood-ink" : "border-warm-stone"]}>
+                        <p class="label">Nr. {i}{gewaehlt && " · ausgewählt"}</p>
+                        {v ? <Image src={v} alt={k.beschreibung ?? ""} width={640} class="mt-8 aspect-[3/2] w-full object-cover" /> : <div class="foto-folgt mt-8 aspect-[3/2]"><span class="caption">keine Vorschau</span></div>}
+                        <p class="caption mt-8">{k.beschreibung}</p>
+                        <p class="mt-8 text-nav">{k.fotograf} · {k.quelle}{k.breite && ` · ${k.breite}×${k.hoehe}`}</p>
+                        <p class="caption">{k.lizenz}</p>
+                        <a class="link caption" href={k.seite_url} target="_blank" rel="noopener">Originalseite</a>
+                      </li>
+                    );
+                  })}
+                </ol>
+              )}
+            </div>
+          </div>
+        </section>
+      ))}
+    </main>
+  </body>
+</html>

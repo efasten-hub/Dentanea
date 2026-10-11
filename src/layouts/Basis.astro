@@ -69,6 +69,11 @@ const preloads = [
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={site.sprachen.og_locale[sprache]} />
     {vorhandene.filter((a) => a.sprache !== sprache).map((a) => <meta property="og:locale:alternate" content={site.sprachen.og_locale[a.sprache]} />)}
+    <meta property="og:image" content={absolut(`/og/${sprache}/${seitenId}.jpg`)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={titel} />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />

@@ -8,6 +8,7 @@ import Basis from "../layouts/Basis.astro";
 import Terminbuchung from "../components/Terminbuchung.astro";
 import SprachHinweis from "../components/SprachHinweis.astro";
 import Sprechzeiten from "../components/Sprechzeiten.astro";
+import Foto from "../components/Foto.astro";
 import { site } from "../config/site";
 import { t } from "../i18n";
 import type { VorlagenProps } from "./typen";
@@ -22,7 +23,7 @@ const { id, sprache, daten } = Astro.props;
       {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
       <Terminbuchung sprache={sprache} variante="hero" class="mt-40" />
     </div>
-    <div class="foto-folgt aspect-[4/3] w-full" aria-hidden="true"></div>
+    <Foto bild={daten.bild ?? "hero-atmosphaere"} sprache={sprache} prioritaet sizes="(min-width: 768px) 50vw, 100vw" />
   </section>
 
   <div class="container-page">

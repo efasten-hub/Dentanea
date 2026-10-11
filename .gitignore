@@ -6,3 +6,6 @@ dist/
 !.env.example
 .DS_Store
 vorschau-*.html
+
+# Vorschaubilder der Bildauswahl (nicht ausgewählte Kandidaten)
+bilder/kandidaten/

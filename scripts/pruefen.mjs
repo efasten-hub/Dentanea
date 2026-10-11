@@ -46,7 +46,7 @@ const platzhalter = new Map(); // Art → [{datei, zeile, text}]
 for (const datei of [...dateien(join(WURZEL, "src"), TEXT), ...dateien(join(WURZEL, "public"), TEXT), join(WURZEL, "astro.config.mjs")]) {
   if (datei.includes(`${join("src", "pages", "intern")}`)) continue; // interne Vorschau
   readFileSync(datei, "utf8").split("\n").forEach((zeile, i) => {
-    for (const m of zeile.matchAll(/\[\[([^\]]+)\]\]/g)) {
+    for (const m of zeile.matchAll(/\[\[([A-ZÄÖÜ][^\]]*)\]\]/g)) { // Markierungen beginnen mit Großbuchstaben
       const art = m[1].split(":")[0].trim();
       if (!platzhalter.has(art)) platzhalter.set(art, []);
       platzhalter.get(art).push({ datei: pfadRel(datei), zeile: i + 1, text: m[0] });
@@ -134,6 +134,10 @@ for (const [schl, e] of eintraege) {
   if (e.datei && !existsSync(join(FOTOS, e.datei))) warn("Bilder", `${schl}: Datei ${e.datei} existiert nicht`);
   if (e.stock === true) {
     stockAnzahl++;
+    // Stock nie für Arzt, Team, Praxisräume oder Patientenfälle (HWG/UWG – Irreführung)
+    const verboten = (e.position ?? []).filter((p) => /(porträt|portrait|dr\. adali|team|empfang|warte|behandlungszimmer|hauseingang|praxisr|vorher|nachher|patientenfall|schema\.org dentist)/i.test(p) && !/nie als/i.test(p));
+    if (verboten.length) warn("Bilder", `${schl}: Stockfoto an unzulässiger Position – ${verboten.join(", ")}`);
+    if (e.einwilligung_dokumentiert) warn("Bilder", `${schl}: Stockfoto mit Patienteneinwilligung? Bitte Quelle prüfen`);
     const altText = Object.values(e.alt ?? {}).join(" ").toLowerCase();
     if (/(unser|our |nuestr|bizim|praxis dr|dentaviva)/.test(altText)) warn("Bilder", `${schl}: Stockfoto-Alt-Text behauptet Praxisbezug`);
   }
@@ -174,8 +178,13 @@ if (args.has("--schreiben")) {
     zeilen.push(`**${name}** – zu prüfen: ${offen.length}`, "", ...(offen.length ? offen : ["- keine"]), ...(nicht.length ? ["", ...nicht] : []), "");
   }
   zeilen.push(ende);
+  const stockStart = "<!-- AUTO:STOCKFOTOS:START -->", stockEnde = "<!-- AUTO:STOCKFOTOS:ENDE -->";
+  const stockListe = eintraege.filter(([, e]) => e.stock === true && e.ersetzen_durch_eigenes !== false)
+    .map(([k, e]) => `- [ ] **${k}** (${e.quelle}, ${e.fotograf}) – verwendet: ${(e.position ?? []).join(", ")}`);
+  const stockBlock = [stockStart, "", ...(stockListe.length ? stockListe : ["- noch keine Stockfotos eingebaut"]), "", stockEnde].join("\n");
   const alt = readFileSync(md, "utf8");
-  const neu = alt.includes(start) ? alt.replace(new RegExp(`${start}[\\s\\S]*?${ende}`), zeilen.join("\n")) : `${alt}\n${zeilen.join("\n")}\n`;
+  let neu = alt.includes(start) ? alt.replace(new RegExp(`${start}[\\s\\S]*?${ende}`), zeilen.join("\n")) : `${alt}\n${zeilen.join("\n")}\n`;
+  if (neu.includes(stockStart)) neu = neu.replace(new RegExp(`${stockStart}[\\s\\S]*?${stockEnde}`), stockBlock);
   writeFileSync(md, neu);
   console.log("PLATZHALTER.md aktualisiert.");
 }
