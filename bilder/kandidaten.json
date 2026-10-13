@@ -1,7 +1,12 @@
 {
   "_hinweise": "Bildpositionen und Kandidaten für die Auswahlseite /_bildauswahl (nur lokal, nie im Deployment). Kandidaten werden mit `npm run bilder:laden` von Unsplash/Pexels geladen: per API (Schlüssel in .env) oder über die offiziellen Download-Links der eingetragenen Fotoseiten. Nach der Auswahl: `auswahl` setzen, dann `npm run bilder:laden -- --uebernehmen` → Original nach bilder/original/, Eintrag ins Manifest, `npm run bilder` für den Look.",
   "regeln": {
-    "nie_stock": ["Porträt Dr. Adali", "Team", "Praxisräume, Empfang, Hauseingang (als „unsere Praxis“)", "Vorher/Nachher, Patientenfälle"],
+    "nie_stock": [
+      "Porträt Dr. Adali",
+      "Team",
+      "Praxisräume, Empfang, Hauseingang (als „unsere Praxis“)",
+      "Vorher/Nachher, Patientenfälle"
+    ],
     "bevorzugt": "Hände bei präziser Arbeit, Materialien (Keramik, Instrumente in Ruhe, Abdruck, Schiene), Beratung aus Distanz, natürliches Lächeln im Alltag, ruhige Details, Licht auf Oberflächen. Warm, Tageslicht, Querformat, viel Luft.",
     "nie": "gebleichte Grinse-Gebisse, Daumen hoch, 3D-Zahn-Renderings, Zahnbürsten in Bonbonfarben, kalte Blau-Weiß-Kliniken, Logos, fremde Praxisnamen, erkennbare Orte außerhalb Berlins, KI-generierte Bilder von Menschen/Zähnen/Behandlungen, frontal erkennbare Personen in Behandlungssituationen, erkennbare Kindergesichter in Behandlung"
   },
@@ -9,176 +14,870 @@
     {
       "id": "hero-atmosphaere",
       "titel": "Hero Startseite – Atmosphäre ohne Personen",
-      "verwendung": ["Startseite Hero"],
+      "verwendung": [
+        "Startseite Hero"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Laut Auftrag: echtes Porträt oder Praxisfoto; reicht die Qualität nicht, atmosphärisches Stockfoto ohne Personen – Porträt dann im Teaser. Porträt: 1362 px, Studioweiß → Empfehlung Stock im Hero. [[PRÜFEN]]",
       "suche": {
-        "unsplash": ["warm light interior minimal", "sunlight wall shadow calm", "ceramic texture warm light"],
-        "pexels": ["warm sunlight interior minimal", "calm light shadow wall"]
+        "unsplash": [
+          "warm light interior minimal",
+          "sunlight wall shadow calm",
+          "ceramic texture warm light"
+        ],
+        "pexels": [
+          "warm sunlight interior minimal",
+          "calm light shadow wall"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "gNdyKYXjWko",
+          "seite_url": "https://unsplash.com/photos/yellow-rimmed-cream-mug-on-stone-tiles-with-shadow-gNdyKYXjWko",
+          "fotograf": "Barney Goodman",
+          "fotograf_url": "https://unsplash.com/@bgoodpic",
+          "beschreibung": "Keramikbecher im Sonnenlicht, langer Schatten auf hellem Stein",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "hero-atmosphaere/unsplash-gNdyKYXjWko.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "ceramic texture warm light"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "fVpECuFVaA4",
+          "seite_url": "https://unsplash.com/photos/weathered-beige-plaster-wall-texture-fVpECuFVaA4",
+          "fotograf": "Pawel Czerwinski",
+          "fotograf_url": "https://unsplash.com/@pawel_czerwinski",
+          "beschreibung": "Warm verputzte Wand, Ocker und Creme",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "hero-atmosphaere/unsplash-fVpECuFVaA4.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "ceramic texture warm light"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "tofOMdF8Vx0",
+          "seite_url": "https://unsplash.com/photos/cone-shadow-on-cream-wall-tofOMdF8Vx0",
+          "fotograf": "Barney Goodman",
+          "fotograf_url": "https://unsplash.com/@bgoodpic",
+          "beschreibung": "Schlichte Leuchte vor cremefarbener Wand, weiches Licht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "hero-atmosphaere/unsplash-tofOMdF8Vx0.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "warm light interior minimal"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "JFHgZM07JpA",
+          "seite_url": "https://unsplash.com/photos/background-pattern-JFHgZM07JpA",
+          "fotograf": "Sergei Tokarev",
+          "fotograf_url": "https://unsplash.com/@geserbox",
+          "beschreibung": "Streiflicht auf strukturierter Wand",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "hero-atmosphaere/unsplash-JFHgZM07JpA.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "ceramic texture warm light"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "zahnersatz",
       "titel": "Zahnersatz / Prothetik",
-      "verwendung": ["Leistung Zahnersatz", "Schwerpunkt-Raster", "Zielgruppe Zahnverlust"],
+      "verwendung": [
+        "Leistung Zahnersatz",
+        "Schwerpunkt-Raster",
+        "Zielgruppe Zahnverlust"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Krone/Brücke aus Keramik in der Hand des Zahntechnikers; Farbbestimmung mit Farbring",
       "suche": {
-        "unsplash": ["dental technician ceramic crown", "dental lab hands prosthesis", "tooth shade guide"],
-        "pexels": ["dental technician", "dental prosthesis lab", "dental shade guide"]
+        "unsplash": [
+          "dental technician ceramic crown",
+          "dental lab hands prosthesis",
+          "tooth shade guide"
+        ],
+        "pexels": [
+          "dental technician",
+          "dental prosthesis lab",
+          "dental shade guide"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "kL6LP2olEds",
+          "seite_url": "https://unsplash.com/photos/a-pile-of-chocolate-kL6LP2olEds",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Keramikkronen und Veneers auf einem Gipsmodell",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnersatz/unsplash-kL6LP2olEds.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental technician ceramic crown",
+          "hinweis": "Auch bei Adhäsivbrücke als Nr. 0 – nur einmal verwenden"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "q1KLbswF70Y",
+          "seite_url": "https://unsplash.com/photos/white-candle-on-black-textile-q1KLbswF70Y",
+          "fotograf": "Bogdan condr",
+          "fotograf_url": "https://unsplash.com/@bogdan_condr",
+          "beschreibung": "Einzelne Keramikkrone auf einem Implantat im Modell, dunkler Hintergrund",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnersatz/unsplash-q1KLbswF70Y.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental technician ceramic crown"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "cAvrofAjg3g",
+          "seite_url": "https://unsplash.com/photos/a-model-of-a-tooth-with-a-toothbrush-in-it-cAvrofAjg3g",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Gipsmodell mit Brückengerüst, Pinzette",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnersatz/unsplash-cAvrofAjg3g.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental technician ceramic crown"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "U1gvhqVQ2kQ",
+          "seite_url": "https://unsplash.com/photos/person-wearing-silver-colored-ring-while-holding-denture-U1gvhqVQ2kQ",
+          "fotograf": "Peter Kasprzyk",
+          "fotograf_url": "https://unsplash.com/@petekasprzyk",
+          "beschreibung": "Hände mit Modell einer implantatgetragenen Prothese, helles Tageslicht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnersatz/unsplash-U1gvhqVQ2kQ.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental lab hands prosthesis"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "implantologie",
       "titel": "Implantologie",
-      "verwendung": ["Leistung Implantologie", "Schwerpunkt-Raster", "Ratgeber Sofortimplantate"],
+      "verwendung": [
+        "Leistung Implantologie",
+        "Schwerpunkt-Raster",
+        "Ratgeber Sofortimplantate"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Digitale Planung am Monitor ohne lesbare Patientendaten; Implantat-Detail neutral",
       "suche": {
-        "unsplash": ["dental implant model", "dentist computer planning", "dental x-ray screen"],
-        "pexels": ["dental implant", "dentist monitor planning"]
+        "unsplash": [
+          "dental implant model",
+          "dentist computer planning",
+          "dental x-ray screen"
+        ],
+        "pexels": [
+          "dental implant",
+          "dentist monitor planning"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "oo12Hl9lu70",
+          "seite_url": "https://unsplash.com/photos/dentist-examining-3d-dental-scan-on-tablet-oo12Hl9lu70",
+          "fotograf": "Harold Hisona",
+          "fotograf_url": "https://unsplash.com/@harold_angus",
+          "beschreibung": "Hände an einem Tablet mit 3D-Implantatplanung",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "implantologie/unsplash-oo12Hl9lu70.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental x-ray screen",
+          "hinweis": "Keine lesbaren Patientendaten – vor Einbau in voller Größe prüfen"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "EKcXs_VHbNw",
+          "seite_url": "https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-table-looking-at-a-computer-screen-EKcXs_VHbNw",
+          "fotograf": "Dental Implants Tasmania",
+          "fotograf_url": "https://unsplash.com/@dentalimplantstasmania",
+          "beschreibung": "Beratungsgespräch vor einem Monitor mit 3D-Kiefermodell",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "implantologie/unsplash-EKcXs_VHbNw.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dentist computer planning",
+          "hinweis": "Fotograf ist eine Implantatpraxis (Tasmanien) – prüfen, dass kein Praxisname sichtbar ist"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "iifFLk3KU",
+          "seite_url": "https://unsplash.com/photos/woman-in-blue-denim-jeans-holding-black-tablet-computer-T-iifFLk3KU",
+          "fotograf": "Quang Tri NGUYEN",
+          "fotograf_url": "https://unsplash.com/@quangtri",
+          "beschreibung": "Zahnarzt zeigt einer Patientin die Planung auf dem Tablet",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "implantologie/unsplash-iifFLk3KU.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental x-ray screen",
+          "hinweis": "Gesichter nur angeschnitten"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "DwlC4fija6o",
+          "seite_url": "https://unsplash.com/photos/dental-x-ray-displayed-on-a-monitor-in-a-clinic-DwlC4fija6o",
+          "fotograf": "Fr0ggy5",
+          "fotograf_url": "https://unsplash.com/@fr0ggy5_fr0ggy5",
+          "beschreibung": "Röntgenbild auf einem Monitor am Behandlungsstuhl, Fenster mit Grün",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "implantologie/unsplash-DwlC4fija6o.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental x-ray screen"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "adhaesivbruecke",
       "titel": "Adhäsivbrücke / Implantat-Alternative",
-      "verwendung": ["Leistung Klebebrücke", "Leistung Implantat-Alternativen", "Ratgeber Implantat oder Klebebrücke"],
+      "verwendung": [
+        "Leistung Klebebrücke",
+        "Leistung Implantat-Alternativen",
+        "Ratgeber Implantat oder Klebebrücke"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Detail einer feinen Keramikarbeit; Beratungsgespräch aus Distanz",
       "suche": {
-        "unsplash": ["dental ceramic veneer detail", "dentist consultation patient"],
-        "pexels": ["dental ceramics", "dentist consultation"]
+        "unsplash": [
+          "dental ceramic veneer detail",
+          "dentist consultation patient"
+        ],
+        "pexels": [
+          "dental ceramics",
+          "dentist consultation"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "kL6LP2olEds",
+          "seite_url": "https://unsplash.com/photos/a-pile-of-chocolate-kL6LP2olEds",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Keramikkronen und Veneers auf einem Gipsmodell",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "adhaesivbruecke/unsplash-kL6LP2olEds.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental veneers",
+          "hinweis": "Gleiches Bild wie Zahnersatz Nr. 0"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "WvVW7mRaZE8",
+          "seite_url": "https://unsplash.com/photos/a-group-of-white-objects-WvVW7mRaZE8",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Vier Keramik-Veneers auf dunklem Untergrund",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "adhaesivbruecke/unsplash-WvVW7mRaZE8.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental ceramic veneer detail"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "FBH90YorywM",
+          "seite_url": "https://unsplash.com/photos/a-group-of-white-objects-FBH90YorywM",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Feine Keramikschale an einem Modell, mit Applikator",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "adhaesivbruecke/unsplash-FBH90YorywM.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental ceramic veneer detail"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "RCQnbyQsnUg",
+          "seite_url": "https://unsplash.com/photos/a-close-up-of-a-womans-mouth-with-white-teeth-RCQnbyQsnUg",
+          "fotograf": "Kamal Hoseinianzade",
+          "fotograf_url": "https://unsplash.com/@teravis_sk",
+          "beschreibung": "Natürliches Lächeln im Profil",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "adhaesivbruecke/unsplash-RCQnbyQsnUg.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental veneers"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "aesthetik",
       "titel": "Ästhetik (Veneers, Bleaching, Aligner)",
-      "verwendung": ["Leistung Ästhetik", "Schwerpunkt-Raster", "Zielgruppe Ästhetik"],
+      "verwendung": [
+        "Leistung Ästhetik",
+        "Schwerpunkt-Raster",
+        "Zielgruppe Ästhetik"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Natürliches, nicht übertriebenes Lächeln im Tageslicht; transparenter Aligner",
       "suche": {
-        "unsplash": ["natural smile daylight woman", "clear aligner hand", "laughing outdoors natural"],
-        "pexels": ["natural smile daylight", "clear aligner"]
+        "unsplash": [
+          "natural smile daylight woman",
+          "clear aligner hand",
+          "laughing outdoors natural"
+        ],
+        "pexels": [
+          "natural smile daylight",
+          "clear aligner"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "S5fq8GMs1wU",
+          "seite_url": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-jacket-S5fq8GMs1wU",
+          "fotograf": "Oliver Sharp",
+          "fotograf_url": "https://unsplash.com/@thechickennugget",
+          "beschreibung": "Ältere Frau lacht im Wind, warmes Abendlicht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "aesthetik/unsplash-S5fq8GMs1wU.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "smiling woman outdoors",
+          "hinweis": "Natürlich, kein gebleichtes Gebiss"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "FBfBZbXpUaQ",
+          "seite_url": "https://unsplash.com/photos/young-black-woman-smiling-outdoors-with-trees-FBfBZbXpUaQ",
+          "fotograf": "FOTOGRAFÍA EDITORIAL",
+          "fotograf_url": "https://unsplash.com/@fotografiaeditorial",
+          "beschreibung": "Junge Frau im Freien, Tageslicht, lächelt zur Seite",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "aesthetik/unsplash-FBfBZbXpUaQ.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "smiling woman outdoors"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "uTUsnv_UCSQ",
+          "seite_url": "https://unsplash.com/photos/woman-adjusting-clear-dental-aligners-on-teeth-uTUsnv_UCSQ",
+          "fotograf": "Harold Hisona",
+          "fotograf_url": "https://unsplash.com/@harold_angus",
+          "beschreibung": "Transparente Aligner-Schiene wird eingesetzt, Nahaufnahme",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "aesthetik/unsplash-uTUsnv_UCSQ.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "invisible braces",
+          "hinweis": "Mund und Hände, kein Gesicht"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "cmd-schienen",
       "titel": "CMD & Schienen",
-      "verwendung": ["Leistung CMD & Schienen", "Schwerpunkt-Raster", "Zielgruppe CMD", "Ratgeber Knirschen"],
+      "verwendung": [
+        "Leistung CMD & Schienen",
+        "Schwerpunkt-Raster",
+        "Zielgruppe CMD",
+        "Ratgeber Knirschen"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Aufbissschiene; Person mit Hand an der Wange im Alltag (nicht leidend-dramatisch)",
       "suche": {
-        "unsplash": ["night guard dental splint", "woman hand on cheek thoughtful"],
-        "pexels": ["dental night guard", "hand on jaw"]
+        "unsplash": [
+          "night guard dental splint",
+          "woman hand on cheek thoughtful"
+        ],
+        "pexels": [
+          "dental night guard",
+          "hand on jaw"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "2xjplyQbtYY",
+          "seite_url": "https://unsplash.com/photos/a-woman-wearing-glasses-sitting-in-a-dark-room-2xjplyQbtYY",
+          "fotograf": "Aleksandar Kurešević",
+          "fotograf_url": "https://unsplash.com/@aleksandark",
+          "beschreibung": "Nachdenkliche Frau, Hand an der Wange, ruhiges Licht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "cmd-schienen/unsplash-2xjplyQbtYY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "woman hand on cheek thoughtful",
+          "hinweis": "Kein Foto einer Aufbissschiene gefunden – ggf. später ergänzen"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "wjk_SSqCE4",
+          "seite_url": "https://unsplash.com/photos/woman-in-gray-top--wjk_SSqCE4",
+          "fotograf": "Tachina Lee",
+          "fotograf_url": "https://unsplash.com/@chne_",
+          "beschreibung": "Frau schaut nach oben, Hand am Kinn",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "cmd-schienen/unsplash-wjk_SSqCE4.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "woman hand on cheek thoughtful"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "zahnerhalt",
       "titel": "Endodontie, Parodontologie, Füllungen, PZR",
-      "verwendung": ["Leistung Endodontie", "Leistung Parodontologie", "Leistung Füllungen", "Leistung Prophylaxe"],
+      "verwendung": [
+        "Leistung Endodontie",
+        "Leistung Parodontologie",
+        "Leistung Füllungen",
+        "Leistung Prophylaxe"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Ruhige Detailaufnahmen von Instrumenten bzw. Behandlung, Person nicht frontal erkennbar",
       "suche": {
-        "unsplash": ["dental instruments tray calm", "dentist hands gloves detail", "dental mirror probe"],
-        "pexels": ["dental instruments", "dentist hands"]
+        "unsplash": [
+          "dental instruments tray calm",
+          "dentist hands gloves detail",
+          "dental mirror probe"
+        ],
+        "pexels": [
+          "dental instruments",
+          "dentist hands"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "R8MoN4FV5q0",
+          "seite_url": "https://unsplash.com/photos/a-pair-of-dental-instruments-sitting-on-top-of-a-bed-R8MoN4FV5q0",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Spiegel und Sonde auf strukturiertem Papier",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnerhalt/unsplash-R8MoN4FV5q0.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental instruments tray calm"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "kY",
+          "seite_url": "https://unsplash.com/photos/a-group-of-dental-tools-sitting-on-top-of-a-table-t3Z9mIBv-kY",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Zahnärztliche Instrumente auf weißer Fläche, weiches Licht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnerhalt/unsplash-kY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental instruments tray calm"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "LO4HKJVyQjM",
+          "seite_url": "https://unsplash.com/photos/a-close-up-of-a-bunch-of-metal-nails-LO4HKJVyQjM",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Instrumentenspitzen in Unschärfe",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnerhalt/unsplash-LO4HKJVyQjM.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental mirror probe"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "hSb5sSd1LME",
+          "seite_url": "https://unsplash.com/photos/a-row-of-dental-instruments-sitting-on-top-of-a-sink-hSb5sSd1LME",
+          "fotograf": "Mufid Majnun",
+          "fotograf_url": "https://unsplash.com/@mufidpwt",
+          "beschreibung": "Instrumente in einer hellen Schale",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnerhalt/unsplash-hSb5sSd1LME.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental mirror probe"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "oralchirurgie",
       "titel": "Oralchirurgie",
-      "verwendung": ["Leistung Oralchirurgie"],
+      "verwendung": [
+        "Leistung Oralchirurgie"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Steriles, ruhiges Instrumententablett, keine Blutbilder",
       "suche": {
-        "unsplash": ["sterile surgical instruments tray"],
-        "pexels": ["sterile surgical instruments"]
+        "unsplash": [
+          "sterile surgical instruments tray"
+        ],
+        "pexels": [
+          "sterile surgical instruments"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "TFNwygV0c2I",
+          "seite_url": "https://unsplash.com/photos/a-pair-of-scissors-and-a-pair-of-scissors-on-a-table-TFNwygV0c2I",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Steril verpackte chirurgische Instrumente",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "oralchirurgie/unsplash-TFNwygV0c2I.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "sterile surgical instruments tray"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "Z6sbbTdPJTY",
+          "seite_url": "https://unsplash.com/photos/a-tray-with-surgical-instruments-on-top-of-it-Z6sbbTdPJTY",
+          "fotograf": "César Badilla Miranda",
+          "fotograf_url": "https://unsplash.com/@xbmpro",
+          "beschreibung": "Instrumente auf steriler Abdeckung mit Tupfer",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "oralchirurgie/unsplash-Z6sbbTdPJTY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "sterile surgical instruments tray",
+          "hinweis": "Blauer Abdeckstoff – Farbe prüfen"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "cSJCiHJGVxc",
+          "seite_url": "https://unsplash.com/photos/a-metallic-survival-raft-on-a-black-background-cSJCiHJGVxc",
+          "fotograf": "Smithsonian",
+          "fotograf_url": "https://unsplash.com/@smithsonian",
+          "beschreibung": "Historischer Sterilisierbehälter aus Metall",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "oralchirurgie/unsplash-cSJCiHJGVxc.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "sterile surgical instruments tray",
+          "hinweis": "Archivbild (Smithsonian), dunkler Hintergrund"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "kinder",
       "titel": "Kinder / MIH / Syndrome",
-      "verwendung": ["Leistung Zahnersatz bei Kindern", "Leistung MIH & Syndrome", "Zielgruppe Eltern", "Ratgeber MIH"],
+      "verwendung": [
+        "Leistung Zahnersatz bei Kindern",
+        "Leistung MIH & Syndrome",
+        "Zielgruppe Eltern",
+        "Ratgeber MIH"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Eltern mit Kind im Alltag, freundliche Detailaufnahmen; keine erkennbaren Kindergesichter in Behandlungssituationen",
       "suche": {
-        "unsplash": ["parent child walking back view", "mother daughter hands everyday", "family kitchen morning"],
-        "pexels": ["parent child back view", "family everyday warm"]
+        "unsplash": [
+          "parent child walking back view",
+          "mother daughter hands everyday",
+          "family kitchen morning"
+        ],
+        "pexels": [
+          "parent child back view",
+          "family everyday warm"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "C2PvO6dOORY",
+          "seite_url": "https://unsplash.com/photos/woman-and-girl-walking-on-road-surrounded-by-green-grass-C2PvO6dOORY",
+          "fotograf": "Jon Flobrant",
+          "fotograf_url": "https://unsplash.com/@jonflobrant",
+          "beschreibung": "Mutter und Kind gehen einen Feldweg entlang, goldenes Licht, von hinten",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "kinder/unsplash-C2PvO6dOORY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "parent child walking back view"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "8SwpPqFeoR4",
+          "seite_url": "https://unsplash.com/photos/woman-holding-a-child-walking-in-the-pathway-8SwpPqFeoR4",
+          "fotograf": "Sue Zeng",
+          "fotograf_url": "https://unsplash.com/@suezeng",
+          "beschreibung": "Elternteil und Kind auf einem sonnigen Gehweg, von hinten",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "kinder/unsplash-8SwpPqFeoR4.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "parent child walking back view"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "k8qLthbiLL8",
+          "seite_url": "https://unsplash.com/photos/a-woman-and-a-child-walking-down-a-street-k8qLthbiLL8",
+          "fotograf": "Yigit ARISOY",
+          "fotograf_url": "https://unsplash.com/@yigitarisoy",
+          "beschreibung": "Mutter und Tochter an der Hand in der Stadt, von hinten",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "kinder/unsplash-k8qLthbiLL8.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "parent child walking back view"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "8BNE9KvOBLA",
+          "seite_url": "https://unsplash.com/photos/grandmother-and-granddaughter-enjoying-breakfast-together-8BNE9KvOBLA",
+          "fotograf": "Vitaly Gariev",
+          "fotograf_url": "https://unsplash.com/@silverkblack",
+          "beschreibung": "Großmutter und Enkelin beim Frühstück",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "kinder/unsplash-8BNE9KvOBLA.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "family kitchen morning",
+          "hinweis": "Kindergesicht erkennbar – Alltag, keine Behandlung"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "labor-digital",
       "titel": "Labor & digitaler Workflow",
-      "verwendung": ["Leistung Dentallabor & digital", "Startseite Labor-Sektion"],
+      "verwendung": [
+        "Leistung Dentallabor & digital",
+        "Startseite Labor-Sektion"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Intraoralscanner, CAD/CAM-Fräse, Zahntechniker-Hände – nie als „unser Labor“ beschriften",
       "suche": {
-        "unsplash": ["intraoral scanner", "cad cam dental milling", "dental technician hands"],
-        "pexels": ["intraoral scanner", "dental milling machine"]
+        "unsplash": [
+          "intraoral scanner",
+          "cad cam dental milling",
+          "dental technician hands"
+        ],
+        "pexels": [
+          "intraoral scanner",
+          "dental milling machine"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "6dvjlBU3pQQ",
+          "seite_url": "https://unsplash.com/photos/dentist-crafting-a-dental-prosthesis-with-tools-6dvjlBU3pQQ",
+          "fotograf": "Adrian Sulyok",
+          "fotograf_url": "https://unsplash.com/@sulyok_imaging",
+          "beschreibung": "Zahntechnikerin bearbeitet eine Prothese, Hände im Detail",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "labor-digital/unsplash-6dvjlBU3pQQ.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental lab"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "qRB_h7H0Mx8",
+          "seite_url": "https://unsplash.com/photos/a-person-holding-a-fake-tooth-in-front-of-a-machine-qRB_h7H0Mx8",
+          "fotograf": "Dr. Dexter Mattox",
+          "fotograf_url": "https://unsplash.com/@innova_implants",
+          "beschreibung": "Hände bearbeiten ein Kiefermodell mit einem Handstück",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "labor-digital/unsplash-qRB_h7H0Mx8.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental technician hands"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "ywy50kV72A4",
+          "seite_url": "https://unsplash.com/photos/a-person-with-gloves-and-a-pair-of-scissors-ywy50kV72A4",
+          "fotograf": "Indra Projects",
+          "fotograf_url": "https://unsplash.com/@indraprojects",
+          "beschreibung": "Behandschuhte Hände mit Modell und Werkzeug",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "labor-digital/unsplash-ywy50kV72A4.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental technician hands"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "WRv6Rl_nUes",
+          "seite_url": "https://unsplash.com/photos/white-and-blue-machine-WRv6Rl_nUes",
+          "fotograf": "beuwy.com Alexander Pütter",
+          "fotograf_url": "https://unsplash.com/@beuwy_com",
+          "beschreibung": "CAD/CAM-Fräsmaschine mit Keramikblock",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "labor-digital/unsplash-WRv6Rl_nUes.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental lab",
+          "hinweis": "Kühles Türkislicht – passt nur bedingt zum warmen Look"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "international",
       "titel": "Internationale Patienten",
-      "verwendung": ["Zielgruppe International", "Ratgeber Deutsches System"],
+      "verwendung": [
+        "Zielgruppe International",
+        "Ratgeber Deutsches System"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Beratungsgespräch; Berlin-Stimmung neutral (Altbaufassade, Licht), keine Sehenswürdigkeiten-Klischees",
       "suche": {
-        "unsplash": ["berlin altbau facade light", "consultation conversation table hands"],
-        "pexels": ["berlin building facade", "conversation hands table"]
+        "unsplash": [
+          "berlin altbau facade light",
+          "consultation conversation table hands"
+        ],
+        "pexels": [
+          "berlin building facade",
+          "conversation hands table"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "K8XYGbw4Ahg",
+          "seite_url": "https://unsplash.com/photos/two-people-holding-gray-mugs-at-table-K8XYGbw4Ahg",
+          "fotograf": "Priscilla Du Preez 🇨🇦",
+          "fotograf_url": "https://unsplash.com/@priscilladupreez",
+          "beschreibung": "Zwei Menschen im Gespräch am Tisch, Kaffeetassen, nur Hände",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "international/unsplash-K8XYGbw4Ahg.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "consultation conversation table hands"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "DoMEXHiQMZw",
+          "seite_url": "https://unsplash.com/photos/white-and-pink-buildings-during-daytime-DoMEXHiQMZw",
+          "fotograf": "Jonas Denil",
+          "fotograf_url": "https://unsplash.com/@jonasdenil",
+          "beschreibung": "Altbaufassaden in Pastell mit Balkonen",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "international/unsplash-DoMEXHiQMZw.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "berlin building facade"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "nzWLmc0aAXk",
+          "seite_url": "https://unsplash.com/photos/people-walking-near-brown-concrete-building-during-daytime-nzWLmc0aAXk",
+          "fotograf": "Adrien Aletti",
+          "fotograf_url": "https://unsplash.com/@ahda_gallery",
+          "beschreibung": "Bunte Altbauzeile mit Bäumen und Straßenleben",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "international/unsplash-nzWLmc0aAXk.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "berlin building facade"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "RccZdb0lp6c",
+          "seite_url": "https://unsplash.com/photos/ornate-old-building-facade-with-many-windows-against-blue-sky-RccZdb0lp6c",
+          "fotograf": "Jens Freudenau",
+          "fotograf_url": "https://unsplash.com/@jenstakesphotos",
+          "beschreibung": "Verzierte Gründerzeitfassade vor blauem Himmel",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "international/unsplash-RccZdb0lp6c.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "berlin building facade"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "ratgeber-kosten",
       "titel": "Ratgeber: Was kostet Zahnersatz?",
-      "verwendung": ["Ratgeber Kosten Zahnersatz"],
+      "verwendung": [
+        "Ratgeber Kosten Zahnersatz"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Ruhiges Motiv zu Planung/Unterlagen – keine Geldscheine, keine Zahn-Sparschweine",
       "suche": {
-        "unsplash": ["paperwork desk calm pen", "planning notes table warm light"],
-        "pexels": ["documents desk pen warm"]
+        "unsplash": [
+          "paperwork desk calm pen",
+          "planning notes table warm light"
+        ],
+        "pexels": [
+          "documents desk pen warm"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "XYogQSkSYZ8",
+          "seite_url": "https://unsplash.com/photos/black-pen-on-white-paper-XYogQSkSYZ8",
+          "fotograf": "Isaac Smith",
+          "fotograf_url": "https://unsplash.com/@isaacmsmith",
+          "beschreibung": "Notizbuch und Stift auf dunklem Holztisch",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "ratgeber-kosten/unsplash-XYogQSkSYZ8.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "paperwork desk calm pen"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "b8L0ItAYc",
+          "seite_url": "https://unsplash.com/photos/a-person-holding-a-pen-next-to-a-notebook-7-b8L0ItAYc",
+          "fotograf": "Jess Bailey",
+          "fotograf_url": "https://unsplash.com/@jessbaileydesigns",
+          "beschreibung": "Stift und Notizblock auf hellem Papier",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "ratgeber-kosten/unsplash-b8L0ItAYc.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "paperwork desk calm pen"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "praxis-atmosphaere",
       "titel": "Praxis-Detail ohne Wiedererkennung",
-      "verwendung": ["Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet"],
+      "verwendung": [
+        "Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet"
+      ],
       "stock_erlaubt": true,
       "hinweis": "Nur neutrale Details (Lichtstimmung, Material). Echte Raumfotos kommen aus dem Fotoshooting; bis dahin Platzhalter „FOTO FOLGT“.",
       "suche": {
-        "unsplash": ["linen texture sunlight", "plant shadow wall"],
-        "pexels": ["linen sunlight texture"]
+        "unsplash": [
+          "linen texture sunlight",
+          "plant shadow wall"
+        ],
+        "pexels": [
+          "linen sunlight texture"
+        ]
       },
-      "kandidaten": [],
+      "kandidaten": [
+        {
+          "quelle": "unsplash",
+          "id": "hqBHulDHFpo",
+          "seite_url": "https://unsplash.com/photos/shadow-of-a-monstera-leaf-on-a-wall-hqBHulDHFpo",
+          "fotograf": "Katja Ano",
+          "fotograf_url": "https://unsplash.com/@katjaano",
+          "beschreibung": "Schatten einer Monstera auf cremefarbener Wand",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "praxis-atmosphaere/unsplash-hqBHulDHFpo.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "plant shadow wall"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "9HZrON_glOY",
+          "seite_url": "https://unsplash.com/photos/a-plant-casts-a-shadow-on-a-wall-9HZrON_glOY",
+          "fotograf": "Matea Brajdić",
+          "fotograf_url": "https://unsplash.com/@sa_suncem",
+          "beschreibung": "Pflanzen und Licht im warmen Innenraum",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "praxis-atmosphaere/unsplash-9HZrON_glOY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "plant shadow wall"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "n36w",
+          "seite_url": "https://unsplash.com/photos/the-shadow-of-a-palm-tree-on-the-ground-kGXST_-n36w",
+          "fotograf": "Agata Create",
+          "fotograf_url": "https://unsplash.com/@agatacreate",
+          "beschreibung": "Palmenschatten auf sandfarbener Fläche",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "praxis-atmosphaere/unsplash-n36w.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "plant shadow wall"
+        }
+      ],
       "auswahl": null
     },
     {
       "id": "team",
       "titel": "Team",
-      "verwendung": ["Praxis & Team"],
+      "verwendung": [
+        "Praxis & Team"
+      ],
       "stock_erlaubt": false,
       "hinweis": "Keine Stock-Gesichter. Echte Fotos aus dem Shooting, bis dahin „FOTO FOLGT“.",
       "kandidaten": [],
@@ -187,7 +886,11 @@
     {
       "id": "praxisraeume",
       "titel": "Empfang, Wartebereich, Behandlungszimmer, Hauseingang",
-      "verwendung": ["Praxis & Team", "Kontakt (Hauseingang)", "Schema.org Dentist.image"],
+      "verwendung": [
+        "Praxis & Team",
+        "Kontakt (Hauseingang)",
+        "Schema.org Dentist.image"
+      ],
       "stock_erlaubt": false,
       "hinweis": "Nur echte Fotos. Die alte Website hat keine Raumfotos (Galerie = Stock). Bis zum Shooting „FOTO FOLGT“.",
       "kandidaten": [],

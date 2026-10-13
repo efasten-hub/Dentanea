@@ -15,7 +15,7 @@ import manifest from "../assets/fotos/bilder.json";
 export const getStaticPaths = (() =>
   import.meta.env.DEV || process.env.BILDAUSWAHL === "1" ? [{ params: { intern: "_bildauswahl" } }] : []) satisfies GetStaticPaths;
 
-type Kandidat = { quelle: string; id: string; seite_url: string; fotograf?: string; fotograf_url?: string; lizenz?: string; beschreibung?: string; breite?: number; hoehe?: number; vorschau?: string };
+type Kandidat = { quelle: string; id: string; seite_url: string; fotograf?: string; fotograf_url?: string; lizenz?: string; beschreibung?: string; hinweis?: string; breite?: number; hoehe?: number; vorschau?: string };
 type Position = { id: string; titel: string; verwendung: string[]; stock_erlaubt: boolean; hinweis: string; kandidaten: Kandidat[]; auswahl: number | string | null };
 const positionen = (kandidatenDaten as unknown as { positionen: Position[] }).positionen;
 const vorschauen = import.meta.glob<{ default: ImageMetadata }>("../../bilder/kandidaten/**/*.jpg", { eager: true });
@@ -79,8 +79,9 @@ const imManifest = Object.entries(manifest as unknown as Record<string, M>).filt
                       <li class:list={["border p-12", gewaehlt ? "border-oxblood-ink" : "border-warm-stone"]}>
                         <p class="label">Nr. {i}{gewaehlt && " · ausgewählt"}</p>
                         {v ? <Image src={v} alt={k.beschreibung ?? ""} width={640} class="mt-8 aspect-[3/2] w-full object-cover" /> : <div class="foto-folgt mt-8 aspect-[3/2]"><span class="caption">keine Vorschau</span></div>}
-                        <p class="caption mt-8">{k.beschreibung}</p>
-                        <p class="mt-8 text-nav">{k.fotograf} · {k.quelle}{k.breite && ` · ${k.breite}×${k.hoehe}`}</p>
+                        <p class="mt-8 text-nav">{k.beschreibung}</p>
+                        {k.hinweis && <p class="caption mt-4">Hinweis: {k.hinweis}</p>}
+                        <p class="caption mt-8">Foto: {k.fotograf} · {k.quelle}</p>
                         <p class="caption">{k.lizenz}</p>
                         <a class="link caption" href={k.seite_url} target="_blank" rel="noopener">Originalseite</a>
                       </li>
