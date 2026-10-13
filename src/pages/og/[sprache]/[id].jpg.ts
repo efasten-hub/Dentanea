@@ -29,8 +29,8 @@ const FONTS = [
   { name: "Inter", data: font("inter", "inter-latin-400-normal.woff"), weight: 400 as const },
   { name: "InterExt", data: font("inter", "inter-latin-ext-400-normal.woff"), weight: 400 as const },
 ];
-/** Standardbild, solange eine Seite kein eigenes Bild hat [[PRÜFEN: nach Bildauswahl auf hero-atmosphaere umstellen]] */
-const STANDARD_BILD = "portraet-dr-adali";
+/** Standardbild, solange eine Seite kein eigenes Bild hat */
+const STANDARD_BILD = "hero-atmosphaere";
 
 export const getStaticPaths = (async () => {
   const verfuegbar = await seitenVerfuegbar();

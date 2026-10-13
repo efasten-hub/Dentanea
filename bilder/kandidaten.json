@@ -80,7 +80,7 @@
           "suchbegriff": "ceramic texture warm light"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "zahnersatz",
@@ -155,7 +155,7 @@
           "suchbegriff": "dental lab hands prosthesis"
         }
       ],
-      "auswahl": null
+      "auswahl": 1
     },
     {
       "id": "implantologie",
@@ -207,7 +207,7 @@
         },
         {
           "quelle": "unsplash",
-          "id": "iifFLk3KU",
+          "id": "T-iifFLk3KU",
           "seite_url": "https://unsplash.com/photos/woman-in-blue-denim-jeans-holding-black-tablet-computer-T-iifFLk3KU",
           "fotograf": "Quang Tri NGUYEN",
           "fotograf_url": "https://unsplash.com/@quangtri",
@@ -231,7 +231,7 @@
           "suchbegriff": "dental x-ray screen"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "adhaesivbruecke",
@@ -304,7 +304,7 @@
           "suchbegriff": "dental veneers"
         }
       ],
-      "auswahl": null
+      "auswahl": 1
     },
     {
       "id": "aesthetik",
@@ -367,7 +367,7 @@
           "hinweis": "Mund und Hände, kein Gesicht"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "cmd-schienen",
@@ -406,7 +406,7 @@
         },
         {
           "quelle": "unsplash",
-          "id": "wjk_SSqCE4",
+          "id": "-wjk_SSqCE4",
           "seite_url": "https://unsplash.com/photos/woman-in-gray-top--wjk_SSqCE4",
           "fotograf": "Tachina Lee",
           "fotograf_url": "https://unsplash.com/@chne_",
@@ -417,7 +417,7 @@
           "suchbegriff": "woman hand on cheek thoughtful"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "zahnerhalt",
@@ -456,7 +456,7 @@
         },
         {
           "quelle": "unsplash",
-          "id": "kY",
+          "id": "t3Z9mIBv-kY",
           "seite_url": "https://unsplash.com/photos/a-group-of-dental-tools-sitting-on-top-of-a-table-t3Z9mIBv-kY",
           "fotograf": "Ozkan Guner",
           "fotograf_url": "https://unsplash.com/@dentistozkanguner",
@@ -491,7 +491,7 @@
           "suchbegriff": "dental mirror probe"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "oralchirurgie",
@@ -520,7 +520,8 @@
           "lizenz": "Unsplash License (https://unsplash.com/license)",
           "vorschau": "oralchirurgie/unsplash-TFNwygV0c2I.jpg",
           "geladen_am": "2026-10-13",
-          "suchbegriff": "sterile surgical instruments tray"
+          "suchbegriff": "sterile surgical instruments tray",
+          "hinweis": "Ungeeignet: Markenaufschrift „…medical®“ auf den Verpackungen gut lesbar"
         },
         {
           "quelle": "unsplash",
@@ -533,7 +534,7 @@
           "vorschau": "oralchirurgie/unsplash-Z6sbbTdPJTY.jpg",
           "geladen_am": "2026-10-13",
           "suchbegriff": "sterile surgical instruments tray",
-          "hinweis": "Blauer Abdeckstoff – Farbe prüfen"
+          "hinweis": "Kühles Klinikblau – widerspricht der warmen Bildsprache"
         },
         {
           "quelle": "unsplash",
@@ -541,15 +542,28 @@
           "seite_url": "https://unsplash.com/photos/a-metallic-survival-raft-on-a-black-background-cSJCiHJGVxc",
           "fotograf": "Smithsonian",
           "fotograf_url": "https://unsplash.com/@smithsonian",
-          "beschreibung": "Historischer Sterilisierbehälter aus Metall",
+          "beschreibung": "Historischer Metallbehälter (Apollo-Probenbehälter der NASA) – KEIN Sterilisierbehälter",
           "lizenz": "Unsplash License (https://unsplash.com/license)",
           "vorschau": "oralchirurgie/unsplash-cSJCiHJGVxc.jpg",
           "geladen_am": "2026-10-13",
           "suchbegriff": "sterile surgical instruments tray",
-          "hinweis": "Archivbild (Smithsonian), dunkler Hintergrund"
+          "hinweis": "Ungeeignet: anderes Motiv als vermutet"
+        },
+        {
+          "quelle": "unsplash",
+          "id": "t3Z9mIBv-kY",
+          "seite_url": "https://unsplash.com/photos/a-group-of-dental-tools-sitting-on-top-of-a-table-t3Z9mIBv-kY",
+          "fotograf": "Ozkan Guner",
+          "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+          "beschreibung": "Zahnärztliche Instrumente auf weißer Fläche, weiches Licht",
+          "lizenz": "Unsplash License (https://unsplash.com/license)",
+          "vorschau": "zahnerhalt/unsplash-kY.jpg",
+          "geladen_am": "2026-10-13",
+          "suchbegriff": "dental instruments tray calm",
+          "hinweis": "Ersatz aus Zahnerhalt Nr. 1 (Original-Kandidaten ungeeignet)"
         }
       ],
-      "auswahl": null
+      "auswahl": 3
     },
     {
       "id": "kinder",
@@ -624,7 +638,7 @@
           "hinweis": "Kindergesicht erkennbar – Alltag, keine Behandlung"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "labor-digital",
@@ -697,7 +711,7 @@
           "hinweis": "Kühles Türkislicht – passt nur bedingt zum warmen Look"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "international",
@@ -768,7 +782,7 @@
           "suchbegriff": "berlin building facade"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "ratgeber-kosten",
@@ -802,7 +816,7 @@
         },
         {
           "quelle": "unsplash",
-          "id": "b8L0ItAYc",
+          "id": "7-b8L0ItAYc",
           "seite_url": "https://unsplash.com/photos/a-person-holding-a-pen-next-to-a-notebook-7-b8L0ItAYc",
           "fotograf": "Jess Bailey",
           "fotograf_url": "https://unsplash.com/@jessbaileydesigns",
@@ -813,7 +827,7 @@
           "suchbegriff": "paperwork desk calm pen"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "praxis-atmosphaere",
@@ -859,7 +873,7 @@
         },
         {
           "quelle": "unsplash",
-          "id": "n36w",
+          "id": "kGXST_-n36w",
           "seite_url": "https://unsplash.com/photos/the-shadow-of-a-palm-tree-on-the-ground-kGXST_-n36w",
           "fotograf": "Agata Create",
           "fotograf_url": "https://unsplash.com/@agatacreate",
@@ -870,7 +884,7 @@
           "suchbegriff": "plant shadow wall"
         }
       ],
-      "auswahl": null
+      "auswahl": 0
     },
     {
       "id": "team",

@@ -139,7 +139,7 @@ for (const [schl, e] of eintraege) {
     if (verboten.length) warn("Bilder", `${schl}: Stockfoto an unzulässiger Position – ${verboten.join(", ")}`);
     if (e.einwilligung_dokumentiert) warn("Bilder", `${schl}: Stockfoto mit Patienteneinwilligung? Bitte Quelle prüfen`);
     const altText = Object.values(e.alt ?? {}).join(" ").toLowerCase();
-    if (/(unser|our |nuestr|bizim|praxis dr|dentaviva)/.test(altText)) warn("Bilder", `${schl}: Stockfoto-Alt-Text behauptet Praxisbezug`);
+    if (/\b(unser\w*|our|nuestr\w*|bizim\w*|dentaviva)\b|praxis dr/.test(altText)) warn("Bilder", `${schl}: Stockfoto-Alt-Text behauptet Praxisbezug`);
   }
 }
 const BILD = [".jpg", ".jpeg", ".png", ".webp", ".avif"];

@@ -2,7 +2,12 @@
   "_hinweise": "Bildmanifest: ein Eintrag pro Bild in src/assets/fotos/. Bilder tauschen: Datei ablegen, Eintrag anpassen – kein Code nötig. Stockfotos (stock: true) dürfen nie Arzt, Team, Praxisräume oder Patientenfälle zeigen; ihre Alt-Texte beschreiben das Motiv, nicht die Praxis. Der Bildnachweis im Impressum entsteht automatisch aus diesem Manifest.",
   "portraet-dr-adali": {
     "datei": "dr-ufuk-adali-portraet.jpg",
-    "position": ["Über Dr. Adali", "Startseite – Teaser Dr. Adali", "Team", "Schema.org Person.image"],
+    "position": [
+      "Über Dr. Adali",
+      "Startseite – Teaser Dr. Adali",
+      "Team",
+      "Schema.org Person.image"
+    ],
     "quelle": "alte-website",
     "original_url": "https://zahnarzt-adali.de/wp-content/uploads/go-x/u/74b458e5-0131-4560-92ed-cd1da7de379a/image.jpg",
     "fotograf": "[[PLATZHALTER: Name Fotograf/in]]",
@@ -15,6 +20,285 @@
       "en": "Portrait of Dr. Ufuk Adali, dentist at the Dentaviva dental practice in Berlin",
       "es": "Retrato del Dr. Ufuk Adali, dentista de la clínica dental Dentaviva en Berlín",
       "tr": "Berlin’deki Dentaviva Diş Kliniği’nin diş hekimi Dr. Ufuk Adali’nin portresi"
+    }
+  },
+  "hero-atmosphaere": {
+    "datei": "hero-atmosphaere.jpg",
+    "position": [
+      "Startseite Hero"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/yellow-rimmed-cream-mug-on-stone-tiles-with-shadow-gNdyKYXjWko",
+    "fotograf": "Barney Goodman",
+    "fotograf_url": "https://unsplash.com/@bgoodpic",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Keramikbecher im Sonnenlicht wirft einen langen Schatten auf hellen Stein",
+      "en": "Ceramic cup in sunlight casting a long shadow on pale stone",
+      "es": "Taza de cerámica bajo la luz del sol que proyecta una larga sombra sobre piedra clara",
+      "tr": "Güneş ışığında açık renk taşın üzerine uzun bir gölge düşüren seramik fincan"
+    }
+  },
+  "zahnersatz": {
+    "datei": "zahnersatz.jpg",
+    "position": [
+      "Leistung Zahnersatz",
+      "Schwerpunkt-Raster",
+      "Zielgruppe Zahnverlust"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/white-candle-on-black-textile-q1KLbswF70Y",
+    "fotograf": "Bogdan condr",
+    "fotograf_url": "https://unsplash.com/@bogdan_condr",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Keramikkrone auf einem Implantat in einem Kiefermodell",
+      "en": "Ceramic crown on an implant in a dental model",
+      "es": "Corona de cerámica sobre un implante en un modelo dental",
+      "tr": "Diş modelinde implant üzerinde seramik kron"
+    }
+  },
+  "implantologie": {
+    "datei": "implantologie.jpg",
+    "position": [
+      "Leistung Implantologie",
+      "Schwerpunkt-Raster",
+      "Ratgeber Sofortimplantate"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/dentist-examining-3d-dental-scan-on-tablet-oo12Hl9lu70",
+    "fotograf": "Harold Hisona",
+    "fotograf_url": "https://unsplash.com/@harold_angus",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Hände an einem Tablet mit digitaler 3D-Planung eines Zahnimplantats",
+      "en": "Hands on a tablet showing digital 3D planning of a dental implant",
+      "es": "Manos sobre una tableta con la planificación digital en 3D de un implante dental",
+      "tr": "Diş implantının dijital 3D planlamasını gösteren tablet üzerinde eller"
+    }
+  },
+  "adhaesivbruecke": {
+    "datei": "adhaesivbruecke.jpg",
+    "position": [
+      "Leistung Klebebrücke",
+      "Leistung Implantat-Alternativen",
+      "Ratgeber Implantat oder Klebebrücke"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/a-group-of-white-objects-WvVW7mRaZE8",
+    "fotograf": "Ozkan Guner",
+    "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Vier hauchdünne Keramikschalen (Veneers) auf dunklem Untergrund",
+      "en": "Four thin ceramic veneers on a dark surface",
+      "es": "Cuatro carillas de cerámica finas sobre una superficie oscura",
+      "tr": "Koyu zemin üzerinde dört ince seramik lamina (veneer)"
+    }
+  },
+  "aesthetik": {
+    "datei": "aesthetik.jpg",
+    "position": [
+      "Leistung Ästhetik",
+      "Schwerpunkt-Raster",
+      "Zielgruppe Ästhetik"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/a-woman-wearing-glasses-and-a-black-jacket-S5fq8GMs1wU",
+    "fotograf": "Oliver Sharp",
+    "fotograf_url": "https://unsplash.com/@thechickennugget",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Ältere Frau lacht im Freien, die Haare im Wind",
+      "en": "Older woman laughing outdoors, her hair blowing in the wind",
+      "es": "Mujer mayor riendo al aire libre con el pelo al viento",
+      "tr": "Saçları rüzgârda uçuşan, açık havada gülen yaşlı bir kadın"
+    }
+  },
+  "cmd-schienen": {
+    "datei": "cmd-schienen.jpg",
+    "position": [
+      "Leistung CMD & Schienen",
+      "Schwerpunkt-Raster",
+      "Zielgruppe CMD",
+      "Ratgeber Knirschen"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/a-woman-wearing-glasses-sitting-in-a-dark-room-2xjplyQbtYY",
+    "fotograf": "Aleksandar Kurešević",
+    "fotograf_url": "https://unsplash.com/@aleksandark",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Nachdenkliche Frau stützt ihre Wange in die Hand",
+      "en": "Thoughtful woman resting her cheek in her hand",
+      "es": "Mujer pensativa con la mejilla apoyada en la mano",
+      "tr": "Yanağını eline dayamış düşünceli bir kadın"
+    }
+  },
+  "zahnerhalt": {
+    "datei": "zahnerhalt.jpg",
+    "position": [
+      "Leistung Endodontie",
+      "Leistung Parodontologie",
+      "Leistung Füllungen",
+      "Leistung Prophylaxe"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/a-pair-of-dental-instruments-sitting-on-top-of-a-bed-R8MoN4FV5q0",
+    "fotograf": "Ozkan Guner",
+    "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Zahnärztlicher Spiegel und Sonde auf strukturiertem Papier",
+      "en": "Dental mirror and probe on textured paper",
+      "es": "Espejo dental y sonda sobre papel texturizado",
+      "tr": "Dokulu kâğıt üzerinde diş aynası ve sond"
+    }
+  },
+  "oralchirurgie": {
+    "datei": "oralchirurgie.jpg",
+    "position": [
+      "Leistung Oralchirurgie"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/a-group-of-dental-tools-sitting-on-top-of-a-table-t3Z9mIBv-kY",
+    "fotograf": "Ozkan Guner",
+    "fotograf_url": "https://unsplash.com/@dentistozkanguner",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Zahnärztliche und chirurgische Instrumente ruhig nebeneinander auf einer weißen Fläche",
+      "en": "Dental and surgical instruments laid out calmly on a white surface",
+      "es": "Instrumental dental y quirúrgico dispuesto con calma sobre una superficie blanca",
+      "tr": "Beyaz bir yüzey üzerinde düzenli şekilde duran diş ve cerrahi aletleri"
+    }
+  },
+  "kinder": {
+    "datei": "kinder.jpg",
+    "position": [
+      "Leistung Zahnersatz bei Kindern",
+      "Leistung MIH & Syndrome",
+      "Zielgruppe Eltern",
+      "Ratgeber MIH"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/woman-and-girl-walking-on-road-surrounded-by-green-grass-C2PvO6dOORY",
+    "fotograf": "Jon Flobrant",
+    "fotograf_url": "https://unsplash.com/@jonflobrant",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Mutter und Kind gehen im Abendlicht einen Feldweg entlang, von hinten gesehen",
+      "en": "Mother and child walking along a country path in evening light, seen from behind",
+      "es": "Madre e hijo caminando por un sendero a la luz del atardecer, vistos de espaldas",
+      "tr": "Akşam ışığında toprak yolda yürüyen anne ve çocuk, arkadan görünüm"
+    }
+  },
+  "labor-digital": {
+    "datei": "labor-digital.jpg",
+    "position": [
+      "Leistung Dentallabor & digital",
+      "Startseite Labor-Sektion"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/dentist-crafting-a-dental-prosthesis-with-tools-6dvjlBU3pQQ",
+    "fotograf": "Adrian Sulyok",
+    "fotograf_url": "https://unsplash.com/@sulyok_imaging",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Zahntechnikerin bearbeitet eine Zahnprothese, Detail der Hände",
+      "en": "Dental technician working on a denture, close-up of the hands",
+      "es": "Protésica dental trabajando en una prótesis, detalle de las manos",
+      "tr": "Protez diş üzerinde çalışan diş teknisyeni, ellerin yakın çekimi"
+    }
+  },
+  "international": {
+    "datei": "international.jpg",
+    "position": [
+      "Zielgruppe International",
+      "Ratgeber Deutsches System"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/two-people-holding-gray-mugs-at-table-K8XYGbw4Ahg",
+    "fotograf": "Priscilla Du Preez 🇨🇦",
+    "fotograf_url": "https://unsplash.com/@priscilladupreez",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Zwei Menschen im Gespräch an einem Tisch mit Kaffeetassen, nur die Hände sind zu sehen",
+      "en": "Two people talking at a table with coffee cups, only their hands visible",
+      "es": "Dos personas conversando en una mesa con tazas de café; solo se ven las manos",
+      "tr": "Kahve fincanlarının olduğu bir masada sohbet eden iki kişi, yalnızca elleri görünüyor"
+    }
+  },
+  "ratgeber-kosten": {
+    "datei": "ratgeber-kosten.jpg",
+    "position": [
+      "Ratgeber Kosten Zahnersatz"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/black-pen-on-white-paper-XYogQSkSYZ8",
+    "fotograf": "Isaac Smith",
+    "fotograf_url": "https://unsplash.com/@isaacmsmith",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Notizbuch und Stift auf einem dunklen Holztisch",
+      "en": "Notebook and pen on a dark wooden table",
+      "es": "Cuaderno y bolígrafo sobre una mesa de madera oscura",
+      "tr": "Koyu ahşap masa üzerinde defter ve kalem"
+    }
+  },
+  "praxis-atmosphaere": {
+    "datei": "praxis-atmosphaere.jpg",
+    "position": [
+      "Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet"
+    ],
+    "quelle": "unsplash",
+    "original_url": "https://unsplash.com/photos/shadow-of-a-monstera-leaf-on-a-wall-hqBHulDHFpo",
+    "fotograf": "Katja Ano",
+    "fotograf_url": "https://unsplash.com/@katjaano",
+    "lizenz": "Unsplash License (https://unsplash.com/license)",
+    "download_datum": "2026-10-13",
+    "stock": true,
+    "ersetzen_durch_eigenes": true,
+    "alt": {
+      "de": "Schatten einer Monstera-Pflanze auf einer cremefarbenen Wand",
+      "en": "Shadow of a monstera plant on a cream-coloured wall",
+      "es": "Sombra de una monstera sobre una pared de color crema",
+      "tr": "Krem rengi duvara düşen monstera bitkisinin gölgesi"
     }
   }
 }
