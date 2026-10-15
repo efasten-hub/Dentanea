@@ -282,7 +282,8 @@
   .inhalt a:hover { text-decoration-thickness: 1.5px; }
   .inhalt hr { border: 0; border-top: 1px solid var(--color-oxblood-ink); margin-block: var(--spacing-40); }
   .inhalt table { width: 100%; border-collapse: collapse; font-size: var(--text-nav); }
-  .inhalt th, .inhalt td { text-align: left; padding: var(--spacing-8) var(--spacing-12) var(--spacing-8) 0; border-bottom: 1px solid var(--color-oxblood-ink); vertical-align: top; }
+  .inhalt th, .inhalt td { text-align: left; padding: var(--spacing-8) var(--spacing-12) var(--spacing-8) 0; border-bottom: 1px solid var(--color-oxblood-ink); vertical-align: top; hyphens: auto; overflow-wrap: anywhere; }
+  .inhalt table { table-layout: fixed; }
 
   /* Hinweis „Seite noch nicht übersetzt“: nur sichtbar, wenn die URL auf ihn zeigt (#uebersetzung-fehlt-xx) */
   .hinweis-ziel:not(:target) { display: none; }

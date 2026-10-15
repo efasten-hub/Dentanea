@@ -101,8 +101,8 @@
     "nicht_gefunden_text": "The address may have changed. You can continue here:",
     "rechtsverbindlich": "The German version is legally binding.",
     "autor_titel": "About the author",
-    "autor_text": "Dr Ufuk Adali is a Spezialist für Prothetik (prosthodontics specialist certified by the German Society of Prosthetic Dentistry and Biomaterials, DGPro) and a certified implantologist (DGI). Until 2026 he was a senior consultant at Charité – Universitätsmedizin Berlin.",
-    "autor_link": "More about Dr Adali",
+    "autor_text": "Dr. Ufuk Adali is a Spezialist für Prothetik (prosthodontics specialist certified by the German Society of Prosthetic Dentistry and Biomaterials, DGPro) and a certified implantologist (DGI). Until 2026 he was a senior consultant at Charité – Universitätsmedizin Berlin.",
+    "autor_link": "More about Dr. Adali",
     "veroeffentlicht": "Published on {datum}",
     "von": "By {name}",
     "quellen": "Sources",
@@ -197,7 +197,7 @@
     "vortraege": "Lectures and teaching (selection)",
     "orcid": "Full list on ORCID",
     "sprachen": "Languages",
-    "portraet_alt": "Portrait of Dr Ufuk Adali"
+    "portraet_alt": "Portrait of Dr. Ufuk Adali"
   },
   "impressum": {
     "angaben": "Information pursuant to § 5 of the German Digital Services Act (DDG)",

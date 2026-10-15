@@ -34,12 +34,14 @@ Ein einzelner fehlender Zahn – zum Beispiel nach einem Unfall, wegen einer Nic
 
 Ein Implantat ist eine künstliche Zahnwurzel aus Titan oder Keramik. Sie wird in den Kieferknochen eingesetzt und trägt nach dem Einheilen eine Krone.
 
-**Vorteile**
+### Vorteile
+
 - Die Nachbarzähne bleiben unberührt.
 - Der Knochen wird belastet und baut sich weniger ab.
 - Geeignet für Front- und Backenzähne.
 
-**Nachteile**
+### Nachteile
+
 - Ein chirurgischer Eingriff ist nötig.
 - Es braucht ausreichend Knochen, sonst ist ein Knochenaufbau nötig.
 - Erst nach Abschluss des Wachstums möglich, also meist nicht vor 18 Jahren.
@@ -50,14 +52,16 @@ Ein Implantat ist eine künstliche Zahnwurzel aus Titan oder Keramik. Sie wird i
 
 Bei der Klebebrücke sitzt der Ersatzzahn an einem dünnen Keramikflügel, der auf die Rückseite eines Nachbarzahns geklebt wird. Studien zu einflügeligen vollkeramischen Klebebrücken im Frontzahnbereich zeigen sehr gute Langzeitergebnisse.
 
-**Vorteile**
+### Vorteile
+
 - Kein chirurgischer Eingriff, kein Knochenaufbau
 - Die Nachbarzähne werden kaum oder gar nicht beschliffen.
 - Schnell fertig, meist in zwei bis drei Wochen
 - Auch für Jugendliche geeignet, deren Kiefer noch wächst
 - Meist günstiger als ein Implantat
 
-**Nachteile**
+### Nachteile
+
 - Vor allem für Schneidezähne geeignet
 - Der Pfeilerzahn muss gesund und ausreichend groß sein.
 - Sie kann sich lösen – lässt sich dann aber meist wieder einkleben.

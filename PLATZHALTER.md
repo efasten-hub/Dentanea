@@ -42,8 +42,21 @@ Das Profil heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“. Für G
 ## 3. Texte freigeben
 
 - [ ] Alle medizinischen Texte auf Deutsch durch Dr. Adali freigeben. Das Prüfdatum wird bei jeder Leistungsseite angezeigt.
-- [ ] Formulierungen mit `[[PRÜFEN HWG/BO]]` rechtlich prüfen lassen
-- [ ] Impressum und Datenschutzerklärung juristisch prüfen lassen
+- [ ] Formulierungen mit `[[PRÜFEN HWG/BO]]` rechtlich prüfen lassen. Besonders:
+  - Leitgedanke „Zahnmedizin auf universitärem Niveau“ (Startseite, alle Sprachen)
+  - „Feste Zähne an einem Tag“ / Sofortversorgung (Ratgeber und Seite Implantate)
+  - Darstellung der Titel „Spezialist für Prothetik (DGPro)“ und „Zertifizierter Implantologe (DGI)“ samt Erklärung der Vergabekriterien (Seite Über Dr. Adali)
+- [ ] Preise eintragen: Alle Stellen mit `[[PREIS]]` sind Orientierungswerte für den Eigenanteil. Bitte realistische Spannen nennen oder den Satz streichen.
+- [ ] Prüfdatum eintragen: `[[DATUM]]` bei jeder Leistungs- und Ratgeberseite (Feld `stand`) nach der Freigabe durch Dr. Adali
+- [ ] Fachliche Einzelfragen (alle als `[[PRÜFEN: …]]` markiert): DVT vorhanden? Sedierung angeboten? Leistungsumfang des Labors, Regelversorgung Adhäsivbrücke, Kassenleistung Schnarchschiene, Abgrenzung Kasse/privat bei der Wurzelbehandlung, Ratenzahlung, KIM-Adresse für Überweiser
+- [ ] Impressum und Datenschutzerklärung juristisch prüfen lassen (u. a. Datenschutzbeauftragte/r, Speicherdauer der Server-Logs, AV-Vertrag Doctolib, externe Abrechnungsstelle, Schlichtungsstelle)
+- [ ] Anfrageformular: Einwilligungstext und Pflicht-Checkbox rechtlich bestätigen lassen
+
+## 3a. Anfrageformular einrichten
+
+- [ ] Auf dem Hetzner-Webhosting ein Postfach für den Versand anlegen (z. B. website@zahnarzt-adali.de)
+- [ ] `server/anfrage-konfiguration.beispiel.php` als `anfrage-konfiguration.php` eine Ebene über dem Web-Verzeichnis ablegen und Passwort eintragen (nie ins Git)
+- [ ] Testanfrage in allen vier Sprachen senden und Eingang prüfen
 
 ## 4. Übersetzungen prüfen lassen
 
@@ -53,26 +66,102 @@ So geht es: Seite lesen, Korrekturen notieren, danach in der Datei `uebersetzung
 
 <!-- AUTO:UEBERSETZUNGEN:START -->
 
-_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-13._
+_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-15._
 
-**English** – zu prüfen: 2
+**English** – zu prüfen: 32
 
+- [ ] adhaesivbruecke → `/en/services/resin-bonded-bridge/`
+- [ ] aesthetik → `/en/services/cosmetic-dentistry/`
+- [ ] anfrage-gesendet → `/en/request-sent/`
+- [ ] barrierefreiheit → `/en/accessibility/`
+- [ ] cmd-schienen → `/en/services/tmd-splint-therapy/`
+- [ ] datenschutz → `/en/privacy-policy/`
+- [ ] deutsches-system → `/en/guide/dentist-berlin-german-system/`
+- [ ] endodontie → `/en/services/root-canal-treatment/`
+- [ ] faq → `/en/faq/`
+- [ ] fuellungen → `/en/services/tooth-coloured-fillings/`
+- [ ] fuer-zahnaerzte → `/en/for-dentists/`
+- [ ] implantat-alternativen → `/en/services/implant-alternatives/`
+- [ ] implantat-oder-klebebruecke → `/en/guide/implant-or-resin-bonded-bridge/`
+- [ ] implantologie → `/en/services/dental-implants/`
+- [ ] impressum → `/en/legal-notice/`
+- [ ] kinder-zahnersatz → `/en/services/dental-prosthetics-children/`
+- [ ] knirschen-schiene → `/en/guide/teeth-grinding-splint/`
 - [ ] kontakt → `/en/appointment-contact/`
+- [ ] kosten-zahnersatz → `/en/guide/cost-of-dental-prosthetics/`
+- [ ] labor-digital → `/en/services/in-house-dental-lab/`
+- [ ] leistungen → `/en/services/`
+- [ ] mih-kinder → `/en/guide/mih-chalky-teeth-children/`
+- [ ] mih-syndrome → `/en/services/mih-chalky-teeth-rare-conditions/`
+- [ ] oralchirurgie → `/en/services/oral-surgery/`
+- [ ] parodontologie → `/en/services/gum-disease-treatment/`
+- [ ] praxis-team → `/en/practice-team/`
+- [ ] prophylaxe → `/en/services/professional-teeth-cleaning/`
+- [ ] ratgeber → `/en/guide/`
+- [ ] sofortimplantate → `/en/guide/teeth-in-a-day/`
 - [ ] startseite → `/en/`
+- [ ] ueber-dr-adali → `/en/about-dr-adali/`
+- [ ] zahnersatz → `/en/services/crowns-bridges-dentures/`
 
-- fuer-zahnaerzte (noch nicht veröffentlicht)
+**Español** – zu prüfen: 25
 
-**Español** – zu prüfen: 2
-
+- [ ] adhaesivbruecke → `/es/tratamientos/puente-adhesivo/`
+- [ ] aesthetik → `/es/tratamientos/estetica-dental/`
+- [ ] anfrage-gesendet → `/es/solicitud-enviada/`
+- [ ] cmd-schienen → `/es/tratamientos/disfuncion-atm-ferulas/`
+- [ ] datenschutz → `/es/politica-de-privacidad/`
+- [ ] deutsches-system → `/es/guia/dentista-berlin-sistema-aleman/`
+- [ ] endodontie → `/es/tratamientos/endodoncia/`
+- [ ] faq → `/es/preguntas-frecuentes/`
+- [ ] fuellungen → `/es/tratamientos/empastes-esteticos/`
+- [ ] implantat-alternativen → `/es/tratamientos/alternativas-al-implante/`
+- [ ] implantologie → `/es/tratamientos/implantes-dentales/`
+- [ ] impressum → `/es/aviso-legal/`
+- [ ] kinder-zahnersatz → `/es/tratamientos/protesis-dental-infantil/`
 - [ ] kontakt → `/es/cita-contacto/`
+- [ ] labor-digital → `/es/tratamientos/laboratorio-dental-propio/`
+- [ ] leistungen → `/es/tratamientos/`
+- [ ] mih-syndrome → `/es/tratamientos/mih-dientes-de-tiza/`
+- [ ] oralchirurgie → `/es/tratamientos/cirugia-oral/`
+- [ ] parodontologie → `/es/tratamientos/periodoncia/`
+- [ ] praxis-team → `/es/clinica-equipo/`
+- [ ] prophylaxe → `/es/tratamientos/limpieza-dental-profesional/`
+- [ ] ratgeber → `/es/guia/`
 - [ ] startseite → `/es/`
+- [ ] ueber-dr-adali → `/es/sobre-el-dr-adali/`
+- [ ] zahnersatz → `/es/tratamientos/protesis-dentales/`
 
-**Türkçe** – zu prüfen: 2
+**Türkçe** – zu prüfen: 25
 
+- [ ] adhaesivbruecke → `/tr/tedaviler/yapiskan-kopru/`
+- [ ] aesthetik → `/tr/tedaviler/estetik-dis-hekimligi/`
+- [ ] anfrage-gesendet → `/tr/talep-gonderildi/`
+- [ ] cmd-schienen → `/tr/tedaviler/cmd-gece-plagi/`
+- [ ] datenschutz → `/tr/gizlilik-politikasi/`
+- [ ] deutsches-system → `/tr/rehber/berlinde-dis-hekimi-alman-sistemi/`
+- [ ] endodontie → `/tr/tedaviler/kanal-tedavisi/`
+- [ ] faq → `/tr/sss/`
+- [ ] fuellungen → `/tr/tedaviler/beyaz-dolgu/`
+- [ ] implantat-alternativen → `/tr/tedaviler/implant-alternatifleri/`
+- [ ] implantologie → `/tr/tedaviler/implant/`
+- [ ] impressum → `/tr/kunye/`
+- [ ] kinder-zahnersatz → `/tr/tedaviler/cocuklarda-protez/`
 - [ ] kontakt → `/tr/randevu-iletisim/`
+- [ ] labor-digital → `/tr/tedaviler/dis-laboratuvari/`
+- [ ] leistungen → `/tr/tedaviler/`
+- [ ] mih-syndrome → `/tr/tedaviler/mih-tebesir-dis/`
+- [ ] oralchirurgie → `/tr/tedaviler/agiz-cerrahisi/`
+- [ ] parodontologie → `/tr/tedaviler/dis-eti-tedavisi/`
+- [ ] praxis-team → `/tr/klinik-ekip/`
+- [ ] prophylaxe → `/tr/tedaviler/profesyonel-dis-temizligi/`
+- [ ] ratgeber → `/tr/rehber/`
 - [ ] startseite → `/tr/`
+- [ ] ueber-dr-adali → `/tr/dr-adali-hakkinda/`
+- [ ] zahnersatz → `/tr/tedaviler/protez-dis/`
 
 <!-- AUTO:UEBERSETZUNGEN:ENDE -->
+
+Ratgeberartikel gibt es auf Spanisch und Türkisch vorerst nur „Zum Zahnarzt in Berlin: So funktioniert das deutsche System“. Die fünf übrigen Artikel erscheinen dort als Link auf die englische Fassung. Für eine spanische oder türkische Fassung: Datei unter `src/content/es/` bzw. `src/content/tr/` anlegen.
 
 Zusätzlich zu prüfen: die Oberflächentexte `src/i18n/en.json`, `es.json` und `tr.json` (Buttons, Formulare, Hinweise).
 
