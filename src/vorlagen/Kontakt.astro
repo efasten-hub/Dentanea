@@ -1,19 +1,34 @@
 ---
 /**
- * Termin & Kontakt – Phase 2: Terminbuchung ganz oben, Telefon, Sprechzeiten, Sprachen, Anfahrt.
- * Karte (nach Klick) und Anfrageformular folgen in Phase 4.
+ * Termin & Kontakt: Terminbuchung ganz oben, Sprechzeiten, Anfahrt mit Karte (lädt erst nach Klick),
+ * Anfrageformular ohne Gesundheitsdaten-Pflichtfelder.
+ *
+ * Formular → /anfrage.php (public/anfrage.php, PHP auf dem Hetzner-Webhosting, Versand per SMTP).
+ * Funktioniert ohne JavaScript. Nach dem Versand leitet das Skript auf die Bestätigungsseite der
+ * jeweiligen Sprache weiter; bei Fehlern zurück auf diese Seite mit #anfrage-fehler (Hinweis per :target).
  */
 import Basis from "../layouts/Basis.astro";
 import Terminbuchung from "../components/Terminbuchung.astro";
 import SprachHinweis from "../components/SprachHinweis.astro";
 import Sprechzeiten from "../components/Sprechzeiten.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
-import { site } from "../config/site";
-import { t } from "../i18n";
+import { site, type Sprache } from "../config/site";
+import { t, link, SPRACHEN } from "../i18n";
 import type { VorlagenProps } from "./typen";
 
 type Props = VorlagenProps;
 const { id, sprache, daten } = Astro.props;
+const hier = await link("kontakt", sprache);
+const danke = await link("anfrage-gesendet", sprache);
+const datenschutz = await link("datenschutz", sprache);
+const { lat, lng } = site.geo;
+const d = 0.004;
+const kartenUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${lng - d * 1.6},${lat - d},${lng + d * 1.6},${lat + d}&layer=mapnik&marker=${lat},${lng}`;
+const kartenLink = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=18/${lat}/${lng}`;
+const anliegen = ["erstberatung", "zweitmeinung", "implantat", "zahnersatz", "aesthetik", "kinder", "sonstiges"];
+// Behandlungssprachen zuerst, aktuelle Website-Sprache vorausgewählt
+const sprachen = [...new Set([sprache, ...site.gesprochene_sprachen.dr_adali, ...SPRACHEN])] as Sprache[];
+const [vorDatenschutz, nachDatenschutz] = t(sprache, "formular.datenschutz_hinweis").split("{link}");
 ---
 <Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
   <div class="container-page pt-24">
@@ -28,8 +43,12 @@ const { id, sprache, daten } = Astro.props;
         <h2 id="sprechzeiten-titel">{t(sprache, "sprechzeiten.titel")}</h2>
         <Sprechzeiten sprache={sprache} class="mt-16" />
         <p class="mt-16">{t(sprache, "termin.taeglich")}</p>
-        <p class="mt-16"><a class="link-action" href={`tel:${site.telefon}`}>{site.telefon_anzeige}</a></p>
+        <p class="mt-16">
+          <a class="link-action" href={`tel:${site.telefon}`}>{site.telefon_anzeige}</a><br />
+          <a class="link-action" href={`mailto:${site.email}`}>{site.email}</a>
+        </p>
         <SprachHinweis sprache={sprache} class="mt-24" />
+        <p class="mt-16 text-nav">{t(sprache, "versicherung.alle")}</p>
       </section>
 
       <section id="anfahrt" aria-labelledby="anfahrt-titel">
@@ -49,8 +68,103 @@ const { id, sprache, daten } = Astro.props;
       </section>
     </div>
 
+    <section class="mt-60" aria-labelledby="karte-titel">
+      <h2 id="karte-titel" class="sr-only">{t(sprache, "anfahrt.karte_titel")}</h2>
+      <div class="karte foto-folgt aspect-[4/3] w-full border border-oxblood-ink md:aspect-[21/9]" data-karte={kartenUrl} data-titel={`${t(sprache, "anfahrt.karte_titel")}: ${site.adresse.strasse}`}>
+        <div class="max-w-text p-24 text-center">
+          <p class="text-nav">{t(sprache, "anfahrt.karte_hinweis")}</p>
+          <button type="button" class="btn btn-outline mt-16" data-karte-laden>{t(sprache, "anfahrt.karte_laden")}</button>
+        </div>
+      </div>
+      <a class="link-action mt-8" href={kartenLink} target="_blank" rel="noopener">{t(sprache, "anfahrt.karte_extern")}<span class="sr-only"> ({t(sprache, "a11y.neues_fenster")})</span></a>
+    </section>
+
+    <section id="anfrage" class="sektion-kopf mt-80" aria-labelledby="anfrage-titel">
+      <p class="label">{t(sprache, "formular.titel")}</p>
+      <div class="max-w-text">
+        <h2 id="anfrage-titel">{t(sprache, "formular.titel")}</h2>
+        <p class="mt-16">{t(sprache, "formular.einleitung")}</p>
+
+        <div id="anfrage-fehler" class="hinweis-ziel mt-24 border border-oxblood-ink bg-aged-linen p-16" role="alert">
+          <p>{t(sprache, "formular.fehler_allgemein", { telefon: site.telefon_anzeige })}</p>
+        </div>
+
+        <form class="mt-32 grid gap-24" action="/anfrage.php" method="post" accept-charset="UTF-8">
+          <input type="hidden" name="sprache" value={sprache} />
+          <input type="hidden" name="ziel_ok" value={danke} />
+          <input type="hidden" name="ziel_fehler" value={hier} />
+
+          <div>
+            <label for="f-name">{t(sprache, "formular.name")} <span class="caption">({t(sprache, "formular.pflicht")})</span></label>
+            <input class="field mt-8" id="f-name" name="name" type="text" autocomplete="name" required maxlength="100" />
+          </div>
+          <div>
+            <label for="f-kontakt">{t(sprache, "formular.kontakt")} <span class="caption">({t(sprache, "formular.pflicht")})</span></label>
+            <p class="caption" id="f-kontakt-hilfe">{t(sprache, "formular.kontakt_hilfe")}</p>
+            <input class="field mt-8" id="f-kontakt" name="kontakt" type="text" autocomplete="email" required maxlength="200" aria-describedby="f-kontakt-hilfe" />
+          </div>
+          <div>
+            <label for="f-wunschtermin">{t(sprache, "formular.wunschtermin")} <span class="caption">({t(sprache, "formular.optional")})</span></label>
+            <p class="caption" id="f-wunschtermin-hilfe">{t(sprache, "formular.wunschtermin_hilfe")}</p>
+            <input class="field mt-8" id="f-wunschtermin" name="wunschtermin" type="text" maxlength="100" aria-describedby="f-wunschtermin-hilfe" />
+          </div>
+          <div class="grid gap-24 sm:grid-cols-2">
+            <div>
+              <label for="f-sprache">{t(sprache, "formular.sprache")}</label>
+              <select class="field mt-8" id="f-sprache" name="bevorzugte_sprache">
+                {sprachen.map((s) => <option value={s} selected={s === sprache}>{t(sprache, `sprachen.namen.${s}`)}</option>)}
+              </select>
+            </div>
+            <div>
+              <label for="f-anliegen">{t(sprache, "formular.anliegen")} <span class="caption">({t(sprache, "formular.optional")})</span></label>
+              <select class="field mt-8" id="f-anliegen" name="anliegen">
+                <option value="">{t(sprache, "formular.anliegen_waehlen")}</option>
+                {anliegen.map((a) => <option value={a}>{t(sprache, `formular.anliegen_optionen.${a}`)}</option>)}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="f-nachricht">{t(sprache, "formular.nachricht")} <span class="caption">({t(sprache, "formular.optional")})</span></label>
+            <p class="caption" id="f-nachricht-hilfe">{t(sprache, "formular.hinweis_befunde")}</p>
+            <textarea class="field mt-8 min-h-[8rem]" id="f-nachricht" name="nachricht" rows="4" maxlength="1500" aria-describedby="f-nachricht-hilfe"></textarea>
+          </div>
+          {/* Honeypot gegen Spam-Bots: für Menschen unsichtbar, Bots füllen es aus */}
+          <div class="honig" aria-hidden="true">
+            <label for="f-website">{t(sprache, "formular.honeypot")}</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <div class="flex items-start gap-12">
+            <input class="mt-4 h-24 w-24 shrink-0 accent-oxblood-ink" id="f-einwilligung" name="einwilligung" type="checkbox" value="ja" required />
+            <label for="f-einwilligung" class="text-nav">{t(sprache, "formular.einwilligung")}</label>
+          </div>
+          <p class="caption">{vorDatenschutz}<a class="link" href={datenschutz}>{t(sprache, "termin.datenschutzerklaerung")}</a>{nachDatenschutz}</p>
+          <div>
+            <button type="submit" class="btn btn-primary">{t(sprache, "formular.senden")}</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <div class="inhalt mt-80">
       <slot />
     </div>
   </div>
 </Basis>
+
+<script>
+  // Karte erst nach Klick laden (vorher keine Verbindung zu OpenStreetMap)
+  for (const knopf of document.querySelectorAll<HTMLButtonElement>("[data-karte-laden]")) {
+    knopf.addEventListener("click", () => {
+      const box = knopf.closest<HTMLElement>("[data-karte]");
+      if (!box) return;
+      const frame = document.createElement("iframe");
+      frame.src = box.dataset.karte!;
+      frame.title = box.dataset.titel ?? "";
+      frame.loading = "lazy";
+      frame.referrerPolicy = "no-referrer";
+      frame.className = "h-full w-full border-0";
+      box.replaceChildren(frame);
+      frame.focus();
+    });
+  }
+</script>

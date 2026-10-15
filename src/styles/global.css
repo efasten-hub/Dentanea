@@ -297,3 +297,13 @@
     color: var(--color-oxblood-ink);
   }
 }
+
+/* Offene Markierungen ([[PREIS]], [[PRÜFEN …]]) in der Vorschau hervorheben – vor dem Livegang erledigt */
+@layer components {
+  .markierung { background: var(--color-aged-linen); color: var(--color-oxblood-ink); outline: 1px dashed var(--color-oxblood-ink); padding-inline: 2px; }
+}
+
+@layer components {
+  /* Honeypot im Anfrageformular: für Menschen unsichtbar, auch für Screenreader (aria-hidden) */
+  .honig { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+}

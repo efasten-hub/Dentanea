@@ -10,3 +10,6 @@ vorschau-*.html
 # Vorschaubilder der Bildauswahl (nicht ausgewählte Kandidaten)
 bilder/kandidaten/
 bildauswahl-*.html
+
+# Zugangsdaten Anfrageformular – nie einchecken
+anfrage-konfiguration.php

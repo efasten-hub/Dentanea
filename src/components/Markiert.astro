@@ -1,0 +1,10 @@
+---
+/**
+ * Macht offene Markierungen im Seitentext sichtbar: [[PREIS]], [[PRÜFEN HWG/BO: …]] usw. werden in
+ * <mark class="markierung"> gesetzt, damit sie bei der Durchsicht der Vorschau auffallen.
+ * Vor dem Livegang müssen alle erledigt sein (npm run pruefen -- --streng).
+ */
+const html = await Astro.slots.render("default");
+const markiert = html.replace(/\[\[([A-ZÄÖÜ][^\]<>"]*)\]\]/g, '<mark class="markierung">[[$1]]</mark>');
+---
+<Fragment set:html={markiert} />

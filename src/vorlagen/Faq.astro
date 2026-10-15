@@ -1,0 +1,42 @@
+---
+/** FAQ-Seite: Fragen in Gruppen (Feld „faq_gruppen“), mit Sprungmarken. */
+import Basis from "../layouts/Basis.astro";
+import Terminbuchung from "../components/Terminbuchung.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import FaqListe from "../components/FaqListe.astro";
+import { t } from "../i18n";
+import type { VorlagenProps } from "./typen";
+
+type Props = VorlagenProps;
+const { id, sprache, daten } = Astro.props;
+const anker = (titel: string, i: number) => `gruppe-${i + 1}-${titel.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+---
+<Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
+  <article class="container-page pt-24">
+    <Breadcrumb sprache={sprache} id={id} />
+    <header class="mt-40 max-w-[52rem]">
+      <h1>{daten.titel}</h1>
+      {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
+    </header>
+
+    <nav class="mt-40" aria-label={daten.titel}>
+      <ul class="flex flex-wrap gap-x-24">
+        {daten.faq_gruppen.map((g, i) => <li><a class="link-action" href={`#${anker(g.titel, i)}`}>{g.titel}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="inhalt mt-24"><slot /></div>
+
+    {daten.faq_gruppen.map((g, i) => (
+      <section class="sektion-kopf mt-60" id={anker(g.titel, i)} aria-labelledby={`${anker(g.titel, i)}-h`}>
+        <p class="label">{t(sprache, "seite.fragen_anzahl", { anzahl: g.fragen.length })}</p>
+        <div>
+          <h2 id={`${anker(g.titel, i)}-h`}>{g.titel}</h2>
+          <FaqListe fragen={g.fragen} class="mt-24" />
+        </div>
+      </section>
+    ))}
+
+    <Terminbuchung sprache={sprache} variante="block" class="mt-80" />
+  </article>
+</Basis>

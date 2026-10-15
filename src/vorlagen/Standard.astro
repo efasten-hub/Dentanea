@@ -1,21 +1,26 @@
 ---
 /**
- * Standardvorlage: Leistungen, Ratgeber, Über, Praxis, FAQ, Rechtliches.
- * Aufbau: Breadcrumb · H1 · Unterzeile · Antwortabsatz · Inhalt · FAQ · Terminbuchung · Autorenbox
+ * Standardvorlage: Leistungen, Ratgeber, Seiten, Rechtliches, Bestätigungsseiten.
+ * Aufbau: Breadcrumb · H1 · Unterzeile · (Ratgeber: Autor/Datum) · Aufmacherbild · Antwortabsatz ·
+ *         Inhalt · FAQ · Terminbuchung · Quellen · Autorenbox · „medizinisch geprüft“ · Passend dazu
  */
 import Basis from "../layouts/Basis.astro";
 import Terminbuchung from "../components/Terminbuchung.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
+import Foto from "../components/Foto.astro";
+import FaqListe from "../components/FaqListe.astro";
+import Verwandt from "../components/Verwandt.astro";
+import AutorBox from "../components/AutorBox.astro";
 import { site } from "../config/site";
 import { t } from "../i18n";
 import { routen } from "../i18n/routen";
 import type { VorlagenProps } from "./typen";
 
-type Props = VorlagenProps;
-const { id, sprache, daten } = Astro.props;
+type Props = VorlagenProps & { ohneTermin?: boolean };
+const { id, sprache, daten, ohneTermin = false } = Astro.props;
 const typ = routen[id].typ;
 const medizinisch = typ === "leistung" || typ === "ratgeber";
-const mitTermin = typ === "leistung" || typ === "ratgeber" || typ === "uebersicht" || typ === "seite";
+const mitTermin = !ohneTermin && (typ === "leistung" || typ === "ratgeber" || typ === "seite");
 const datum = (iso?: string) =>
   iso && /^\d{4}-\d{2}-\d{2}$/.test(iso)
     ? new Intl.DateTimeFormat(sprache, { day: "numeric", month: "long", year: "numeric" }).format(new Date(iso))
@@ -24,13 +29,22 @@ const datum = (iso?: string) =>
 <Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
   <article class="container-page pt-24">
     <Breadcrumb sprache={sprache} id={id} />
-    <header class="mt-40 max-w-[52rem]">
-      <h1>{daten.titel}</h1>
-      {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
-    </header>
+
+    <div class:list={["mt-40", daten.bild && "grid gap-40 md:grid-cols-[1fr_minmax(0,0.8fr)] md:items-end"]}>
+      <header class="max-w-[52rem]">
+        <h1>{daten.titel}</h1>
+        {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
+        {typ === "ratgeber" && (
+          <p class="caption mt-24">
+            {t(sprache, "seite.von", { name: site.inhaber.name_voll })} · {t(sprache, "seite.veroeffentlicht", { datum: datum(daten.datum) })}
+          </p>
+        )}
+      </header>
+      {daten.bild && <Foto bild={daten.bild} sprache={sprache} prioritaet sizes="(min-width: 768px) 45vw, 100vw" format="3/2" />}
+    </div>
 
     {daten.antwort && (
-      <p class="intro mt-40 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>
+      <p class="intro mt-48 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>
     )}
 
     <div class="inhalt mt-48">
@@ -42,15 +56,8 @@ const datum = (iso?: string) =>
         <div class="sektion-kopf">
           <p class="label">FAQ</p>
           <div>
-            <h2 id="faq-titel">{t(sprache, "nav.faq")}</h2>
-            <div class="mt-24">
-              {daten.faq.map((f) => (
-                <details class="border-t border-oxblood-ink py-16">
-                  <summary class="cursor-pointer text-subheading font-caslon-ionic">{f.frage}</summary>
-                  <p class="mt-12 max-w-text">{f.antwort}</p>
-                </details>
-              ))}
-            </div>
+            <h2 id="faq-titel">{t(sprache, "seite.faq_titel")}</h2>
+            <FaqListe fragen={daten.faq} class="mt-24" />
           </div>
         </div>
       </section>
@@ -58,11 +65,27 @@ const datum = (iso?: string) =>
 
     {mitTermin && <Terminbuchung sprache={sprache} variante="block" class="mt-80" />}
 
+    {daten.quellen.length > 0 && (
+      <section class="sektion-kopf mt-80" aria-labelledby="quellen-titel">
+        <p class="label" id="quellen-titel">{t(sprache, "seite.quellen")}</p>
+        <ol class="caption list-decimal space-y-8 pl-24">
+          {daten.quellen.map((q) => (
+            <li>{q.url ? <a class="link" href={q.url} rel="noopener">{q.titel}</a> : q.titel}</li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {typ === "ratgeber" && <AutorBox sprache={sprache} class="mt-60" />}
+
     {medizinisch && (
       <p class="caption mt-40 border-t border-warm-stone pt-12">
         {t(sprache, "seite.medizinisch_geprueft", { name: site.inhaber.name_voll, datum: datum(daten.stand) })}
       </p>
     )}
+
+    {daten.verwandt.length > 0 && <Verwandt sprache={sprache} ids={daten.verwandt} class="mt-60" />}
+
     {typ === "recht" && sprache !== "de" && <p class="caption mt-40">{t(sprache, "seite.rechtsverbindlich")}</p>}
   </article>
 </Basis>

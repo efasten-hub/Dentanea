@@ -12,6 +12,12 @@ import { pfad, routen } from "../i18n/routen";
 import Startseite from "../vorlagen/Startseite.astro";
 import Kontakt from "../vorlagen/Kontakt.astro";
 import Standard from "../vorlagen/Standard.astro";
+import Uebersicht from "../vorlagen/Uebersicht.astro";
+import Ueber from "../vorlagen/Ueber.astro";
+import Praxis from "../vorlagen/Praxis.astro";
+import Faq from "../vorlagen/Faq.astro";
+import Impressum from "../vorlagen/Impressum.astro";
+import Markiert from "../components/Markiert.astro";
 
 export const getStaticPaths = (async () => {
   const verfuegbar = await seitenVerfuegbar();
@@ -29,8 +35,11 @@ const { id, sprache } = Astro.props as { id: string; sprache: Sprache };
 const eintrag = (await getEntry("seiten", `${sprache}/${id}`))!;
 const { Content } = await render(eintrag);
 const typ = routen[id].typ;
-const Vorlage = typ === "startseite" ? Startseite : typ === "kontakt" ? Kontakt : Standard;
+// Vorlage: zuerst nach Seiten-ID (Sonderseiten), sonst nach Seitentyp
+const NACH_ID = { "ueber-dr-adali": Ueber, "praxis-team": Praxis, faq: Faq, impressum: Impressum } as Record<string, typeof Standard>;
+const NACH_TYP = { startseite: Startseite, kontakt: Kontakt, uebersicht: Uebersicht } as Record<string, typeof Standard>;
+const Vorlage = NACH_ID[id] ?? NACH_TYP[typ] ?? Standard;
 ---
 <Vorlage id={id} sprache={sprache} daten={eintrag.data}>
-  <Content />
+  <Markiert><Content /></Markiert>
 </Vorlage>

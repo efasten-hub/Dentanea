@@ -1,0 +1,83 @@
+---
+/**
+ * Impressum – Pflichtangaben kommen ausschließlich aus src/config/site.ts (→ recht, adresse, kontakt),
+ * der Bildnachweis automatisch aus dem Bildmanifest. Der Seitentext (Markdown) ergänzt Streitbeilegung,
+ * Haftung und Urheberrecht. Rechtsverbindlich ist die deutsche Fassung.
+ */
+import Basis from "../layouts/Basis.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import { site } from "../config/site";
+import { bildnachweis } from "../config/bildnachweis";
+import { t } from "../i18n";
+import type { VorlagenProps } from "./typen";
+
+type Props = VorlagenProps;
+const { id, sprache, daten } = Astro.props;
+const r = site.recht;
+const nachweise = bildnachweis();
+---
+<Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
+  <article class="container-page pt-24">
+    <Breadcrumb sprache={sprache} id={id} />
+    <h1 class="mt-40">{daten.titel}</h1>
+    {sprache !== "de" && <p class="caption mt-16">{t(sprache, "seite.rechtsverbindlich")}</p>}
+
+    <div class="inhalt mt-48">
+      <h2>{t(sprache, "impressum.angaben")}</h2>
+      <p>
+        {site.praxisname_voll}<br />
+        {site.inhaber.name_voll}<br />
+        {site.adresse.strasse}<br />
+        {site.adresse.plz} {site.adresse.ort}
+      </p>
+
+      <h3>{t(sprache, "impressum.kontakt")}</h3>
+      <p>
+        {t(sprache, "impressum.telefon")}: <a href={`tel:${site.telefon}`}>{site.telefon_anzeige}</a><br />
+        {t(sprache, "impressum.fax")}: {site.fax_anzeige}<br />
+        {t(sprache, "impressum.email")}: <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+
+      <h3>{t(sprache, "impressum.berufsbezeichnung")}</h3>
+      <p>{t(sprache, "impressum.berufsbezeichnung_text")}</p>
+
+      <h3>{t(sprache, "impressum.kammer")}</h3>
+      <p lang="de">{r.kammer.name}<br />{r.kammer.adresse}<br /><a href={r.kammer.url} rel="noopener">{r.kammer.url.replace(/^https?:\/\//, "")}</a></p>
+
+      <h3>{t(sprache, "impressum.kzv")}</h3>
+      <p lang="de">{r.kzv.name}<br />{r.kzv.adresse}<br /><a href={r.kzv.url} rel="noopener">{r.kzv.url.replace(/^https?:\/\//, "")}</a></p>
+
+      <h3>{t(sprache, "impressum.berufsrecht")}</h3>
+      <ul lang="de">
+        {r.berufsrecht.map((b) => <li><a href={b.url} rel="noopener">{b.name}</a></li>)}
+      </ul>
+
+      <h3>{t(sprache, "impressum.haftpflicht")}</h3>
+      <p lang="de">{r.berufshaftpflicht.name}<br />{r.berufshaftpflicht.adresse}</p>
+      <p>{t(sprache, "impressum.geltungsbereich")}</p>
+
+      {r.ust_id && (<><h3>{t(sprache, "impressum.ust")}</h3><p>{r.ust_id}</p></>)}
+
+      <h3>{t(sprache, "impressum.verantwortlich")}</h3>
+      <p>{r.verantwortlich_inhalt}<br />{site.adresse.strasse}, {site.adresse.plz} {site.adresse.ort}</p>
+    </div>
+
+    <div class="inhalt mt-16"><slot /></div>
+
+    <section class="inhalt mt-16" aria-labelledby="bildnachweis-titel">
+      <h2 id="bildnachweis-titel">{t(sprache, "impressum.bildnachweis")}</h2>
+      <p>{t(sprache, "impressum.bildnachweis_text")}</p>
+      <ul>
+        {nachweise.map((n) => (
+          <li>
+            <span>{n.stock ? t(sprache, "impressum.symbolbild") : t(sprache, "impressum.eigenes_foto")}:</span>{" "}
+            {n.fotograf_url ? <a href={n.fotograf_url} rel="noopener">{n.fotograf}</a> : n.fotograf}
+            {" · "}
+            {n.plattform_url ? <a href={n.plattform_url} rel="noopener">{n.quelle}</a> : n.quelle}
+            {" · "}<span class="caption">{n.lizenz}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </article>
+</Basis>

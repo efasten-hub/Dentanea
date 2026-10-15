@@ -55,7 +55,10 @@
     "fussweg": "approx. {min} min walk",
     "karte_laden": "Load map",
     "karte_hinweis": "The map is only loaded from OpenStreetMap after you click. Your IP address is then transmitted to the map service.",
-    "route": "Plan your route"
+    "route": "Plan your route",
+    "karte_titel": "Map",
+    "karte_extern": "Open map on OpenStreetMap",
+    "adresse": "Address"
   },
   "sprechzeiten": {
     "titel": "Opening hours",
@@ -72,7 +75,12 @@
     }
   },
   "sprachen": {
-    "namen": { "de": "German", "en": "English", "es": "Spanish", "tr": "Turkish" },
+    "namen": {
+      "de": "German",
+      "en": "English",
+      "es": "Spanish",
+      "tr": "Turkish"
+    },
     "und": "and",
     "behandlung_in": "Treatment and consultations in {sprachen}.",
     "dr_adali_spricht": "Dr. Adali advises and treats you in {sprachen}.",
@@ -91,7 +99,19 @@
     "mehr_erfahren": "Learn more",
     "nicht_gefunden_titel": "This page does not exist.",
     "nicht_gefunden_text": "The address may have changed. You can continue here:",
-    "rechtsverbindlich": "The German version is legally binding."
+    "rechtsverbindlich": "The German version is legally binding.",
+    "autor_titel": "About the author",
+    "autor_text": "Dr Ufuk Adali is a Spezialist für Prothetik (prosthodontics specialist certified by the German Society of Prosthetic Dentistry and Biomaterials, DGPro) and a certified implantologist (DGI). Until 2026 he was a senior consultant at Charité – Universitätsmedizin Berlin.",
+    "autor_link": "More about Dr Adali",
+    "veroeffentlicht": "Published on {datum}",
+    "von": "By {name}",
+    "quellen": "Sources",
+    "verwandt": "Related",
+    "faq_titel": "Frequently asked questions",
+    "alle_fragen": "All questions and answers",
+    "weiterlesen": "Read more",
+    "in_sprache": "in {sprache}",
+    "fragen_anzahl": "{anzahl} questions"
   },
   "footer": {
     "kontakt": "Contact",
@@ -112,7 +132,9 @@
       "zmp": "Dental prophylaxis assistant"
     },
     "foto_folgt": "Photo coming soon",
-    "spricht": "Speaks {sprachen}"
+    "spricht": "Speaks {sprachen}",
+    "titel": "The team",
+    "aufgabe": "Role"
   },
   "formular": {
     "titel": "Send a request",
@@ -147,6 +169,56 @@
       "versand": "Unfortunately, your request could not be sent. Please call us: {telefon}."
     },
     "danke_titel": "Thank you for your request.",
-    "danke_text": "We have received your message and usually reply within two working days. If it is urgent, please call us."
+    "danke_text": "We have received your message and usually reply within two working days. If it is urgent, please call us.",
+    "honeypot": "Please leave this field empty",
+    "anliegen_waehlen": "Please choose (optional)",
+    "einwilligung": "I agree that the practice may use my details to answer my request. I can withdraw this consent at any time.",
+    "fehler_allgemein": "Your request could not be sent. Please check your details and try again – or call us: {telefon}."
+  },
+  "leistungen": {
+    "gruppen": {
+      "zahnersatz": "Tooth replacement and implants",
+      "aesthetik_funktion": "Aesthetics and function",
+      "kinder": "Children and special conditions",
+      "zahnerhalt": "Prevention and saving teeth"
+    }
+  },
+  "ratgeber": {
+    "andere_sprachen": "More articles, so far only in other languages:"
+  },
+  "ueber": {
+    "werdegang": "Career",
+    "qualifikationen": "Qualifications",
+    "mitgliedschaften": "Memberships",
+    "auszeichnungen": "Awards",
+    "publikationen": "Scientific publications (selection)",
+    "publikationen_hinweis": "Titles in the original language.",
+    "beitraege": "Further articles (selection)",
+    "vortraege": "Lectures and teaching (selection)",
+    "orcid": "Full list on ORCID",
+    "sprachen": "Languages",
+    "portraet_alt": "Portrait of Dr Ufuk Adali"
+  },
+  "impressum": {
+    "angaben": "Information pursuant to § 5 of the German Digital Services Act (DDG)",
+    "kontakt": "Contact",
+    "telefon": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "berufsbezeichnung": "Professional title",
+    "berufsbezeichnung_text": "Zahnarzt (dentist), awarded in the Federal Republic of Germany",
+    "kammer": "Competent professional chamber",
+    "kzv": "Competent Association of Statutory Health Insurance Dentists (KZV)",
+    "berufsrecht": "Professional regulations",
+    "haftpflicht": "Professional liability insurance",
+    "geltungsbereich": "Territorial scope: Federal Republic of Germany",
+    "ust": "VAT identification number",
+    "verantwortlich": "Responsible for content pursuant to § 18 (2) MStV",
+    "bildnachweis": "Image credits",
+    "bildnachweis_text": "Photos marked “stock photo” come from image libraries. They do not show our practice, our team or our patients.",
+    "symbolbild": "Stock photo",
+    "eigenes_foto": "Own photo",
+    "foto_von": "Photo: {name}",
+    "lizenz": "Licence"
   }
 }

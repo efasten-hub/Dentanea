@@ -1,20 +1,46 @@
 ---
 /**
- * Startseite – Phase 2: Hero mit Terminbuchung, Sprachhinweis, Sprechzeiten und Anfahrt.
- * Die übrigen Sektionen (Schwerpunkte, Zielgruppen, Ablauf, Teaser, Labor, FAQ) folgen in Phase 4,
- * Fotos in Phase 3.
+ * Startseite: Hero · Vertrauensleiste · Schwerpunkte · Zielgruppen · Ablauf · Dr. Adali · Labor & digital ·
+ * Anfahrt & Sprechzeiten · FAQ-Auszug · Abschluss.
+ * Alle Texte stehen in src/content/<sprache>/startseite.md (Feld „start“), die Reihenfolge der
+ * Zielgruppen ist je Sprache frei (EN/ES/TR: internationale Patienten weit oben).
  */
+import { getEntry } from "astro:content";
 import Basis from "../layouts/Basis.astro";
 import Terminbuchung from "../components/Terminbuchung.astro";
 import SprachHinweis from "../components/SprachHinweis.astro";
 import Sprechzeiten from "../components/Sprechzeiten.astro";
 import Foto from "../components/Foto.astro";
+import FaqListe from "../components/FaqListe.astro";
 import { site } from "../config/site";
-import { t } from "../i18n";
+import { t, link, seitenVerfuegbar, seitenTitel } from "../i18n";
+import { pfad } from "../i18n/routen";
 import type { VorlagenProps } from "./typen";
 
 type Props = VorlagenProps;
 const { id, sprache, daten } = Astro.props;
+const s = daten.start;
+const verfuegbar = await seitenVerfuegbar();
+const gibt = (seite: string) => verfuegbar.get(seite)?.has(sprache) ?? false;
+
+const schwerpunkte = s
+  ? await Promise.all(
+      s.schwerpunkte.eintraege.filter((e) => gibt(e.id)).map(async (e) => ({
+        ...e,
+        href: pfad(e.id, sprache)!,
+        bild: (await getEntry("seiten", `${sprache}/${e.id}`))?.data.bild,
+      })),
+    )
+  : [];
+const zielgruppen = s
+  ? await Promise.all(
+      s.zielgruppen.eintraege.map(async (z) => ({
+        ...z,
+        links: await Promise.all(z.links.filter(gibt).map(async (l) => ({ href: pfad(l, sprache)!, label: await seitenTitel(l, sprache) }))),
+      })),
+    )
+  : [];
+const ziel = async (seite: string) => link(seite, sprache);
 ---
 <Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
   <section class="container-page grid gap-40 py-48 md:grid-cols-2 md:items-end md:py-80">
@@ -26,13 +52,126 @@ const { id, sprache, daten } = Astro.props;
     <Foto bild={daten.bild ?? "hero-atmosphaere"} sprache={sprache} prioritaet sizes="(min-width: 768px) 50vw, 100vw" />
   </section>
 
-  <div class="container-page">
-    <SprachHinweis sprache={sprache} />
-    <div class="inhalt mt-40">
-      <slot />
+  {s && (
+    <div class="container-page">
+      <p class="border-y border-oxblood-ink py-16 text-center text-nav">
+        {s.vertrauen.map((v, i) => <>{i > 0 && <span aria-hidden="true" class="px-8">·</span>}<span class="whitespace-nowrap">{v}</span></>)}
+      </p>
     </div>
+  )}
+
+  <div class="container-page">
+    <SprachHinweis sprache={sprache} class="mt-40" />
+    {daten.antwort && <p class="intro mt-40 max-w-[52rem]">{daten.antwort}</p>}
+    <div class="inhalt mt-24"><slot /></div>
   </div>
 
+  {s && (
+    <>
+      {/* Schwerpunkte */}
+      <section class="container-page section" aria-labelledby="schwerpunkte-titel">
+        <div class="sektion-kopf">
+          <p class="label">{s.schwerpunkte.label}</p>
+          <div>
+            <h2 id="schwerpunkte-titel" class="max-w-[52rem]">{s.schwerpunkte.titel}</h2>
+            <ul class="mt-40 grid gap-x-24 gap-y-48 sm:grid-cols-2">
+              {schwerpunkte.map((e) => (
+                <li class="flex flex-col">
+                  {e.bild && <Foto bild={e.bild} sprache={sprache} format="3/2" sizes="(min-width: 640px) 45vw, 100vw" />}
+                  <h3 class="mt-16">{e.titel}</h3>
+                  <p class="mt-8">{e.text}</p>
+                  <a class="link-action mt-4 self-start" href={e.href}>{t(sprache, "seite.mehr_erfahren")}<span class="sr-only">: {e.titel}</span></a>
+                </li>
+              ))}
+            </ul>
+            <a class="link-action mt-24" href={await ziel("leistungen")}>{t(sprache, "nav.leistungen")}</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Zielgruppen */}
+      <section class="container-page section" aria-labelledby="zielgruppen-titel">
+        <div class="sektion-kopf">
+          <p class="label">{s.zielgruppen.label}</p>
+          <div>
+            <h2 id="zielgruppen-titel" class="max-w-[52rem]">{s.zielgruppen.titel}</h2>
+            <ul class="mt-40 grid gap-x-40 md:grid-cols-2">
+              {zielgruppen.map((z) => (
+                <li class="border-t border-oxblood-ink py-24">
+                  <h3>{z.titel}</h3>
+                  <p class="mt-8">{z.text}</p>
+                  {z.links.length > 0 && (
+                    <ul class="mt-8 flex flex-wrap gap-x-24">
+                      {z.links.map((l) => <li><a class="link-action" href={l.href}>{l.label}</a></li>)}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Ablauf */}
+      <section class="bg-aged-linen" aria-labelledby="ablauf-titel">
+        <div class="container-page section">
+          <div class="sektion-kopf">
+            <p class="label">{s.ablauf.label}</p>
+            <div>
+              <h2 id="ablauf-titel" class="max-w-[52rem]">{s.ablauf.titel}</h2>
+              <ol class="mt-40 grid gap-32 sm:grid-cols-2 lg:grid-cols-4">
+                {s.ablauf.schritte.map((schritt, i) => (
+                  <li class="border-t border-oxblood-ink pt-16">
+                    <p class="font-caslon-display text-title" aria-hidden="true">{String(i + 1).padStart(2, "0")}</p>
+                    <h3 class="mt-12">{schritt.titel}</h3>
+                    <p class="mt-8 text-nav">{schritt.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dr. Adali */}
+      <section class="container-page section" aria-labelledby="arzt-titel">
+        <div class="sektion-kopf">
+          <p class="label">{s.arzt.label}</p>
+          <div class="grid gap-40 md:grid-cols-[minmax(0,0.7fr)_1fr] md:items-start">
+            <Foto bild="portraet-dr-adali" sprache={sprache} format="3/4" sizes="(min-width: 768px) 35vw, 100vw" />
+            <div>
+              <h2 id="arzt-titel">{s.arzt.titel}</h2>
+              <p class="mt-24">{s.arzt.text}</p>
+              <ul class="mt-24 border-t border-oxblood-ink">
+                {s.arzt.punkte.map((p) => <li class="border-b border-oxblood-ink py-12 text-nav">{p}</li>)}
+              </ul>
+              <a class="link-action mt-16" href={await ziel(s.arzt.link)}>{t(sprache, "seite.autor_link")}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Labor & digital */}
+      <section class="container-page section" aria-labelledby="labor-titel">
+        <div class="sektion-kopf">
+          <p class="label">{s.labor.label}</p>
+          <div class="grid gap-40 md:grid-cols-2 md:items-start">
+            <div>
+              <h2 id="labor-titel">{s.labor.titel}</h2>
+              <p class="mt-24">{s.labor.text}</p>
+              <ul class="mt-24 border-t border-oxblood-ink">
+                {s.labor.punkte.map((p) => <li class="border-b border-oxblood-ink py-12 text-nav">{p}</li>)}
+              </ul>
+              <a class="link-action mt-16" href={await ziel(s.labor.link)}>{await seitenTitel(s.labor.link, sprache)}</a>
+            </div>
+            <Foto bild="labor-digital" sprache={sprache} format="4/3" sizes="(min-width: 768px) 45vw, 100vw" />
+          </div>
+        </div>
+      </section>
+    </>
+  )}
+
+  {/* Anfahrt & Sprechzeiten */}
   <section class="container-page section" aria-labelledby="praxis-titel">
     <div class="sektion-kopf">
       <p class="label">{t(sprache, "anfahrt.titel")}</p>
@@ -44,18 +183,48 @@ const { id, sprache, daten } = Astro.props;
             {t(sprache, "anfahrt.aufgang")}{site.adresse.aufzug && <>, {t(sprache, "anfahrt.aufzug")}</>}
           </address>
           <p class="mt-12">{t(sprache, "anfahrt.parken")}</p>
+          <ul class="mt-12 text-nav">
+            {site.oepnv.map((o) => <li>{o.linie} {o.haltestelle} – {t(sprache, "anfahrt.fussweg", { min: o.fussweg_min })}</li>)}
+          </ul>
           <p class="mt-12 text-nav">{t(sprache, "versicherung.alle")}</p>
+          <a class="link-action mt-8" href={`${await ziel("kontakt")}#anfahrt`}>{t(sprache, "nav.kontakt")}</a>
         </div>
         <div>
           <h3>{t(sprache, "sprechzeiten.titel")}</h3>
           <Sprechzeiten sprache={sprache} class="mt-12" />
           <p class="mt-12 text-nav">{t(sprache, "termin.taeglich")}</p>
+          <SprachHinweis sprache={sprache} class="mt-24" />
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container-page">
-    <Terminbuchung sprache={sprache} variante="block" />
-  </div>
+  {/* FAQ-Auszug */}
+  {s && daten.faq.length > 0 && (
+    <section class="container-page section" aria-labelledby="faq-titel">
+      <div class="sektion-kopf">
+        <p class="label">{s.faq.label}</p>
+        <div>
+          <h2 id="faq-titel">{s.faq.titel}</h2>
+          <FaqListe fragen={daten.faq} class="mt-24" />
+          <a class="link-action mt-16" href={await ziel(s.faq.link)}>{t(sprache, "seite.alle_fragen")}</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* Abschluss */}
+  <section class="container-page">
+    <div class="bg-aged-linen p-24 md:p-60">
+      {s ? (
+        <>
+          <h2 class="max-w-[52rem]">{s.abschluss.titel}</h2>
+          <p class="mt-16 max-w-text">{s.abschluss.text}</p>
+          <Terminbuchung sprache={sprache} variante="hero" class="mt-32" />
+        </>
+      ) : (
+        <Terminbuchung sprache={sprache} variante="block" />
+      )}
+    </div>
+  </section>
 </Basis>

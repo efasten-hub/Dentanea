@@ -55,7 +55,10 @@
     "fussweg": "yürüyerek yaklaşık {min} dk",
     "karte_laden": "Haritayı yükle",
     "karte_hinweis": "Harita, siz tıkladıktan sonra OpenStreetMap’ten yüklenir. Bu sırada IP adresiniz harita hizmetine iletilir.",
-    "route": "Rota planla"
+    "route": "Rota planla",
+    "karte_titel": "Harita",
+    "karte_extern": "Haritayı OpenStreetMap’te açın",
+    "adresse": "Adres"
   },
   "sprechzeiten": {
     "titel": "Muayene saatleri",
@@ -72,7 +75,12 @@
     }
   },
   "sprachen": {
-    "namen": { "de": "Almanca", "en": "İngilizce", "es": "İspanyolca", "tr": "Türkçe" },
+    "namen": {
+      "de": "Almanca",
+      "en": "İngilizce",
+      "es": "İspanyolca",
+      "tr": "Türkçe"
+    },
     "und": "ve",
     "behandlung_in": "{sprachen} tedavi ve danışmanlık.",
     "dr_adali_spricht": "Dr. Adali size {sprachen} danışmanlık ve tedavi hizmeti verir.",
@@ -91,7 +99,19 @@
     "mehr_erfahren": "Daha fazla bilgi",
     "nicht_gefunden_titel": "Bu sayfa mevcut değil.",
     "nicht_gefunden_text": "Adres değişmiş olabilir. Buradan devam edebilirsiniz:",
-    "rechtsverbindlich": "Hukuken bağlayıcı olan Almanca metindir."
+    "rechtsverbindlich": "Hukuken bağlayıcı olan Almanca metindir.",
+    "autor_titel": "Yazar hakkında",
+    "autor_text": "Dr. Ufuk Adali, Spezialist für Prothetik (Alman Protetik Diş Hekimliği ve Biyomateryaller Derneği DGPro tarafından verilen protez uzmanlığı unvanı) ve sertifikalı implantologdur (DGI). 2026 yılına kadar Charité – Universitätsmedizin Berlin’de sorumlu başhekim yardımcısı (leitender Oberarzt) olarak görev yaptı.",
+    "autor_link": "Dr. Adali hakkında daha fazla",
+    "veroeffentlicht": "Yayın tarihi: {datum}",
+    "von": "Yazar: {name}",
+    "quellen": "Kaynaklar",
+    "verwandt": "İlgili sayfalar",
+    "faq_titel": "Sık sorulan sorular",
+    "alle_fragen": "Tüm sorular ve yanıtlar",
+    "weiterlesen": "Devamını okuyun",
+    "in_sprache": "{sprache}",
+    "fragen_anzahl": "{anzahl} soru"
   },
   "footer": {
     "kontakt": "İletişim",
@@ -112,7 +132,9 @@
       "zmp": "Profilaksi asistanı"
     },
     "foto_folgt": "Fotoğraf yakında",
-    "spricht": "Konuştuğu diller: {sprachen}"
+    "spricht": "Konuştuğu diller: {sprachen}",
+    "titel": "Ekibimiz",
+    "aufgabe": "Görev"
   },
   "formular": {
     "titel": "Talep gönderin",
@@ -147,6 +169,56 @@
       "versand": "Talebiniz maalesef gönderilemedi. Lütfen bizi arayın: {telefon}."
     },
     "danke_titel": "Talebiniz için teşekkür ederiz.",
-    "danke_text": "Mesajınızı aldık ve genellikle iki iş günü içinde size dönüş yapıyoruz. Acil durumlarda lütfen bizi arayın."
+    "danke_text": "Mesajınızı aldık ve genellikle iki iş günü içinde size dönüş yapıyoruz. Acil durumlarda lütfen bizi arayın.",
+    "honeypot": "Lütfen bu alanı boş bırakın",
+    "anliegen_waehlen": "Lütfen seçin (isteğe bağlı)",
+    "einwilligung": "Bilgilerimin talebimi yanıtlamak için muayenehane tarafından kullanılmasını kabul ediyorum. Bu onayı her zaman geri alabilirim.",
+    "fehler_allgemein": "Talebiniz gönderilemedi. Lütfen bilgilerinizi kontrol edip tekrar deneyin ya da bizi arayın: {telefon}."
+  },
+  "leistungen": {
+    "gruppen": {
+      "zahnersatz": "Protezler ve implantlar",
+      "aesthetik_funktion": "Estetik ve fonksiyon",
+      "kinder": "Çocuklar ve özel durumlar",
+      "zahnerhalt": "Koruyucu tedavi ve dişlerin korunması"
+    }
+  },
+  "ratgeber": {
+    "andere_sprachen": "Diğer makaleler, şimdilik yalnızca başka dillerde:"
+  },
+  "ueber": {
+    "werdegang": "Kariyer",
+    "qualifikationen": "Nitelikler",
+    "mitgliedschaften": "Üyelikler",
+    "auszeichnungen": "Ödüller",
+    "publikationen": "Bilimsel yayınlar (seçki)",
+    "publikationen_hinweis": "Başlıklar orijinal dilindedir.",
+    "beitraege": "Diğer yazılar (seçki)",
+    "vortraege": "Konferanslar ve eğitim (seçki)",
+    "orcid": "Tam liste ORCID’de",
+    "sprachen": "Diller",
+    "portraet_alt": "Dr. Ufuk Adali’nin portresi"
+  },
+  "impressum": {
+    "angaben": "Alman Dijital Hizmetler Yasası (DDG) § 5 uyarınca bilgiler",
+    "kontakt": "İletişim",
+    "telefon": "Telefon",
+    "fax": "Faks",
+    "email": "E-posta",
+    "berufsbezeichnung": "Meslek unvanı",
+    "berufsbezeichnung_text": "Zahnarzt (diş hekimi), Almanya Federal Cumhuriyeti’nde verilmiştir",
+    "kammer": "Yetkili meslek odası",
+    "kzv": "Yetkili Yasal Sağlık Sigortası Diş Hekimleri Birliği (KZV)",
+    "berufsrecht": "Mesleki düzenlemeler",
+    "haftpflicht": "Mesleki sorumluluk sigortası",
+    "geltungsbereich": "Geçerlilik alanı: Almanya Federal Cumhuriyeti",
+    "ust": "KDV kimlik numarası",
+    "verantwortlich": "MStV § 18 (2) uyarınca içerikten sorumlu kişi",
+    "bildnachweis": "Görsel kaynakları",
+    "bildnachweis_text": "“Temsili görsel” olarak işaretlenen fotoğraflar görsel arşivlerinden alınmıştır. Muayenehanemizi, ekibimizi veya hastalarımızı göstermez.",
+    "symbolbild": "Temsili görsel",
+    "eigenes_foto": "Kendi fotoğrafımız",
+    "foto_von": "Fotoğraf: {name}",
+    "lizenz": "Lisans"
   }
 }

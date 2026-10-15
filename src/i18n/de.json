@@ -55,7 +55,10 @@
     "fussweg": "ca. {min} Min. zu Fuß",
     "karte_laden": "Karte laden",
     "karte_hinweis": "Die Karte wird erst nach Ihrem Klick von OpenStreetMap geladen. Dabei wird Ihre IP-Adresse an den Kartendienst übertragen.",
-    "route": "Route planen"
+    "route": "Route planen",
+    "karte_titel": "Karte",
+    "karte_extern": "Karte bei OpenStreetMap öffnen",
+    "adresse": "Adresse"
   },
   "sprechzeiten": {
     "titel": "Sprechzeiten",
@@ -72,7 +75,12 @@
     }
   },
   "sprachen": {
-    "namen": { "de": "Deutsch", "en": "Englisch", "es": "Spanisch", "tr": "Türkisch" },
+    "namen": {
+      "de": "Deutsch",
+      "en": "Englisch",
+      "es": "Spanisch",
+      "tr": "Türkisch"
+    },
     "und": "und",
     "behandlung_in": "Behandlung und Beratung auf {sprachen}.",
     "dr_adali_spricht": "Dr. Adali berät und behandelt Sie auf {sprachen}.",
@@ -91,7 +99,19 @@
     "mehr_erfahren": "Mehr erfahren",
     "nicht_gefunden_titel": "Diese Seite gibt es nicht.",
     "nicht_gefunden_text": "Vielleicht hat sich die Adresse geändert. Hier finden Sie weiter:",
-    "rechtsverbindlich": "Rechtsverbindlich ist die deutsche Fassung."
+    "rechtsverbindlich": "Rechtsverbindlich ist die deutsche Fassung.",
+    "autor_titel": "Über den Autor",
+    "autor_text": "Dr. Ufuk Adali ist Spezialist für Prothetik (DGPro) und zertifizierter Implantologe (DGI). Bis 2026 war er leitender Oberarzt an der Charité – Universitätsmedizin Berlin.",
+    "autor_link": "Mehr über Dr. Adali",
+    "veroeffentlicht": "Veröffentlicht am {datum}",
+    "von": "Von {name}",
+    "quellen": "Quellen",
+    "verwandt": "Passend dazu",
+    "faq_titel": "Häufige Fragen",
+    "alle_fragen": "Alle Fragen und Antworten",
+    "weiterlesen": "Weiterlesen",
+    "in_sprache": "auf {sprache}",
+    "fragen_anzahl": "{anzahl} Fragen"
   },
   "footer": {
     "kontakt": "Kontakt",
@@ -112,7 +132,9 @@
       "zmp": "Zahnmedizinische Prophylaxeassistentin"
     },
     "foto_folgt": "Foto folgt",
-    "spricht": "Spricht {sprachen}"
+    "spricht": "Spricht {sprachen}",
+    "titel": "Das Team",
+    "aufgabe": "Aufgabe"
   },
   "formular": {
     "titel": "Anfrage senden",
@@ -147,6 +169,56 @@
       "versand": "Ihre Anfrage konnte leider nicht gesendet werden. Bitte rufen Sie uns an: {telefon}."
     },
     "danke_titel": "Vielen Dank für Ihre Anfrage.",
-    "danke_text": "Wir haben Ihre Nachricht erhalten und melden uns in der Regel innerhalb von zwei Werktagen. In dringenden Fällen rufen Sie uns bitte an."
+    "danke_text": "Wir haben Ihre Nachricht erhalten und melden uns in der Regel innerhalb von zwei Werktagen. In dringenden Fällen rufen Sie uns bitte an.",
+    "honeypot": "Bitte dieses Feld leer lassen",
+    "anliegen_waehlen": "Bitte wählen (optional)",
+    "einwilligung": "Ich bin einverstanden, dass die Praxis meine Angaben verwendet, um meine Anfrage zu beantworten. Ich kann diese Einwilligung jederzeit widerrufen.",
+    "fehler_allgemein": "Ihre Anfrage konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben und versuchen Sie es noch einmal – oder rufen Sie uns an: {telefon}."
+  },
+  "leistungen": {
+    "gruppen": {
+      "zahnersatz": "Zahnersatz und Implantate",
+      "aesthetik_funktion": "Ästhetik und Funktion",
+      "kinder": "Kinder und besondere Befunde",
+      "zahnerhalt": "Vorsorge und Zahnerhalt"
+    }
+  },
+  "ratgeber": {
+    "andere_sprachen": "Weitere Artikel, bisher nur in anderen Sprachen:"
+  },
+  "ueber": {
+    "werdegang": "Werdegang",
+    "qualifikationen": "Qualifikationen",
+    "mitgliedschaften": "Mitgliedschaften",
+    "auszeichnungen": "Auszeichnungen",
+    "publikationen": "Wissenschaftliche Publikationen (Auswahl)",
+    "publikationen_hinweis": "Titel in der Originalsprache.",
+    "beitraege": "Weitere Beiträge (Auswahl)",
+    "vortraege": "Vorträge und Lehre (Auswahl)",
+    "orcid": "Vollständige Liste bei ORCID",
+    "sprachen": "Sprachen",
+    "portraet_alt": "Porträt von Dr. Ufuk Adali"
+  },
+  "impressum": {
+    "angaben": "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)",
+    "kontakt": "Kontakt",
+    "telefon": "Telefon",
+    "fax": "Telefax",
+    "email": "E-Mail",
+    "berufsbezeichnung": "Berufsbezeichnung",
+    "berufsbezeichnung_text": "Zahnarzt, verliehen in der Bundesrepublik Deutschland",
+    "kammer": "Zuständige Kammer",
+    "kzv": "Zuständige Kassenzahnärztliche Vereinigung",
+    "berufsrecht": "Berufsrechtliche Regelungen",
+    "haftpflicht": "Berufshaftpflichtversicherung",
+    "geltungsbereich": "Geltungsbereich: Bundesrepublik Deutschland",
+    "ust": "Umsatzsteuer-Identifikationsnummer",
+    "verantwortlich": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+    "bildnachweis": "Bildnachweis",
+    "bildnachweis_text": "Fotos mit dem Vermerk „Symbolbild“ stammen aus Bilddatenbanken. Sie zeigen nicht unsere Praxis, unser Team oder Patientinnen und Patienten.",
+    "symbolbild": "Symbolbild",
+    "eigenes_foto": "Eigenes Foto",
+    "foto_von": "Foto: {name}",
+    "lizenz": "Lizenz"
   }
 }

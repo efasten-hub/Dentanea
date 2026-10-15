@@ -1,0 +1,21 @@
+---
+/** Linkliste „Passend dazu“ – nur Seiten, die es in dieser Sprache gibt. */
+import type { Sprache } from "../config/site";
+import { t, seitenVerfuegbar, seitenTitel } from "../i18n";
+import { pfad } from "../i18n/routen";
+
+interface Props { sprache: Sprache; ids: string[]; class?: string }
+const { sprache, ids, class: klasse = "" } = Astro.props;
+const verfuegbar = await seitenVerfuegbar();
+const eintraege = await Promise.all(
+  ids.filter((id) => verfuegbar.get(id)?.has(sprache)).map(async (id) => ({ href: pfad(id, sprache)!, label: await seitenTitel(id, sprache) })),
+);
+---
+{eintraege.length > 0 && (
+  <nav class:list={["sektion-kopf", klasse]} aria-labelledby={`verwandt-${sprache}`}>
+    <p class="label" id={`verwandt-${sprache}`}>{t(sprache, "seite.verwandt")}</p>
+    <ul class="grid gap-x-24 sm:grid-cols-2">
+      {eintraege.map((e) => <li><a class="link-action" href={e.href}>{e.label}</a></li>)}
+    </ul>
+  </nav>
+)}

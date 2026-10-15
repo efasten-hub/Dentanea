@@ -1,0 +1,88 @@
+---
+/**
+ * Über Dr. Adali: Porträt, Haltung und Werdegang (Seitentext), danach aus den Daten:
+ * Qualifikationen und Mitgliedschaften (site.ts, Gesellschaftsnamen unübersetzt),
+ * Auszeichnungen, Publikationen, Vorträge (src/config/publikationen.ts).
+ */
+import Basis from "../layouts/Basis.astro";
+import Terminbuchung from "../components/Terminbuchung.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import Foto from "../components/Foto.astro";
+import { site } from "../config/site";
+import { publikationen, beitraege, vortraege, type Publikation } from "../config/publikationen";
+import { t, sprachListe } from "../i18n";
+import type { VorlagenProps } from "./typen";
+
+type Props = VorlagenProps;
+const { id, sprache, daten } = Astro.props;
+const zitat = (p: Publikation) => `${p.autoren}. ${p.titel} ${p.quelle}.${p.zusatz ? ` ${p.zusatz}.` : ""}`;
+---
+<Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
+  <article class="container-page pt-24">
+    <Breadcrumb sprache={sprache} id={id} />
+    <div class="mt-40 grid gap-40 md:grid-cols-[1fr_minmax(0,0.6fr)] md:items-end">
+      <header>
+        <h1>{daten.titel}</h1>
+        {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
+        <p class="mt-24 text-nav">{t(sprache, "sprachen.dr_adali_spricht", { sprachen: sprachListe(sprache, site.gesprochene_sprachen.dr_adali) })}</p>
+      </header>
+      <Foto bild="portraet-dr-adali" sprache={sprache} format="3/4" prioritaet sizes="(min-width: 768px) 35vw, 100vw" />
+    </div>
+
+    {daten.antwort && <p class="intro mt-48 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
+
+    <div class="inhalt mt-48"><slot /></div>
+
+    <section class="sektion-kopf mt-80" aria-labelledby="quali-titel">
+      <p class="label">{t(sprache, "ueber.qualifikationen")}</p>
+      <div>
+        <h2 id="quali-titel">{t(sprache, "ueber.qualifikationen")}</h2>
+        <ul class="mt-24 border-t border-oxblood-ink">
+          {site.qualifikationen.map((q) => (
+            <li class="border-b border-oxblood-ink py-16">
+              <p class="kategorie" lang="de">{q.titel} ({q.kuerzel})</p>
+              <p class="mt-4 text-nav"><a class="link" href={q.url} lang="de" rel="noopener">{q.gesellschaft}</a></p>
+            </li>
+          ))}
+        </ul>
+        <h3 class="mt-40">{t(sprache, "ueber.mitgliedschaften")}</h3>
+        <ul class="mt-12 text-nav">
+          {site.mitgliedschaften.map((m) => <li lang="de">{m.name}</li>)}
+        </ul>
+        <h3 class="mt-40">{t(sprache, "ueber.auszeichnungen")}</h3>
+        <ul class="mt-12 text-nav">
+          {site.auszeichnungen.map((a) => <li><span>{a.jahr}</span> · <span lang="de">{a.name}</span></li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="sektion-kopf mt-80" aria-labelledby="publikationen-titel">
+      <p class="label">{t(sprache, "ueber.publikationen")}</p>
+      <div>
+        <h2 id="publikationen-titel">{t(sprache, "ueber.publikationen")}</h2>
+        <p class="caption mt-8">{t(sprache, "ueber.publikationen_hinweis")}</p>
+        <ol class="mt-24 border-t border-oxblood-ink">
+          {publikationen.map((p) => (
+            <li class="grid gap-x-24 border-b border-oxblood-ink py-12 text-nav sm:grid-cols-[64px_1fr]">
+              <span class="caption">{p.jahr}</span>
+              <span lang="en">{zitat(p)}{p.doi && <> <a class="link" href={`https://doi.org/${p.doi}`} rel="noopener">DOI {p.doi}</a></>}</span>
+            </li>
+          ))}
+        </ol>
+        <h3 class="mt-40">{t(sprache, "ueber.beitraege")}</h3>
+        <ul class="mt-12">
+          {beitraege.map((p) => (
+            <li class="text-nav" lang="de">{p.jahr} · {zitat(p)}{p.doi && <> <a class="link" href={`https://doi.org/${p.doi}`} rel="noopener">DOI {p.doi}</a></>}</li>
+          ))}
+        </ul>
+        <h3 class="mt-40">{t(sprache, "ueber.vortraege")}</h3>
+        <ul class="mt-12 text-nav">
+          {vortraege.map((v) => <li lang="de">{v}</li>)}
+        </ul>
+        <a class="link-action mt-16" href={`https://orcid.org/${site.orcid}`} rel="noopener">{t(sprache, "ueber.orcid")}</a>
+      </div>
+    </section>
+
+    <Terminbuchung sprache={sprache} variante="block" class="mt-80" />
+  </article>
+</Basis>

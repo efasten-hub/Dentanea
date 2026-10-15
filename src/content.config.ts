@@ -39,6 +39,33 @@ const seiten = defineCollection({
     /** Für Ratgeber: Veröffentlichungsdatum und Quellen. */
     datum: z.string().optional(),
     quellen: z.array(z.object({ titel: z.string(), url: z.string().optional() })).default([]),
+    /** Kurztext für Übersichten, Startseite und Linklisten (1–2 Sätze). */
+    kurz: z.string().optional(),
+    /** Verwandte Seiten (Seiten-IDs aus routen.ts) – erscheinen als Links am Seitenende. */
+    verwandt: z.array(z.string()).default([]),
+    /** FAQ-Seite: Fragen in Gruppen. */
+    faq_gruppen: z.array(z.object({ titel: z.string(), fragen: z.array(z.object({ frage: z.string(), antwort: z.string() })) })).default([]),
+    /** Nur Startseite: Inhalte der Sektionen. Reihenfolge der Zielgruppen je Sprache frei wählbar. */
+    start: z
+      .object({
+        vertrauen: z.array(z.string()),
+        schwerpunkte: z.object({
+          label: z.string(),
+          titel: z.string(),
+          eintraege: z.array(z.object({ id: z.string(), titel: z.string(), text: z.string() })),
+        }),
+        zielgruppen: z.object({
+          label: z.string(),
+          titel: z.string(),
+          eintraege: z.array(z.object({ titel: z.string(), text: z.string(), links: z.array(z.string()) })),
+        }),
+        ablauf: z.object({ label: z.string(), titel: z.string(), schritte: z.array(z.object({ titel: z.string(), text: z.string() })) }),
+        arzt: z.object({ label: z.string(), titel: z.string(), text: z.string(), punkte: z.array(z.string()), link: z.string() }),
+        labor: z.object({ label: z.string(), titel: z.string(), text: z.string(), punkte: z.array(z.string()), link: z.string() }),
+        faq: z.object({ label: z.string(), titel: z.string(), link: z.string() }),
+        abschluss: z.object({ titel: z.string(), text: z.string() }),
+      })
+      .optional(),
   }),
 });
 

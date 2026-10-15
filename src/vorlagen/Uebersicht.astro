@@ -1,0 +1,111 @@
+---
+/**
+ * Übersichtsseiten
+ *  - leistungen: Leistungen in Gruppen (src/config/leistungsgruppen.ts), je Eintrag Titel + Kurztext
+ *  - ratgeber:   Artikel mit Bild, Datum und Kurztext; Artikel, die es in dieser Sprache noch nicht gibt,
+ *                erscheinen darunter mit Link auf die vorhandene Fassung (Englisch bevorzugt)
+ */
+import { getEntry } from "astro:content";
+import Basis from "../layouts/Basis.astro";
+import Terminbuchung from "../components/Terminbuchung.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import Foto from "../components/Foto.astro";
+import type { Sprache } from "../config/site";
+import { leistungsgruppen } from "../config/leistungsgruppen";
+import { t, seitenVerfuegbar, STANDARD } from "../i18n";
+import { pfad, routen } from "../i18n/routen";
+import type { VorlagenProps } from "./typen";
+
+type Props = VorlagenProps;
+const { id, sprache, daten } = Astro.props;
+const verfuegbar = await seitenVerfuegbar();
+const gibt = (seite: string, sp: Sprache = sprache) => verfuegbar.get(seite)?.has(sp) ?? false;
+const eintrag = async (seite: string, sp: Sprache = sprache) => (await getEntry("seiten", `${sp}/${seite}`))!.data;
+
+const gruppen = id === "leistungen"
+  ? (await Promise.all(
+      leistungsgruppen.map(async (g) => ({
+        titel: t(sprache, `leistungen.gruppen.${g.schluessel}`),
+        eintraege: await Promise.all(g.ids.filter((x) => gibt(x)).map(async (x) => {
+          const d = await eintrag(x);
+          return { href: pfad(x, sprache)!, titel: d.titel, kurz: d.kurz ?? d.unterzeile ?? "" };
+        })),
+      })),
+    )).filter((g) => g.eintraege.length > 0)
+  : [];
+
+const artikelIds = Object.entries(routen).filter(([, r]) => r.typ === "ratgeber" && r.eltern === id).map(([k]) => k);
+const datumFormat = (iso?: string) =>
+  iso && /^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Intl.DateTimeFormat(sprache, { day: "numeric", month: "long", year: "numeric" }).format(new Date(iso)) : iso;
+const artikel = id === "ratgeber"
+  ? (await Promise.all(artikelIds.filter((x) => gibt(x)).map(async (x) => {
+      const d = await eintrag(x);
+      return { href: pfad(x, sprache)!, titel: d.titel, kurz: d.kurz ?? "", bild: d.bild, datum: d.datum };
+    }))).sort((a, b) => (b.datum ?? "").localeCompare(a.datum ?? ""))
+  : [];
+// Noch nicht übersetzte Artikel: Englisch bevorzugt, sonst Deutsch
+const andere = id === "ratgeber"
+  ? await Promise.all(artikelIds.filter((x) => !gibt(x)).flatMap((x) => {
+      const sp = (["en", STANDARD] as Sprache[]).find((k) => k !== sprache && gibt(x, k));
+      return sp ? [(async () => ({ href: pfad(x, sp)!, titel: (await eintrag(x, sp)).titel, sprache: sp }))()] : [];
+    }))
+  : [];
+---
+<Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
+  <div class="container-page pt-24">
+    <Breadcrumb sprache={sprache} id={id} />
+    <header class="mt-40 max-w-[52rem]">
+      <h1>{daten.titel}</h1>
+      {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
+    </header>
+    {daten.antwort && <p class="intro mt-40 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
+
+    {gruppen.map((g, i) => (
+      <section class="sektion-kopf mt-60" aria-labelledby={`gruppe-${i}`}>
+        <p class="label">{String(i + 1).padStart(2, "0")}</p>
+        <div>
+          <h2 id={`gruppe-${i}`}>{g.titel}</h2>
+          <ul class="mt-24 grid gap-x-40 md:grid-cols-2">
+            {g.eintraege.map((e) => (
+              <li class="border-t border-oxblood-ink py-20">
+                <h3><a class="no-underline hover:underline" href={e.href}>{e.titel}</a></h3>
+                {e.kurz && <p class="mt-8 text-nav">{e.kurz}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    ))}
+
+    {artikel.length > 0 && (
+      <ul class="mt-60 grid gap-x-24 gap-y-48 sm:grid-cols-2 lg:grid-cols-3">
+        {artikel.map((a) => (
+          <li class="flex flex-col">
+            {a.bild && <Foto bild={a.bild} sprache={sprache} format="3/2" sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw" />}
+            {a.datum && <p class="caption mt-16">{datumFormat(a.datum)}</p>}
+            <h2 class="kategorie mt-8"><a class="no-underline hover:underline" href={a.href}>{a.titel}</a></h2>
+            {a.kurz && <p class="mt-8 text-nav">{a.kurz}</p>}
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {andere.length > 0 && (
+      <section class="sektion-kopf mt-60">
+        <p class="label">{t(sprache, "seite.weiterlesen")}</p>
+        <div>
+          <p class="text-nav">{t(sprache, "ratgeber.andere_sprachen")}</p>
+          <ul class="mt-8">
+            {andere.map((a) => (
+              <li><a class="link-action" href={a.href} hreflang={a.sprache} lang={a.sprache}>{a.titel}</a> <span class="caption">({t(sprache, `sprachen.namen.${a.sprache}`)})</span></li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
+
+    <div class="inhalt mt-60"><slot /></div>
+
+    <Terminbuchung sprache={sprache} variante="block" class="mt-80" />
+  </div>
+</Basis>

@@ -1,0 +1,65 @@
+---
+/**
+ * Praxis & Team: Seitentext (Labor, Ausstattung, Hygiene, Barrierefreiheit) und Team aus site.ts.
+ * Teammitglieder ohne eigenes Foto bekommen die Fläche „Foto folgt“ – nie ein Stock-Gesicht.
+ */
+import type { ImageMetadata } from "astro";
+import { Picture } from "astro:assets";
+import Basis from "../layouts/Basis.astro";
+import Terminbuchung from "../components/Terminbuchung.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import FotoFolgt from "../components/FotoFolgt.astro";
+import Foto from "../components/Foto.astro";
+import { site } from "../config/site";
+import { t, sprachListe } from "../i18n";
+import type { VorlagenProps } from "./typen";
+
+type Props = VorlagenProps;
+const { id, sprache, daten } = Astro.props;
+const dateien = import.meta.glob<{ default: ImageMetadata }>("../assets/fotos/*.{jpg,jpeg,png,webp}", { eager: true });
+const MANIFEST_SCHLUESSEL: Record<string, string> = { "dr-ufuk-adali-portraet.jpg": "portraet-dr-adali" };
+const team = site.team.map((m) => ({
+  ...m,
+  platzhalter: m.name.startsWith("[["),
+  manifest: m.foto ? MANIFEST_SCHLUESSEL[m.foto] : undefined,
+  datei: m.foto ? dateien[`../assets/fotos/${m.foto}`]?.default : undefined,
+}));
+---
+<Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
+  <article class="container-page pt-24">
+    <Breadcrumb sprache={sprache} id={id} />
+    <header class="mt-40 max-w-[52rem]">
+      <h1>{daten.titel}</h1>
+      {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
+    </header>
+    {daten.antwort && <p class="intro mt-40 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
+
+    <section class="sektion-kopf mt-60" aria-labelledby="team-titel">
+      <p class="label">{t(sprache, "team.titel")}</p>
+      <div>
+        <h2 id="team-titel">{t(sprache, "team.titel")}</h2>
+        <ul class="mt-24 grid gap-x-24 gap-y-40 sm:grid-cols-2 lg:grid-cols-3">
+          {team.map((m) => (
+            <li>
+              {m.manifest ? (
+                <Foto bild={m.manifest} sprache={sprache} format="3/4" sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw" />
+              ) : m.datei ? (
+                <Picture src={m.datei} alt={m.name} formats={["avif", "webp"]} widths={[480, 768]} sizes="(min-width: 1024px) 30vw, 100vw" class="block aspect-[3/4] w-full object-cover" />
+              ) : (
+                <FotoFolgt sprache={sprache} format="3/4" />
+              )}
+              <p class="kategorie mt-16">{m.platzhalter ? t(sprache, `team.rollen.${m.rolle}`) : m.name}</p>
+              {!m.platzhalter && <p class="text-nav">{t(sprache, `team.rollen.${m.rolle}`)}</p>}
+              {m.platzhalter && <p class="text-nav">{m.name}</p>}
+              <p class="caption mt-4">{t(sprache, "team.spricht", { sprachen: sprachListe(sprache, m.sprachen) })}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <div class="inhalt mt-60"><slot /></div>
+
+    <Terminbuchung sprache={sprache} variante="block" class="mt-80" />
+  </article>
+</Basis>

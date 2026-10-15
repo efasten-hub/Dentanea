@@ -55,7 +55,10 @@
     "fussweg": "aprox. {min} min a pie",
     "karte_laden": "Cargar mapa",
     "karte_hinweis": "El mapa de OpenStreetMap solo se carga después de su clic. En ese momento se transmite su dirección IP al servicio de mapas.",
-    "route": "Planificar la ruta"
+    "route": "Planificar la ruta",
+    "karte_titel": "Mapa",
+    "karte_extern": "Abrir el mapa en OpenStreetMap",
+    "adresse": "Dirección"
   },
   "sprechzeiten": {
     "titel": "Horario de consulta",
@@ -72,7 +75,12 @@
     }
   },
   "sprachen": {
-    "namen": { "de": "alemán", "en": "inglés", "es": "español", "tr": "turco" },
+    "namen": {
+      "de": "alemán",
+      "en": "inglés",
+      "es": "español",
+      "tr": "turco"
+    },
     "und": "y",
     "behandlung_in": "Tratamiento y asesoramiento en {sprachen}.",
     "dr_adali_spricht": "El Dr. Adali le atiende y le trata en {sprachen}.",
@@ -91,7 +99,19 @@
     "mehr_erfahren": "Más información",
     "nicht_gefunden_titel": "Esta página no existe.",
     "nicht_gefunden_text": "Es posible que la dirección haya cambiado. Puede continuar aquí:",
-    "rechtsverbindlich": "La versión alemana es la jurídicamente vinculante."
+    "rechtsverbindlich": "La versión alemana es la jurídicamente vinculante.",
+    "autor_titel": "Sobre el autor",
+    "autor_text": "El Dr. Ufuk Adali es Spezialist für Prothetik (especialista en prótesis dental acreditado por la Sociedad Alemana de Odontología Protésica y Biomateriales, DGPro) e implantólogo certificado (DGI). Hasta 2026 fue médico adjunto jefe (leitender Oberarzt) en la Charité – Universitätsmedizin Berlin.",
+    "autor_link": "Más sobre el Dr. Adali",
+    "veroeffentlicht": "Publicado el {datum}",
+    "von": "Por {name}",
+    "quellen": "Fuentes",
+    "verwandt": "Relacionado",
+    "faq_titel": "Preguntas frecuentes",
+    "alle_fragen": "Todas las preguntas y respuestas",
+    "weiterlesen": "Leer más",
+    "in_sprache": "en {sprache}",
+    "fragen_anzahl": "{anzahl} preguntas"
   },
   "footer": {
     "kontakt": "Contacto",
@@ -112,7 +132,9 @@
       "zmp": "Higienista dental"
     },
     "foto_folgt": "Foto próximamente",
-    "spricht": "Habla {sprachen}"
+    "spricht": "Habla {sprachen}",
+    "titel": "El equipo",
+    "aufgabe": "Función"
   },
   "formular": {
     "titel": "Enviar una solicitud",
@@ -147,6 +169,56 @@
       "versand": "Lamentablemente, no se ha podido enviar su solicitud. Por favor, llámenos al {telefon}."
     },
     "danke_titel": "Muchas gracias por su solicitud.",
-    "danke_text": "Hemos recibido su mensaje y normalmente le respondemos en un plazo de dos días laborables. Si es urgente, por favor, llámenos."
+    "danke_text": "Hemos recibido su mensaje y normalmente le respondemos en un plazo de dos días laborables. Si es urgente, por favor, llámenos.",
+    "honeypot": "Deje este campo vacío, por favor",
+    "anliegen_waehlen": "Elija una opción (opcional)",
+    "einwilligung": "Acepto que la consulta utilice mis datos para responder a mi solicitud. Puedo retirar este consentimiento en cualquier momento.",
+    "fehler_allgemein": "No se ha podido enviar su solicitud. Compruebe sus datos e inténtelo de nuevo, o llámenos: {telefon}."
+  },
+  "leistungen": {
+    "gruppen": {
+      "zahnersatz": "Prótesis dentales e implantes",
+      "aesthetik_funktion": "Estética y función",
+      "kinder": "Niños y casos especiales",
+      "zahnerhalt": "Prevención y conservación dental"
+    }
+  },
+  "ratgeber": {
+    "andere_sprachen": "Más artículos, por ahora solo en otros idiomas:"
+  },
+  "ueber": {
+    "werdegang": "Trayectoria",
+    "qualifikationen": "Cualificaciones",
+    "mitgliedschaften": "Sociedades científicas",
+    "auszeichnungen": "Premios",
+    "publikationen": "Publicaciones científicas (selección)",
+    "publikationen_hinweis": "Títulos en el idioma original.",
+    "beitraege": "Otros artículos (selección)",
+    "vortraege": "Conferencias y docencia (selección)",
+    "orcid": "Lista completa en ORCID",
+    "sprachen": "Idiomas",
+    "portraet_alt": "Retrato del Dr. Ufuk Adali"
+  },
+  "impressum": {
+    "angaben": "Información según el § 5 de la Ley alemana de servicios digitales (DDG)",
+    "kontakt": "Contacto",
+    "telefon": "Teléfono",
+    "fax": "Fax",
+    "email": "Correo electrónico",
+    "berufsbezeichnung": "Título profesional",
+    "berufsbezeichnung_text": "Zahnarzt (odontólogo), título otorgado en la República Federal de Alemania",
+    "kammer": "Colegio profesional competente",
+    "kzv": "Asociación de Odontólogos del Seguro Público competente (KZV)",
+    "berufsrecht": "Normativa profesional",
+    "haftpflicht": "Seguro de responsabilidad civil profesional",
+    "geltungsbereich": "Ámbito territorial: República Federal de Alemania",
+    "ust": "Número de identificación fiscal (IVA)",
+    "verantwortlich": "Responsable del contenido según el § 18, apdo. 2 MStV",
+    "bildnachweis": "Créditos de las imágenes",
+    "bildnachweis_text": "Las fotos marcadas como «imagen de archivo» proceden de bancos de imágenes. No muestran nuestra consulta, nuestro equipo ni a nuestros pacientes.",
+    "symbolbild": "Imagen de archivo",
+    "eigenes_foto": "Foto propia",
+    "foto_von": "Foto: {name}",
+    "lizenz": "Licencia"
   }
 }

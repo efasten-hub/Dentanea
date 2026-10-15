@@ -1,0 +1,22 @@
+---
+/** Autorenbox für Ratgeberartikel: echtes Porträt, Qualifikationen, Link zur Über-Seite. */
+import type { Sprache } from "../config/site";
+import { site } from "../config/site";
+import { t, link } from "../i18n";
+import Foto from "./Foto.astro";
+
+interface Props { sprache: Sprache; class?: string }
+const { sprache, class: klasse = "" } = Astro.props;
+const ueber = await link("ueber-dr-adali", sprache);
+---
+<aside class:list={["sektion-kopf", klasse]} aria-labelledby={`autor-${sprache}`}>
+  <p class="label" id={`autor-${sprache}`}>{t(sprache, "seite.autor_titel")}</p>
+  <div class="grid grid-cols-[96px_1fr] gap-24 sm:grid-cols-[120px_1fr]">
+    <Foto bild="portraet-dr-adali" sprache={sprache} format="3/4" sizes="120px" />
+    <div>
+      <p class="kategorie">{site.inhaber.name_voll}</p>
+      <p class="mt-8 max-w-text text-nav">{t(sprache, "seite.autor_text")}</p>
+      <a class="link-action mt-4" href={ueber}>{t(sprache, "seite.autor_link")}</a>
+    </div>
+  </div>
+</aside>

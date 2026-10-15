@@ -1,0 +1,25 @@
+---
+/** Aufklappbare Fragen und Antworten (ohne JavaScript). Antworten dürfen einfache Links in Markdown-Form enthalten: [Text](/pfad/). */
+interface Props { fragen: { frage: string; antwort: string }[]; class?: string }
+const { fragen, class: klasse = "" } = Astro.props;
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// Nur interne Links und Markierungen werden umgewandelt – sonst reiner Text
+const html = (s: string) =>
+  esc(s)
+    .replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a class="link" href="$2">$1</a>')
+    .replace(/\[\[([A-ZÄÖÜ][^\]]*)\]\]/g, '<mark class="markierung">[[$1]]</mark>');
+---
+<div class={klasse}>
+  {fragen.map((f) => (
+    <details class="border-t border-oxblood-ink py-16 last:border-b">
+      <summary class="flex min-h-44 cursor-pointer list-none items-center justify-between gap-16 font-caslon-ionic text-subheading">
+        <span>{f.frage}</span><span aria-hidden="true" class="menue-zeichen">+</span>
+      </summary>
+      <p class="mt-12 max-w-text" set:html={html(f.antwort)} />
+    </details>
+  ))}
+</div>
+<style>
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .menue-zeichen { transform: rotate(45deg); }
+</style>
