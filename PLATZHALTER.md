@@ -209,3 +209,12 @@ Natürliches, warmes Licht, ruhig, aufgeräumt, Querformat. Keine Patientinnen o
 ## 6. Logo
 
 - [ ] Bis jetzt gibt es einen **Platzhalter** (Buchstabe „D“ in Oxblood). Das endgültige Logo sollte einfarbig in Oxblood (#4a0a05) und auf Cream (#fafaf9) funktionieren, ohne Verlauf.
+
+## 7. Nach dem Livegang (Google & Co.)
+
+- [ ] **Google-Unternehmensprofil** anlegen bzw. übernehmen; Name, Adresse und Telefon exakt wie auf der Website. Den Link in `src/config/site.ts` → `online.google_business_profile_url` eintragen (erscheint dann in den strukturierten Daten).
+- [ ] **Google Search Console** und **Bing Webmaster Tools** einrichten und die Sitemap einreichen: `https://zahnarzt-adali.de/sitemap.xml`
+- [ ] Weiterleitungen der alten Adressen testen (z. B. `/die-praxis/` → `/praxis-team/`, `/uber-dr-adali/` → `/ueber-dr-adali/`)
+- [ ] Mit dem Rich-Results-Test von Google eine Leistungsseite und die FAQ-Seite prüfen
+- [ ] Gleiche Praxisdaten (NAP) bei Doctolib, Jameda, Dr. Flex, Gelbe Seiten und weiteren Verzeichnissen
+- [ ] Echte Bewertungen: erst wenn sie in `site.ts` → `bewertungen` stehen, erscheinen Sterne in den strukturierten Daten

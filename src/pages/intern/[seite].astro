@@ -1,10 +1,15 @@
 ---
 /**
  * INTERNE Vorschau des Designsystems (Phase-1-Checkpoint).
- * noindex, nicht in der Sitemap, wird beim Deployment ausgeschlossen (Phase 7).
+ * noindex, nicht in der Sitemap. Existiert nur mit `npm run dev` (/intern/designsystem)
+ * oder mit INTERN=1 npm run build – ein normaler Produktions-Build erzeugt sie nicht.
  * Inhalte sind Musterdaten – echte Praxisdaten kommen in Phase 2 aus src/config/site.ts.
  */
+import type { GetStaticPaths } from "astro";
 import "../../styles/global.css";
+
+export const getStaticPaths = (() =>
+  import.meta.env.DEV || process.env.INTERN === "1" ? [{ params: { seite: "designsystem" } }] : []) satisfies GetStaticPaths;
 import { Picture } from "astro:assets";
 import Sprachumschalter from "../../components/Sprachumschalter.astro";
 import MobileLeiste from "../../components/MobileLeiste.astro";
