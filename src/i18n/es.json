@@ -220,5 +220,27 @@
     "eigenes_foto": "Foto propia",
     "foto_von": "Foto: {name}",
     "lizenz": "Licencia"
+  },
+  "llms": {
+    "fakten": "Datos clave",
+    "adresse": "Dirección",
+    "telefon": "Teléfono",
+    "email": "Correo electrónico",
+    "sprechzeiten": "Horario",
+    "termin": "Cita en línea",
+    "sprachen": "Idiomas de atención",
+    "versicherung": "Seguros",
+    "anfahrt": "Cómo llegar",
+    "inhaber": "Titular",
+    "qualifikationen": "Cualificaciones",
+    "labor": "Laboratorio dental propio con maestro protésico dental",
+    "leistungen": "Tratamientos",
+    "praxis": "Clínica y dentista",
+    "ratgeber": "Guía",
+    "service": "Citas, preguntas y avisos legales",
+    "andere": "Otros idiomas",
+    "volltext": "Texto completo de todas las páginas (en alemán)",
+    "hinweis": "Este archivo resume el sitio web para asistentes de IA y buscadores. Las páginas enlazadas son la referencia. Los contenidos médicos no sustituyen una exploración personal.",
+    "stand": "Actualizado"
   }
 }

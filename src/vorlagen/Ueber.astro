@@ -31,6 +31,12 @@ const zitat = (p: Publikation) => `${p.autoren}. ${p.titel} ${p.quelle}.${p.zusa
 
     {daten.antwort && <p class="intro mt-48 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
 
+    {/* GEO-Kernsatz – identisch mit Footer und llms.txt (src/i18n → geo.kernsatz) */}
+    <section class="sektion-kopf mt-60" aria-label={t(sprache, "llms.fakten")}>
+      <p class="label">{t(sprache, "llms.fakten")}</p>
+      <p class="max-w-text">{t(sprache, "geo.kernsatz", { sprachen: sprachListe(sprache, site.gesprochene_sprachen.dr_adali) })}</p>
+    </section>
+
     <div class="inhalt mt-48"><slot /></div>
 
     <section class="sektion-kopf mt-80" aria-labelledby="quali-titel">

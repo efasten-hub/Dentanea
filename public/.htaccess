@@ -18,6 +18,10 @@
   RedirectMatch 301 ^/impressum$               /impressum/
 </IfModule>
 
+# Zeichensatz: Umlaute und türkische Zeichen in llms.txt, robots.txt und Sitemap korrekt ausliefern
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .txt .xml .html
+
 # Zugangsdaten des Anfrageformulars nie ausliefern (falls im Web-Verzeichnis abgelegt)
 <Files "anfrage-konfiguration.php">
   Require all denied

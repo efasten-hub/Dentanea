@@ -92,6 +92,7 @@ const preloads = [
     <meta name="geo.placename" content={site.adresse.ort} />
     <meta name="geo.position" content={`${site.geo.lat};${site.geo.lng}`} />
     <meta name="ICBM" content={`${site.geo.lat}, ${site.geo.lng}`} />
+    <link rel="alternate" type="text/plain" href={sprache === STANDARD ? "/llms.txt" : `/${sprache}/llms.txt`} title="llms.txt" />
     {ldJson && <script type="application/ld+json" set:html={ldJson} />}
     <slot name="head" />
   </head>

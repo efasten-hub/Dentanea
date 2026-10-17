@@ -220,5 +220,27 @@
     "eigenes_foto": "Kendi fotoğrafımız",
     "foto_von": "Fotoğraf: {name}",
     "lizenz": "Lisans"
+  },
+  "llms": {
+    "fakten": "Temel bilgiler",
+    "adresse": "Adres",
+    "telefon": "Telefon",
+    "email": "E-posta",
+    "sprechzeiten": "Muayene saatleri",
+    "termin": "Online randevu",
+    "sprachen": "Tedavi dilleri",
+    "versicherung": "Sigorta",
+    "anfahrt": "Ulaşım",
+    "inhaber": "Klinik sahibi",
+    "qualifikationen": "Nitelikler",
+    "labor": "Diş teknisyeni ustasıyla kendi diş laboratuvarı",
+    "leistungen": "Tedaviler",
+    "praxis": "Klinik ve diş hekimi",
+    "ratgeber": "Rehber",
+    "service": "Randevu, sorular ve yasal bilgiler",
+    "andere": "Diğer diller",
+    "volltext": "Tüm sayfa içeriklerinin tam metni (Almanca)",
+    "hinweis": "Bu dosya, web sitesini yapay zekâ asistanları ve arama sistemleri için özetler. Bağlantı verilen sayfalar esastır. Tıbbi içerikler kişisel muayenenin yerini tutmaz.",
+    "stand": "Güncelleme"
   }
 }

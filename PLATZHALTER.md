@@ -46,6 +46,7 @@ Das Profil heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“. Für G
   - Leitgedanke „Zahnmedizin auf universitärem Niveau“ (Startseite, alle Sprachen)
   - „Feste Zähne an einem Tag“ / Sofortversorgung (Ratgeber und Seite Implantate)
   - Darstellung der Titel „Spezialist für Prothetik (DGPro)“ und „Zertifizierter Implantologe (DGI)“ samt Erklärung der Vergabekriterien (Seite Über Dr. Adali)
+- [ ] **Kernsatz freigeben** (Kurzbeschreibung der Praxis in allen vier Sprachen, `src/i18n/*.json` → `geo.kernsatz`). Er steht wortgleich im Footer, auf „Über Dr. Adali“ und in den `llms.txt`-Dateien – diese Fassung übernehmen KI-Assistenten am ehesten.
 - [ ] Preise eintragen: Alle Stellen mit `[[PREIS]]` sind Orientierungswerte für den Eigenanteil. Bitte realistische Spannen nennen oder den Satz streichen.
 - [ ] Prüfdatum eintragen: `[[DATUM]]` bei jeder Leistungs- und Ratgeberseite (Feld `stand`) nach der Freigabe durch Dr. Adali
 - [ ] Fachliche Einzelfragen (alle als `[[PRÜFEN: …]]` markiert): DVT vorhanden? Sedierung angeboten? Leistungsumfang des Labors, Regelversorgung Adhäsivbrücke, Kassenleistung Schnarchschiene, Abgrenzung Kasse/privat bei der Wurzelbehandlung, Ratenzahlung, KIM-Adresse für Überweiser
@@ -215,6 +216,7 @@ Natürliches, warmes Licht, ruhig, aufgeräumt, Querformat. Keine Patientinnen o
 - [ ] **Google-Unternehmensprofil** anlegen bzw. übernehmen; Name, Adresse und Telefon exakt wie auf der Website. Den Link in `src/config/site.ts` → `online.google_business_profile_url` eintragen (erscheint dann in den strukturierten Daten).
 - [ ] **Google Search Console** und **Bing Webmaster Tools** einrichten und die Sitemap einreichen: `https://zahnarzt-adali.de/sitemap.xml`
 - [ ] Weiterleitungen der alten Adressen testen (z. B. `/die-praxis/` → `/praxis-team/`, `/uber-dr-adali/` → `/ueber-dr-adali/`)
+- [ ] KI-Sichtbarkeit testen: ChatGPT, Claude, Perplexity und Gemini fragen, z. B. „Zahnarzt Berlin Prenzlauer Berg Türkisch“ oder „Spezialist für Prothetik Berlin Klebebrücke“. `/llms.txt` muss erreichbar sein.
 - [ ] Mit dem Rich-Results-Test von Google eine Leistungsseite und die FAQ-Seite prüfen
 - [ ] Gleiche Praxisdaten (NAP) bei Doctolib, Jameda, Dr. Flex, Gelbe Seiten und weiteren Verzeichnissen
 - [ ] Echte Bewertungen: erst wenn sie in `site.ts` → `bewertungen` stehen, erscheinen Sterne in den strukturierten Daten

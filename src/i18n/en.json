@@ -220,5 +220,27 @@
     "eigenes_foto": "Own photo",
     "foto_von": "Photo: {name}",
     "lizenz": "Licence"
+  },
+  "llms": {
+    "fakten": "Key facts",
+    "adresse": "Address",
+    "telefon": "Phone",
+    "email": "Email",
+    "sprechzeiten": "Opening hours",
+    "termin": "Online booking",
+    "sprachen": "Languages of treatment",
+    "versicherung": "Insurance",
+    "anfahrt": "Getting here",
+    "inhaber": "Owner",
+    "qualifikationen": "Qualifications",
+    "labor": "In-house dental laboratory with a master dental technician",
+    "leistungen": "Treatments",
+    "praxis": "Practice and dentist",
+    "ratgeber": "Guide",
+    "service": "Appointments, questions and legal",
+    "andere": "Other languages",
+    "volltext": "Full text of all page contents (German)",
+    "hinweis": "This file summarises the website for AI assistants and search systems. The linked pages are authoritative. Medical content does not replace a personal examination.",
+    "stand": "Last updated"
   }
 }

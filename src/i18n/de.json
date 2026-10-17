@@ -220,5 +220,27 @@
     "eigenes_foto": "Eigenes Foto",
     "foto_von": "Foto: {name}",
     "lizenz": "Lizenz"
+  },
+  "llms": {
+    "fakten": "Fakten auf einen Blick",
+    "adresse": "Adresse",
+    "telefon": "Telefon",
+    "email": "E-Mail",
+    "sprechzeiten": "Sprechzeiten",
+    "termin": "Online-Termin",
+    "sprachen": "Behandlungssprachen",
+    "versicherung": "Versicherung",
+    "anfahrt": "Anfahrt",
+    "inhaber": "Inhaber",
+    "qualifikationen": "Qualifikationen",
+    "labor": "Eigenes Dentallabor mit Zahntechnikermeister",
+    "leistungen": "Leistungen",
+    "praxis": "Praxis und Zahnarzt",
+    "ratgeber": "Ratgeber",
+    "service": "Termin, Fragen und Rechtliches",
+    "andere": "Andere Sprachen",
+    "volltext": "Ausführliche Fassung aller Seiteninhalte (Deutsch)",
+    "hinweis": "Diese Datei fasst die Website für KI-Assistenten und Suchsysteme zusammen. Maßgeblich sind die verlinkten Seiten. Medizinische Inhalte ersetzen keine persönliche Untersuchung.",
+    "stand": "Stand"
   }
 }
