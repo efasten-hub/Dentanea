@@ -149,7 +149,9 @@
   h2 { font-size: var(--text-title); line-height: var(--text-title--line-height); }
   h3 { font-size: var(--text-subheading); line-height: var(--text-subheading--line-height); }
   h4 { font-family: var(--font-mier-a); font-size: var(--text-heading); line-height: var(--text-heading--line-height); }
-  p, li, dd { text-wrap: pretty; hyphens: auto; overflow-wrap: break-word; }
+  p, li, dd { text-wrap: pretty; hyphens: auto; overflow-wrap: anywhere; }
+  /* Lange Komposita („Berufshaftpflichtversicherung“) dürfen auf schmalen Bildschirmen umbrechen */
+  h1, h2, h3, h4, summary, dt { hyphens: auto; overflow-wrap: anywhere; }
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
   ::selection { background: var(--color-oxblood-ink); color: var(--color-cream-paper); }
 

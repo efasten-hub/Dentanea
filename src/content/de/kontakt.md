@@ -15,4 +15,4 @@ Wenn Sie einen Termin nicht wahrnehmen können, sagen Sie bitte mindestens 24 St
 
 ## Notfall außerhalb der Sprechzeiten
 
-Den zahnärztlichen Notdienst in Berlin erreichen Sie über die Zahnärztekammer Berlin unter [zaek-berlin.de](https://www.zaek-berlin.de) oder telefonisch beim Bereitschaftsdienst. [[PRÜFEN: aktuelle Notdienstnummer Berlin]]
+Den zahnärztlichen Notdienst in Berlin erreichen Sie über die Zahnärztekammer Berlin unter [zaek-berlin.de](https://www.zaek-berlin.de) oder telefonisch beim Bereitschaftsdienst. Bei lebensbedrohlichen Notfällen wählen Sie 112. [[PRÜFEN: aktuelle Notdienstnummer Berlin]]
