@@ -11,7 +11,11 @@
     "check": "astro check",
     "pruefen": "node scripts/pruefen.mjs",
     "bilder": "node scripts/bildlook.mjs",
-    "bilder:laden": "node scripts/bilder-laden.mjs"
+    "bilder:laden": "node scripts/bilder-laden.mjs",
+    "postbuild": "node scripts/htaccess.mjs",
+    "test": "npm run build && node scripts/test.mjs",
+    "test:dist": "node scripts/test.mjs",
+    "test:a11y": "node scripts/test-a11y.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -25,6 +29,8 @@
     "@fontsource/libre-caslon-text": "^5.3.0",
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^22.20.5",
+    "axe-core": "^4.11.0",
+    "playwright": "^1.56.1",
     "satori": "^0.47.1",
     "sharp": "^0.35.5",
     "typescript": "^6.0.3",

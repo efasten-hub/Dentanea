@@ -317,8 +317,15 @@ export const site = {
     fuer_zahnaerzte: true, // [[PRÜFEN: gewünscht?]]
     /** Vorher/Nachher-Komponente – nur nach rechtlicher Prüfung (HWG § 11, Berufsordnung). */
     vorher_nachher: false,
-    /** Cookiefreies Analytics (Plausible/Umami) – Platzhalter, standardmäßig aus. */
-    analytics: { aktiv: false, anbieter: "plausible" as "plausible" | "umami", domain: "", script_url: "" },
+    /**
+     * Cookiefreie Statistik (Plausible oder Umami) – standardmäßig AUS.
+     * Einschalten nur nach Ergänzung der Datenschutzerklärung. Beispiel Plausible:
+     *   { aktiv: true, anbieter: "plausible", domain: "zahnarzt-adali.de", website_id: "",
+     *     script_url: "https://plausible.io/js/script.js" }
+     * Umami: anbieter "umami", website_id aus dem Umami-Konto, script_url des Umami-Servers.
+     * Die Content-Security-Policy in .htaccess passt sich beim Build automatisch an.
+     */
+    analytics: { aktiv: false, anbieter: "plausible" as "plausible" | "umami", domain: "", website_id: "", script_url: "" },
     /** Dezenter Hinweis „Diese Seite gibt es auch auf …“ anhand der Browsersprache (ohne Cookie). */
     browsersprache_hinweis: true,
   },

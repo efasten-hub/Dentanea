@@ -1,0 +1,28 @@
+# Prüft jede Änderung: Build, Inhaltsprüfung, technische Tests und Barrierefreiheit.
+# Veröffentlicht wird nichts – das macht deploy.yml.
+name: Prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build (inkl. Inhaltsprüfung als Warnung)
+        run: npm run build
+      - name: Technische Tests
+        run: npm run test:dist
+      - name: Chromium für Browser-Tests
+        run: npx playwright install --with-deps chromium
+      - name: Barrierefreiheit und Darstellung
+        run: npm run test:a11y

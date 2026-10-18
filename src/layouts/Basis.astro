@@ -16,6 +16,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import MobileLeiste from "../components/MobileLeiste.astro";
 import BrowserSprachHinweis from "../components/BrowserSprachHinweis.astro";
+import Statistik from "../components/Statistik.astro";
 
 interface Props {
   sprache: Sprache;
@@ -94,6 +95,7 @@ const preloads = [
     <meta name="ICBM" content={`${site.geo.lat}, ${site.geo.lng}`} />
     <link rel="alternate" type="text/plain" href={sprache === STANDARD ? "/llms.txt" : `/${sprache}/llms.txt`} title="llms.txt" />
     {ldJson && <script type="application/ld+json" set:html={ldJson} />}
+    {!noindex && <Statistik />}
     <slot name="head" />
   </head>
   <body class="pb-[calc(57px+env(safe-area-inset-bottom))] md:pb-0">

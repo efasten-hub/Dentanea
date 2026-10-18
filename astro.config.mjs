@@ -14,7 +14,8 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false, redirectToDefaultLocale: false },
   },
   trailingSlash: "ignore",
-  build: { format: "directory" },
+  // CSS immer als Datei (nie inline) – Voraussetzung für style-src 'self' in der CSP
+  build: { format: "directory", inlineStylesheets: "never" },
   // Scripts immer als eigene Datei (nie inline) – Voraussetzung für eine strikte Content-Security-Policy
   vite: { plugins: [tailwindcss()], build: { assetsInlineLimit: 0 } },
 });

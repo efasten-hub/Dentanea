@@ -7,8 +7,11 @@
  *    Notfalls im Web-Verzeichnis – dann sperrt die .htaccess den Abruf.
  * 3. Werte eintragen. NIE ins Git-Repository einchecken (steht in .gitignore).
  *
- * Hetzner Webhosting: Postfach in der konsoleH anlegen (z. B. website@zahnarzt-adali.de),
- * SMTP-Server mail.your-server.de, Port 587 (STARTTLS) oder 465 (TLS).
+ * Versand über das E-Mail-Postfach der Domain. Die E-Mails von zahnarzt-adali.de liegen bei
+ * STRATO (MX smtpin.rzone.de, Stand 10/2026). Deshalb über STRATO versenden – dann passen
+ * Absender und Mailserver zusammen und die Anfragen landen nicht im Spam:
+ *   SMTP-Server smtp.strato.de, Port 465 (TLS) oder 587 (STARTTLS),
+ *   Benutzer = vollständige E-Mail-Adresse eines STRATO-Postfachs (z. B. website@zahnarzt-adali.de anlegen).
  */
 return [
     // "smtp" (empfohlen, authentifiziert) oder "mail" (PHP mail() des Servers)
@@ -19,8 +22,8 @@ return [
     'absender' => 'website@zahnarzt-adali.de',
     'absender_name' => 'Website Dentaviva',
     'smtp' => [
-        'host' => 'mail.your-server.de',
-        'port' => 587,
+        'host' => 'smtp.strato.de',
+        'port' => 465,
         'benutzer' => 'website@zahnarzt-adali.de',
         'passwort' => '[[PLATZHALTER: SMTP-Passwort – nur auf dem Server eintragen]]',
     ],

@@ -1,0 +1,11 @@
+---
+/**
+ * Cookiefreie Besucherstatistik (Plausible oder Umami) – nur wenn in site.ts eingeschaltet.
+ * Standard: aus. Dann wird nichts ausgegeben und keine Verbindung aufgebaut.
+ */
+import { site } from "../config/site";
+const a = site.schalter.analytics;
+const aktiv = a.aktiv && Boolean(a.script_url);
+---
+{aktiv && a.anbieter === "plausible" && <script is:inline defer data-domain={a.domain} src={a.script_url}></script>}
+{aktiv && a.anbieter === "umami" && <script is:inline defer data-website-id={a.website_id} src={a.script_url}></script>}

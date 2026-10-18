@@ -5,6 +5,21 @@ Diese Liste zeigt, was vor dem Start der neuen Website noch fehlt. Bitte die Pun
 Den aktuellen Stand zeigt jederzeit der Befehl `npm run pruefen`. Er zählt alle offenen Markierungen:
 - `[[PLATZHALTER]]`: Angabe fehlt
 - `[[PRÜFEN]]`: Angabe steht da, ist aber nicht bestätigt
+- `[[PREIS]]`, `[[DATUM]]`: Preis bzw. Prüfdatum fehlt
+
+Die Website geht erst online, wenn keine Markierung mehr offen ist (die automatische Veröffentlichung bricht sonst ab). Die technischen Schritte (Hetzner, DNS, Zertifikat) stehen in der [README](README.md).
+
+## In dieser Reihenfolge zum Start
+
+1. **Praxisdaten bestätigen** (Abschnitt 1) – vor allem Sprechzeiten, Ortsangabe, Team und Sprachen
+2. **Name rechtlich prüfen lassen** (Dentaviva / „Denta Vita“) – vor allen Ausgaben für Logo, Schilder, Drucksachen
+3. **Medizinische Texte durch Dr. Adali freigeben**, Prüfdatum eintragen, Preise nennen (Abschnitt 3)
+4. **Werberecht und Rechtstexte** von einer Kanzlei prüfen lassen: `[[PRÜFEN HWG/BO]]`, Impressum, Datenschutz, Formular-Einwilligung (Abschnitt 3)
+5. **Übersetzungen** muttersprachlich prüfen lassen (Abschnitt 4)
+6. **Fotoshooting** in der Praxis, danach Stockfotos ersetzen (Abschnitt 5)
+7. **Doctolib-Profil** an den neuen Namen und die Website anpassen (Abschnitt 2)
+8. **Technik**: Hetzner-Webhosting, Postfach für das Formular bei STRATO, DNS, Zertifikat (README, Abschnitte 5–8)
+9. **Start** und danach Google-Unternehmensprofil, Search Console, Verzeichnisse (Abschnitt 7)
 
 ---
 
@@ -55,7 +70,7 @@ Das Profil heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“. Für G
 
 ## 3a. Anfrageformular einrichten
 
-- [ ] Auf dem Hetzner-Webhosting ein Postfach für den Versand anlegen (z. B. website@zahnarzt-adali.de)
+- [ ] Bei STRATO (dort liegen die E-Mails der Domain) ein Postfach für den Versand anlegen, z. B. website@zahnarzt-adali.de
 - [ ] `server/anfrage-konfiguration.beispiel.php` als `anfrage-konfiguration.php` eine Ebene über dem Web-Verzeichnis ablegen und Passwort eintragen (nie ins Git)
 - [ ] Testanfrage in allen vier Sprachen senden und Eingang prüfen
 
