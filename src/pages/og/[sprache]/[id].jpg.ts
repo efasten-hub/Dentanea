@@ -1,7 +1,7 @@
 /**
  * OG-Bilder (Social-Media-Vorschau) – pro Seite und Sprache beim Build erzeugt:
  *   /og/<sprache>/<seiten-id>.jpg  (1200 × 630)
- * Links Cream Paper mit Seitentitel (Libre Caslon Display, Oxblood) und Wortmarke,
+ * Links Weiß mit rotem Label, Seitentitel (Open Sans 600, Tiefgrau) und roter Wortmarke,
  * rechts das Seitenbild aus dem Manifest im einheitlichen Look. Texte nur hier, nie in Fotos.
  */
 import type { APIRoute, GetStaticPaths } from "astro";
@@ -16,18 +16,16 @@ import { seitenVerfuegbar } from "../../../i18n";
 import manifest from "../../../assets/fotos/bilder.json";
 
 const W = 1200, H = 630, BILD_B = 480;
-const INK = "#4a0a05", PAPER = "#fafaf9", MUTED = "#764642";
+const INK = "#4e4741", PAPER = "#ffffff", MUTED = "#6b635d", ROT = "#a3203a", LINIE = "#e3e0dd";
 const WURZEL = process.cwd();
-const font = (paket: string, datei: string) => readFileSync(join(WURZEL, "node_modules/@fontsource", paket, "files", datei));
-// Je Schrift zwei Dateien (latin + latin-ext); satori braucht sie als getrennte Familien in einer Fallback-Liste
-const F = { caslon: "Caslon, CaslonExt", caslonText: "CaslonText, CaslonTextExt", inter: "Inter, InterExt" };
+const font = (datei: string) => readFileSync(join(WURZEL, "node_modules/@fontsource/open-sans/files", datei));
+// Je Schnitt zwei Dateien (latin + latin-ext); satori braucht sie als getrennte Familien in einer Fallback-Liste
+const F = { sans: "OpenSans, OpenSansExt" };
 const FONTS = [
-  { name: "Caslon", data: font("libre-caslon-display", "libre-caslon-display-latin-400-normal.woff"), weight: 400 as const },
-  { name: "CaslonExt", data: font("libre-caslon-display", "libre-caslon-display-latin-ext-400-normal.woff"), weight: 400 as const },
-  { name: "CaslonText", data: font("libre-caslon-text", "libre-caslon-text-latin-400-normal.woff"), weight: 400 as const },
-  { name: "CaslonTextExt", data: font("libre-caslon-text", "libre-caslon-text-latin-ext-400-normal.woff"), weight: 400 as const },
-  { name: "Inter", data: font("inter", "inter-latin-400-normal.woff"), weight: 400 as const },
-  { name: "InterExt", data: font("inter", "inter-latin-ext-400-normal.woff"), weight: 400 as const },
+  { name: "OpenSans", data: font("open-sans-latin-400-normal.woff"), weight: 400 as const },
+  { name: "OpenSansExt", data: font("open-sans-latin-ext-400-normal.woff"), weight: 400 as const },
+  { name: "OpenSans", data: font("open-sans-latin-600-normal.woff"), weight: 600 as const },
+  { name: "OpenSansExt", data: font("open-sans-latin-ext-600-normal.woff"), weight: 600 as const },
 ];
 /** Standardbild, solange eine Seite kein eigenes Bild hat */
 const STANDARD_BILD = "hero-atmosphaere";
@@ -56,17 +54,17 @@ export const GET: APIRoute = async ({ params }) => {
     el("div", { width: W, height: H, display: "flex", backgroundColor: PAPER },
       el("div", { width: W - BILD_B, height: H, boxSizing: "border-box", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "64px 56px 56px 64px" },
         el("div", { display: "flex", flexDirection: "column" },
-          el("div", { fontFamily: F.inter, fontSize: 22, color: MUTED, display: "flex" }, site.praxiszusatz),
-          el("div", { fontFamily: F.caslon, fontSize: groesse, lineHeight: 1.08, color: INK, marginTop: 28, display: "flex" }, titel),
+          el("div", { fontFamily: F.sans, fontWeight: 600, fontSize: 20, letterSpacing: 2, textTransform: "uppercase", color: ROT, display: "flex" }, site.praxiszusatz),
+          el("div", { fontFamily: F.sans, fontWeight: 600, fontSize: groesse, lineHeight: 1.08, letterSpacing: -1, color: INK, marginTop: 28, display: "flex" }, titel),
         ),
-        el("div", { display: "flex", flexDirection: "column", borderTop: `1px solid ${INK}`, paddingTop: 20 },
-          el("div", { fontFamily: F.caslonText, fontSize: 36, color: INK, display: "flex" }, site.praxisname),
-          el("div", { fontFamily: F.inter, fontSize: 20, color: MUTED, marginTop: 6, display: "flex" }, `${site.adresse.strasse}, ${site.adresse.ort} · ${site.domain.replace(/^https?:\/\//, "")}`),
+        el("div", { display: "flex", flexDirection: "column", borderTop: `1px solid ${LINIE}`, paddingTop: 20 },
+          el("div", { fontFamily: F.sans, fontWeight: 600, fontSize: 36, color: ROT, display: "flex" }, site.praxisname),
+          el("div", { fontFamily: F.sans, fontWeight: 400, fontSize: 20, color: MUTED, marginTop: 6, display: "flex" }, `${site.adresse.strasse}, ${site.adresse.ort} · ${site.domain.replace(/^https?:\/\//, "")}`),
         ),
       ),
       foto
         ? ({ type: "img", props: { src: `data:image/jpeg;base64,${foto.toString("base64")}`, width: BILD_B, height: H, style: { width: BILD_B, height: H, objectFit: "cover" } } } as V)
-        : el("div", { width: BILD_B, height: H, backgroundColor: "#f8f7f1", display: "flex" }),
+        : el("div", { width: BILD_B, height: H, backgroundColor: "#f5f5f4", display: "flex" }),
     ) as unknown as Parameters<typeof satori>[0],
     { width: W, height: H, fonts: FONTS },
   );

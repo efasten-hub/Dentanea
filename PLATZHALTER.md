@@ -224,7 +224,7 @@ Natürliches, warmes Licht, ruhig, aufgeräumt, Querformat. Keine Patientinnen o
 
 ## 6. Logo
 
-- [ ] Bis jetzt gibt es einen **Platzhalter** (Buchstabe „D“ in Oxblood). Das endgültige Logo sollte einfarbig in Oxblood (#4a0a05) und auf Cream (#fafaf9) funktionieren, ohne Verlauf.
+- [ ] Bis jetzt gibt es einen **Platzhalter** (weißes „D“ im roten Quadrat nach Brand Book). Das endgültige Logo sollte in Dentanea-Rot (#A3203A) auf Weiß und in Weiß auf Rot funktionieren, ohne Verlauf (siehe DESIGN.md, Abschnitt 6).
 
 ## 7. Nach dem Livegang (Google & Co.)
 

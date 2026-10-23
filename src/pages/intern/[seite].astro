@@ -30,24 +30,26 @@ const alternativen = sprachen.map((s) => ({ sprache: s.code as "de" | "en" | "es
 const nav = ["Leistungen", "Über Dr. Adali", "Praxis & Team", "Ratgeber", "FAQ", "Termin & Kontakt"];
 
 const farben = [
-  { name: "Oxblood Ink", token: "--color-oxblood-ink", hex: "#4a0a05", bg: "bg-oxblood-ink", herkunft: "Export", rolle: "Text, Linien, Links, Buttons", kontrast: "15,0 : 1 · AAA" },
-  { name: "Cream Paper", token: "--color-cream-paper", hex: "#fafaf9", bg: "bg-cream-paper", herkunft: "Export", rolle: "Seitenfläche", kontrast: "Fläche" },
-  { name: "Aged Linen", token: "--color-aged-linen", hex: "#f8f7f1", bg: "bg-aged-linen", herkunft: "Export", rolle: "stille Zweitfläche", kontrast: "Fläche · Ink 14,6 : 1" },
-  { name: "Warm Stone", token: "--color-warm-stone", hex: "#bcb6a6", bg: "bg-warm-stone", herkunft: "Export", rolle: "Fläche/Trennlinie, darauf nur Ink", kontrast: "Fläche · Ink 7,8 : 1" },
-  { name: "Dusty Clay", token: "--color-dusty-clay", hex: "#a2827f", bg: "bg-dusty-clay", herkunft: "Export", rolle: "für Text gesperrt", kontrast: "3,3 : 1 · fällt durch" },
-  { name: "Oxblood Muted", token: "--color-oxblood-muted", hex: "#764642", bg: "bg-oxblood-muted", herkunft: "Ergänzung A2", rolle: "Sekundärtext, Captions", kontrast: "7,4 : 1 · AAA" },
-  { name: "Oxblood Subtle", token: "--color-oxblood-subtle", hex: "#885e5a", bg: "bg-oxblood-subtle", herkunft: "Ergänzung A2", rolle: "Untergrenze, Platzhalter", kontrast: "5,3 : 1 · AA" },
+  { name: "Dentanea Rot", token: "--color-rot", hex: "#a3203a", bg: "bg-rot", herkunft: "Brand Book", rolle: "Buttons, Links, Labels, Wortmarke", kontrast: "7,4 : 1 · AAA" },
+  { name: "Tiefrot", token: "--color-tiefrot", hex: "#7a1a2e", bg: "bg-tiefrot", herkunft: "Brand Book", rolle: "Hover", kontrast: "10,4 : 1 · AAA" },
+  { name: "Tiefgrau", token: "--color-oxblood-ink", hex: "#4e4741", bg: "bg-oxblood-ink", herkunft: "Brand Book", rolle: "Text, Formularrahmen", kontrast: "9,1 : 1 · AAA" },
+  { name: "Weiß", token: "--color-cream-paper", hex: "#ffffff", bg: "bg-cream-paper", herkunft: "Brand Book", rolle: "Seitenfläche (70 %)", kontrast: "Fläche" },
+  { name: "Hellgrau", token: "--color-aged-linen", hex: "#f5f5f4", bg: "bg-aged-linen", herkunft: "Brand Book", rolle: "Zweitfläche", kontrast: "Fläche · Text 8,7 : 1" },
+  { name: "Linie", token: "--color-linie", hex: "#e3e0dd", bg: "bg-linie", herkunft: "Ergänzung", rolle: "dekorative Haarlinien", kontrast: "nur Deko" },
+  { name: "Sekundärtext", token: "--color-oxblood-muted", hex: "#6b635d", bg: "bg-oxblood-muted", herkunft: "Ergänzung", rolle: "Captions, Unterzeilen", kontrast: "5,9 : 1 · AA" },
+  { name: "Untergrenze", token: "--color-oxblood-subtle", hex: "#756d66", bg: "bg-oxblood-subtle", herkunft: "Ergänzung", rolle: "Platzhalter", kontrast: "5,1 : 1 · AA" },
+  { name: "Rosé", token: "--color-rose", hex: "#c86b7e", bg: "bg-rose", herkunft: "Brand Book", rolle: "für Text gesperrt", kontrast: "3,6 : 1 · nur Fläche" },
 ];
 
 const stufen = [
-  { cls: "hero-title", name: "Hero · Caslon Display", groesse: "42→76px · Abweichung" },
-  { cls: "text-display font-caslon-display", name: "H1 · Caslon Display", groesse: "36→56px · Abweichung" },
-  { cls: "text-title font-caslon-display", name: "H2 · Caslon Display", groesse: "28→40px · Abweichung" },
-  { cls: "text-subheading font-caslon-ionic", name: "Subheading · Caslon Text", groesse: "24px · Export" },
-  { cls: "text-heading font-mier-a", name: "Heading/Intro · Inter", groesse: "26px · Export" },
-  { cls: "text-body font-mier-a", name: "Body · Inter", groesse: "18px · Export" },
-  { cls: "text-nav font-mier-a", name: "Navigation · Inter", groesse: "16px · statt 14px" },
-  { cls: "text-caption font-mier-a", name: "Caption · Inter", groesse: "14px · statt 13px" },
+  { cls: "hero-title", name: "Hero · Open Sans 600", groesse: "40→68px" },
+  { cls: "text-display font-semibold", name: "H1 · Open Sans 600", groesse: "34→56px" },
+  { cls: "text-title font-semibold", name: "H2 · Open Sans 600", groesse: "28→42px" },
+  { cls: "text-subheading font-semibold", name: "H3 · Open Sans 600", groesse: "20px" },
+  { cls: "intro", name: "Intro · Open Sans 300", groesse: "20→26px" },
+  { cls: "text-body", name: "Fließtext · Open Sans 400", groesse: "17px" },
+  { cls: "text-nav", name: "Navigation · Open Sans 400", groesse: "16px" },
+  { cls: "label", name: "Label · Open Sans 600", groesse: "14px · Versalien" },
 ];
 
 const zeichenproben = [
@@ -86,7 +88,7 @@ const schwerpunkte = [
         <a href="#" class="inline-flex min-h-44 items-center gap-12 no-underline">
           <img src={logo.src} width="44" height="44" alt="" />
           <span class="flex flex-col">
-            <span class="font-caslon-ionic text-subheading leading-[1]">Dentanea</span>
+            <span class="wortmarke text-subheading leading-[1]">Dentanea</span>
             <span class="caption mt-4">Zahnarztpraxis Dr. Adali</span>
           </span>
         </a>
@@ -181,7 +183,7 @@ const schwerpunkte = [
               widths={[320, 480, 640, 960, 1280]}
               sizes="(min-width: 768px) 40vw, 100vw"
               alt="Porträt von Dr. Ufuk Adali"
-              class="w-full"
+              class="w-full rounded-bild"
               loading="lazy"
             />
             <div>
@@ -198,7 +200,7 @@ const schwerpunkte = [
       <section class="container-page section">
         <div class="sektion-kopf">
           <p class="label">Termin</p>
-          <div class="bg-aged-linen p-24 md:p-40">
+          <div class="rounded-bild bg-aged-linen p-24 md:p-40">
             <h2>Termin vereinbaren</h2>
             <p class="mt-16 max-w-text">Termine können Sie rund um die Uhr online über Doctolib buchen – oder telefonisch während der Sprechzeiten.</p>
             <div class="mt-24 flex flex-wrap gap-12">
@@ -216,11 +218,11 @@ const schwerpunkte = [
           <p class="label">Farben</p>
           <div>
             <h2>Farben &amp; Kontraste</h2>
-            <p class="mt-16 max-w-text text-oxblood-muted">Alle Tokens des Exports 1:1. Dusty Clay ist für Text gesperrt (3,3 : 1); dafür zwei geprüfte Oxblood-Abstufungen.</p>
+            <p class="mt-16 max-w-text text-oxblood-muted">Farben aus dem Brand Book Dentanea. Rot nur als Akzent (≈ 10 %). Rosé, Sand und Grau sind für Text gesperrt.</p>
             <ul class="mt-40 grid gap-x-24 sm:grid-cols-2 lg:grid-cols-4">
               {farben.map((f) => (
                 <li class="border-t border-linie py-24">
-                  <div class:list={["mb-16 h-80 border border-linie", f.bg]}></div>
+                  <div class:list={["mb-16 h-80 rounded-bild border border-linie", f.bg]}></div>
                   <h3>{f.name}</h3>
                   <p class="caption mt-4">{f.hex} · <code>{f.token}</code></p>
                   <p class="mt-8 text-nav">{f.rolle}</p>
@@ -237,7 +239,7 @@ const schwerpunkte = [
         <div class="sektion-kopf">
           <p class="label">Typografie</p>
           <div>
-            <h2>Acht Stufen, nur Gewicht 400</h2>
+            <h2>Acht Stufen, Open Sans 300 · 400 · 600</h2>
             <div class="mt-40">
               {stufen.map((s) => (
                 <div class="grid gap-8 border-t border-linie py-24 md:grid-cols-[200px_1fr]">
@@ -255,8 +257,8 @@ const schwerpunkte = [
                 <div lang={z.lang} class="grid gap-12 border-t border-linie py-20 md:grid-cols-[60px_1fr]">
                   <p class="label">{z.lang.toUpperCase()}</p>
                   <div class="space-y-8">
-                    <p class="font-caslon-display text-title">{z.text}</p>
-                    <p class="font-caslon-ionic text-subheading">{z.text}</p>
+                    <p class="text-title font-semibold">{z.text}</p>
+                    <p class="intro">{z.text}</p>
                     <p>{z.text}</p>
                   </div>
                 </div>
@@ -286,7 +288,7 @@ const schwerpunkte = [
     <footer class="border-t border-linie">
       <div class="container-page grid gap-32 py-60 md:grid-cols-3">
         <div>
-          <p class="font-caslon-ionic text-subheading">Dentanea</p>
+          <p class="wortmarke text-subheading">Dentanea</p>
           <p class="caption">Zahnarztpraxis Dr. Adali</p>
           <p class="mt-8 text-nav">Schönhauser Allee 10–11<br />10119 Berlin</p>
         </div>

@@ -18,5 +18,5 @@ Statische Astro-Website (Astro 7, Tailwind v4) in vier Sprachen (DE, EN, ES, TR)
 - Datenschutz: keine Cookies, kein Tracking, keine externen Schriften/Skripte; Doctolib nur als Link.
 - CSP: keine Inline-Skripte, keine `style`-Attribute oder `<style>`-Blöcke (Tests schlagen sonst fehl).
 - Stockfotos nie als Praxis, Arzt, Team oder Patient beschriften; keine KI-Bilder von Menschen oder Zähnen; keine Patientenfotos ohne schriftliche Einwilligung.
-- Design: nur Tokens aus `DESIGN.md`, Schriftgewicht 400, keine Rundungen/Schatten, WCAG 2.2 AA, Klickflächen ≥ 44 px.
+- Design (Brand Book Dentanea + Isla-Stil): nur Tokens aus `DESIGN.md`; Open Sans 300/400/600; Rot `#A3203A` nur als Akzent (Buttons, Links, Labels, Wortmarke), keine roten Flächen; Haarlinien statt dunkler Linien; Rundung nur 4 px (Buttons/Felder) bzw. 8 px (Bilder/Flächen); keine Schatten/Verläufe; WCAG 2.2 AA, Klickflächen ≥ 44 px.
 - Vor jedem Commit: `npm test` grün.
