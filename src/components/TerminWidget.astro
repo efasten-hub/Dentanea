@@ -14,7 +14,7 @@ const linkHtml = `<a class="link" href="${datenschutzUrl}">${t(sprache, "termin.
 const hinweis = t(sprache, "termin.widget_datenschutz", { link: linkHtml });
 ---
 <div class="mt-24" data-widget>
-  <div class="border border-oxblood-ink bg-cream-paper p-24" data-widget-platzhalter>
+  <div class="border border-linie bg-cream-paper p-24" data-widget-platzhalter>
     <p class="max-w-text text-nav" set:html={hinweis} />
     <div class="mt-16 flex flex-wrap gap-12">
       <button type="button" class="btn btn-primary" data-widget-laden data-ereignis="online-termin" data-sprache={sprache}>

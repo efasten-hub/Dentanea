@@ -11,9 +11,9 @@ const html = (s: string) =>
 ---
 <div class={klasse}>
   {fragen.map((f) => (
-    <details class="border-t border-oxblood-ink py-16 last:border-b">
-      <summary class="flex min-h-44 cursor-pointer list-none items-center justify-between gap-16 font-caslon-ionic text-subheading">
-        <span>{f.frage}</span><span aria-hidden="true" class="menue-zeichen">+</span>
+    <details class="border-t border-linie py-16 last:border-b">
+      <summary class="flex min-h-44 cursor-pointer list-none items-center justify-between gap-16 font-semibold text-subheading">
+        <span>{f.frage}</span><span aria-hidden="true" class="menue-zeichen font-light text-rot">+</span>
       </summary>
       <p class="mt-12 max-w-text" set:html={html(f.antwort)} />
     </details>

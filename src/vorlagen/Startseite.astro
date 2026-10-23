@@ -43,8 +43,9 @@ const zielgruppen = s
 const ziel = async (seite: string) => link(seite, sprache);
 ---
 <Basis sprache={sprache} seitenId={id} titel={daten.seo_titel} beschreibung={daten.beschreibung}>
-  <section class="container-page grid gap-40 py-48 md:grid-cols-2 md:items-end md:py-80">
+  <section class="container-page grid gap-40 py-48 md:grid-cols-[1.15fr_1fr] md:items-center md:py-80">
     <div>
+      <p class="label mb-20">{site.praxiszusatz}</p>
       <h1 class="hero-title">{daten.titel}</h1>
       {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
       <Terminbuchung sprache={sprache} variante="hero" class="mt-40" />
@@ -54,8 +55,8 @@ const ziel = async (seite: string) => link(seite, sprache);
 
   {s && (
     <div class="container-page">
-      <p class="border-y border-oxblood-ink py-16 text-center text-nav">
-        {s.vertrauen.map((v, i) => <>{i > 0 && <span aria-hidden="true" class="px-8">·</span>}<span class="whitespace-nowrap">{v}</span></>)}
+      <p class="border-y border-linie py-20 text-center text-nav text-oxblood-muted">
+        {s.vertrauen.map((v, i) => <>{i > 0 && <span aria-hidden="true" class="px-12 text-rot">·</span>}<span class="whitespace-nowrap">{v}</span></>)}
       </p>
     </div>
   )}
@@ -97,7 +98,7 @@ const ziel = async (seite: string) => link(seite, sprache);
             <h2 id="zielgruppen-titel" class="max-w-[52rem]">{s.zielgruppen.titel}</h2>
             <ul class="mt-40 grid gap-x-40 md:grid-cols-2">
               {zielgruppen.map((z) => (
-                <li class="border-t border-oxblood-ink py-24">
+                <li class="border-t border-linie py-24">
                   <h3>{z.titel}</h3>
                   <p class="mt-8">{z.text}</p>
                   {z.links.length > 0 && (
@@ -121,8 +122,8 @@ const ziel = async (seite: string) => link(seite, sprache);
               <h2 id="ablauf-titel" class="max-w-[52rem]">{s.ablauf.titel}</h2>
               <ol class="mt-40 grid gap-32 sm:grid-cols-2 lg:grid-cols-4">
                 {s.ablauf.schritte.map((schritt, i) => (
-                  <li class="border-t border-oxblood-ink pt-16">
-                    <p class="font-caslon-display text-title" aria-hidden="true">{String(i + 1).padStart(2, "0")}</p>
+                  <li class="border-t border-linie pt-16">
+                    <p class="text-title font-light text-rot" aria-hidden="true">{String(i + 1).padStart(2, "0")}</p>
                     <h3 class="mt-12">{schritt.titel}</h3>
                     <p class="mt-8 text-nav">{schritt.text}</p>
                   </li>
@@ -142,8 +143,8 @@ const ziel = async (seite: string) => link(seite, sprache);
             <div>
               <h2 id="arzt-titel">{s.arzt.titel}</h2>
               <p class="mt-24">{s.arzt.text}</p>
-              <ul class="mt-24 border-t border-oxblood-ink">
-                {s.arzt.punkte.map((p) => <li class="border-b border-oxblood-ink py-12 text-nav">{p}</li>)}
+              <ul class="mt-24 border-t border-linie">
+                {s.arzt.punkte.map((p) => <li class="border-b border-linie py-12 text-nav">{p}</li>)}
               </ul>
               <a class="link-action mt-16" href={await ziel(s.arzt.link)}>{t(sprache, "seite.autor_link")}</a>
             </div>
@@ -159,8 +160,8 @@ const ziel = async (seite: string) => link(seite, sprache);
             <div>
               <h2 id="labor-titel">{s.labor.titel}</h2>
               <p class="mt-24">{s.labor.text}</p>
-              <ul class="mt-24 border-t border-oxblood-ink">
-                {s.labor.punkte.map((p) => <li class="border-b border-oxblood-ink py-12 text-nav">{p}</li>)}
+              <ul class="mt-24 border-t border-linie">
+                {s.labor.punkte.map((p) => <li class="border-b border-linie py-12 text-nav">{p}</li>)}
               </ul>
               <a class="link-action mt-16" href={await ziel(s.labor.link)}>{await seitenTitel(s.labor.link, sprache)}</a>
             </div>
@@ -215,7 +216,7 @@ const ziel = async (seite: string) => link(seite, sprache);
 
   {/* Abschluss */}
   <section class="container-page">
-    <div class="bg-aged-linen p-24 md:p-60">
+    <div class="rounded-bild bg-aged-linen p-24 md:p-60">
       {s ? (
         <>
           <h2 class="max-w-[52rem]">{s.abschluss.titel}</h2>

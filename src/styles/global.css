@@ -1,8 +1,12 @@
 /*
- * Theme der Website – verbindliche Umsetzung von /DESIGN.md.
- * Teil 1: Tokens aus dem Refero-Export (Namen und Werte 1:1).
- * Teil 2: dokumentierte Ergänzungen aus „Anpassungen für Arztpraxis“ (A1–A11).
- * Die Tailwind-Standardpaletten sind entfernt: Es gibt nur Utilities für Werte aus DESIGN.md.
+ * Theme der Website – ENTWURF „Isla-Stil × Brand Book Dentanea“.
+ * Struktur nach Refero-Style „Isla Beauty“: flach, Haarlinien, kleine Rundungen, keine Schatten,
+ * EINE rote Akzentfarbe nur als Funktion (Buttons, Links, Labels).
+ * Werte aus dem Brand Book Dentanea 2026: Rot #A3203A, Tiefrot #7A1A2E, Weiß, Hellgrau #F5F5F4,
+ * Tiefgrau #4E4741, Open Sans 300/400/600. Mengenverhältnis 70 % Weiß · 20 % Grau · 10 % Rot.
+ * Die alten Token-Namen (oxblood-…, cream-paper …) bleiben vorerst, damit alle Vorlagen weiterlaufen;
+ * sie tragen jetzt die Brand-Book-Werte.
+ * Die Tailwind-Standardpaletten sind entfernt: Es gibt nur Utilities für die Werte unten.
  */
 @import "tailwindcss";
 @import "./fonts.css";
@@ -20,36 +24,62 @@
   --text-*: initial;
   --leading-*: initial;
   --tracking-*: initial;
-  --spacing: initial;      /* kein Zahlen-Spacing: nur die Export-Skala unten */
+  --spacing: initial;      /* kein Zahlen-Spacing: nur die Skala unten */
   --container-*: initial;
 
-  /* ================= Export · Tailwind v4 (1:1) ================= */
-  /* Colors */
-  --color-oxblood-ink: #4a0a05;
-  --color-cream-paper: #fafaf9;
-  --color-aged-linen: #f8f7f1;
-  --color-warm-stone: #bcb6a6;
-  --color-dusty-clay: #a2827f;   /* A2: für Text GESPERRT (3,3 : 1) */
+  /* ================= Farben (Brand Book) ================= */
+  /* Akzent – nur für Buttons, Links, Labels, Wortmarke (≈ 10 % der Fläche) */
+  --color-rot: #a3203a;          /* Weiß auf Rot 7,4 : 1 · Rot auf Weiß 7,4 : 1 */
+  --color-tiefrot: #7a1a2e;      /* Hover, Weiß auf Tiefrot 10,4 : 1 */
+  --color-rose: #c86b7e;         /* nur Fläche/Deko, für Text GESPERRT (3,6 : 1) */
+  --color-linie: #e3e0dd;        /* Haarlinien, rein dekorativ */
 
-  /* Typography – Schriftfamilien: Export-Namen, Ersatzschriften nach A3
-     (Export-Fallback der Caslon war fälschlich sans-serif → korrigiert) */
-  --font-mier-a: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-caslon-ionic: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  /* Alte Namen, neue Werte */
+  --color-oxblood-ink: #4e4741;     /* Tiefgrau: Text, Formularrahmen – 9,1 : 1 auf Weiß */
+  --color-cream-paper: #ffffff;     /* Weiß: Seitenfläche */
+  --color-aged-linen: #f5f5f4;      /* Hellgrau: stille Zweitfläche */
+  --color-warm-stone: #a48e72;      /* Sand (Bereich Labor): nur Fläche */
+  --color-dusty-clay: #8a827b;      /* Grau (Bereich Akademie): für Text GESPERRT (3,8 : 1) */
+  --color-oxblood-muted: #6b635d;   /* Sekundärtext – 5,9 : 1 auf Weiß, 5,4 : 1 auf Hellgrau */
+  --color-oxblood-subtle: #756d66;  /* Untergrenze – 5,1 : 1 auf Weiß, 4,7 : 1 auf Hellgrau */
+  --color-transparent: transparent;
+  --color-current: currentColor;
 
-  /* Typography – Scale (Werte 1:1; px als rem notiert, A1) */
-  --text-caption: 0.8125rem;     /* 13px */
-  --leading-caption: 1.2;
-  --text-body: 1.125rem;         /* 18px */
-  --leading-body: 1.2;
-  --text-subheading: 1.5rem;     /* 24px */
-  --leading-subheading: 1.2;
-  --text-heading: 1.625rem;      /* 26px */
-  --leading-heading: 1.2;
+  /* ================= Schrift ================= */
+  /* Eine Familie für alles; die alten Rollennamen zeigen auf Open Sans */
+  --font-open-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mier-a: var(--font-open-sans);
+  --font-caslon-ionic: var(--font-open-sans);
+  --font-caslon-display: var(--font-open-sans);
 
-  /* Typography – Weights */
-  --font-weight-regular: 400;
+  --font-weight-light: 300;      /* Intro */
+  --font-weight-regular: 400;    /* Fließtext */
+  --font-weight-semibold: 600;   /* Wortmarke, H1–H3, Buttons, Labels */
 
-  /* Spacing */
+  --tracking-eng: -0.02em;       /* große Überschriften */
+  --tracking-weit: 0.08em;       /* Versal-Labels (Isla) */
+
+  /* Größen */
+  --text-caption: 0.875rem;                                  /* 14px */
+  --text-caption--line-height: 1.45;
+  --text-nav: 1rem;                                          /* 16px */
+  --text-nav--line-height: 1.45;
+  --text-body: 1.0625rem;                                    /* 17px */
+  --text-body--line-height: 1.65;
+  --text-subheading: 1.25rem;                                /* 20px – H3, Wortmarke */
+  --text-subheading--line-height: 1.3;
+  --text-heading: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);  /* Intro 20→26px */
+  --text-heading--line-height: 1.45;
+  --text-title: clamp(1.75rem, 1.4rem + 1.4vw, 2.625rem);    /* H2 28→42px */
+  --text-title--line-height: 1.15;
+  --text-display: clamp(2.125rem, 1.6rem + 2.2vw, 3.5rem);   /* H1 34→56px */
+  --text-display--line-height: 1.1;
+  --text-hero: clamp(2.5rem, 1.8rem + 2.6vw, 4.25rem);       /* Hero 40→68px */
+  --text-hero--line-height: 1.05;
+
+  /* Abstände */
+  --spacing-0: 0px;
+  --spacing-px: 1px;
   --spacing-4: 4px;
   --spacing-8: 8px;
   --spacing-12: 12px;
@@ -59,73 +89,35 @@
   --spacing-28: 28px;
   --spacing-32: 32px;
   --spacing-40: 40px;
+  --spacing-44: 44px;            /* Klickfläche */
   --spacing-48: 48px;
   --spacing-56: 56px;
   --spacing-60: 60px;
   --spacing-80: 80px;
 
-  /* Border Radius */
-  --radius-full: 9999px;         /* A5: auf dieser Website nicht verwendet */
+  /* Rundungen: klein und ruhig (Isla 3px, Brand Book „weiches Quadrat“) */
+  --radius-knopf: 4px;           /* Buttons, Formularfelder */
+  --radius-bild: 8px;            /* Fotos, Flächen */
+  --radius-full: 9999px;
 
-  /* ================= Ergänzungen (DESIGN.md · Anpassungen) ================= */
-  /* A2: abgestufte Oxblood-Töne für Sekundärtext – nur auf Cream Paper / Aged Linen */
-  --color-oxblood-muted: #764642;    /* 7,4 : 1 */
-  --color-oxblood-subtle: #885e5a;   /* 5,3 : 1 – Untergrenze */
-  --color-transparent: transparent;
-  --color-current: currentColor;
-
-  /* A3: Display-Schnitt für vergrößerte Headlines */
-  --font-caslon-display: "Libre Caslon Display", "Libre Caslon Text", Georgia, "Times New Roman", serif;
-
-  /* A4: Lesbarkeit – angepasste Größen/Zeilenhöhen (Export-Tokens oben bleiben unverändert) */
-  --text-caption: 0.875rem;                                  /* 14px statt 13px */
-  --text-caption--line-height: 1.4;
-  --text-nav: 1rem;                                          /* 16px statt 14px */
-  --text-nav--line-height: 1.4;
-  --text-body--line-height: 1.6;                             /* statt 1.2 */
-  --text-heading--line-height: 1.35;
-  --text-subheading--line-height: 1.2;
-  --text-title: clamp(1.75rem, 1.45rem + 1.25vw, 2.5rem);    /* H2 28→40px */
-  --text-title--line-height: 1.15;
-  --text-display: clamp(2.25rem, 1.75rem + 2.1vw, 3.5rem);   /* H1 36→56px */
-  --text-display--line-height: 1.1;
-  --text-hero: clamp(2.625rem, 1.85rem + 3.4vw, 4.75rem);    /* Hero 42→76px */
-  --text-hero--line-height: 1.05;
-
-  /* A5: Klickfläche */
-  --spacing-44: 44px;
-  --spacing-0: 0px;
-  --spacing-px: 1px;
-
-  /* A5: Breiten */
-  --container-page: 1200px;      /* = --page-max-width */
+  /* Breiten */
+  --container-page: 1200px;
   --container-text: 42rem;       /* Lesebreite ≈ 70 Zeichen */
-  --container-label: 120px;      /* Sidebar Section Label */
+  --container-label: 120px;      /* Sektions-Label */
 }
 
-/* ================= Export · CSS Custom Properties (Layout, Radien, Surfaces – 1:1) ================= */
 :root {
-  --spacing-unit: 4px;
   --page-max-width: 1200px;
-  --section-gap: 64px;
-  --card-padding: 0px;
-  --element-gap: 12px;
-  --radius-tags: 9999px;
-  --radius-cards: 0px;
-  --radius-pills: 9999px;
-  --radius-images: 0px;
-  --radius-buttons: 0px;
-  --surface-cream-paper: #fafaf9;
-  --surface-aged-linen: #f8f7f1;
-  --surface-warm-stone: #bcb6a6;
+  --section-gap: 96px;           /* Isla: viel Luft zwischen den Abschnitten */
 }
+@media (max-width: 47.99rem) { :root { --section-gap: 64px; } }
 
 /* ================= Basis ================= */
 @layer base {
   html {
     background: var(--color-cream-paper);
     color: var(--color-oxblood-ink);
-    font-family: var(--font-mier-a);
+    font-family: var(--font-open-sans);
     font-weight: 400;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -137,26 +129,23 @@
     line-height: var(--text-body--line-height);
   }
   *, ::before, ::after {
-    border-color: var(--color-oxblood-ink);
-    box-shadow: none !important;   /* keine Schatten – auch nicht aus Browser-Defaults */
-    border-radius: 0;              /* A5: ausnahmslos scharfe Ecken */
+    border-color: var(--color-linie);
+    box-shadow: none !important;   /* keine Schatten (Isla) */
   }
-  /* Nur Gewicht 400 (A3) – auch für Überschriften, <strong>, <b> */
-  h1, h2, h3, h4, h5, h6, strong, b, th, button, input, select, textarea { font-weight: 400; }
-  h1, h2 { font-family: var(--font-caslon-display); text-wrap: balance; }
-  h3, h4 { font-family: var(--font-caslon-ionic); text-wrap: balance; }
-  h1 { font-size: var(--text-display); line-height: var(--text-display--line-height); }
-  h2 { font-size: var(--text-title); line-height: var(--text-title--line-height); }
+  h1, h2, h3, h4, h5, h6 { font-weight: 600; text-wrap: balance; color: var(--color-oxblood-ink); }
+  strong, b, th { font-weight: 600; }
+  h1 { font-size: var(--text-display); line-height: var(--text-display--line-height); letter-spacing: var(--tracking-eng); }
+  h2 { font-size: var(--text-title); line-height: var(--text-title--line-height); letter-spacing: var(--tracking-eng); }
   h3 { font-size: var(--text-subheading); line-height: var(--text-subheading--line-height); }
-  h4 { font-family: var(--font-mier-a); font-size: var(--text-heading); line-height: var(--text-heading--line-height); }
+  h4 { font-size: var(--text-nav); line-height: var(--text-nav--line-height); }
   p, li, dd { text-wrap: pretty; hyphens: auto; overflow-wrap: anywhere; }
   /* Lange Komposita („Berufshaftpflichtversicherung“) dürfen auf schmalen Bildschirmen umbrechen */
   h1, h2, h3, h4, summary, dt { hyphens: auto; overflow-wrap: anywhere; }
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
-  ::selection { background: var(--color-oxblood-ink); color: var(--color-cream-paper); }
+  ::selection { background: var(--color-rot); color: #ffffff; }
 
   /* Gut sichtbarer Fokus (WCAG 2.4.7 / 2.4.11) */
-  :focus-visible { outline: 2px solid var(--color-oxblood-ink); outline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--color-rot); outline-offset: 3px; }
 
   @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
@@ -176,41 +165,50 @@
   .section { padding-block: var(--section-gap); }
 
   /* Typo-Rollen */
-  .hero-title { font-family: var(--font-caslon-display); font-size: var(--text-hero); line-height: var(--text-hero--line-height); }
-  .kategorie { font-family: var(--font-caslon-ionic); font-size: var(--text-subheading); line-height: var(--text-subheading--line-height); }
-  .intro { font-size: var(--text-heading); line-height: var(--text-heading--line-height); }
+  .hero-title { font-weight: 600; font-size: var(--text-hero); line-height: var(--text-hero--line-height); letter-spacing: var(--tracking-eng); }
+  .kategorie { font-weight: 600; font-size: var(--text-subheading); line-height: var(--text-subheading--line-height); }
+  .intro { font-weight: 300; font-size: var(--text-heading); line-height: var(--text-heading--line-height); }
   .caption { font-size: var(--text-caption); line-height: var(--text-caption--line-height); color: var(--color-oxblood-muted); }
-  .label { font-size: var(--text-caption); line-height: var(--text-caption--line-height); }
+  /* Label (Isla-„Eyebrow“): klein, Versalien, gesperrt, rot */
+  .label {
+    font-size: var(--text-caption);
+    line-height: var(--text-caption--line-height);
+    font-weight: 600;
+    letter-spacing: var(--tracking-weit);
+    text-transform: uppercase;
+    color: var(--color-rot);
+  }
+  .wortmarke { font-weight: 600; color: var(--color-rot); letter-spacing: -0.01em; }
 
-  /* Sidebar Section Label (Export): Label links in ~120px-Spalte, Haarlinie über die Breite */
+  /* Sektions-Kopf (Isla): rotes Label direkt über der Überschrift, Haarlinie über die Breite */
   .sektion-kopf {
     display: grid;
-    gap: var(--spacing-12);
-    border-top: 1px solid var(--color-oxblood-ink);
-    padding-top: var(--spacing-12);
+    gap: var(--spacing-16);
+    border-top: 1px solid var(--color-linie);
+    padding-top: var(--spacing-24);
   }
-  @media (min-width: 48rem) {
-    .sektion-kopf { grid-template-columns: var(--container-label) 1fr; column-gap: var(--spacing-24); }
-  }
+  .sektion-kopf > .label { hyphens: manual; overflow-wrap: break-word; }
 
-  .hairline { border: 0; border-top: 1px solid var(--color-oxblood-ink); }
+  .hairline { border: 0; border-top: 1px solid var(--color-linie); }
 
-  /* Textlink / Outlined Action (Export): 1px Unterstreichung, Hover 1.5px.
-     Als text-decoration statt border-bottom, damit die Klickfläche 44px hoch sein kann (A5). */
+  /* Textlink / Aktion: rot, halbfett, Klickfläche 44px */
   .link-action {
     display: inline-flex;
     align-items: center;
+    gap: var(--spacing-8);
     min-height: var(--spacing-44);
     font-size: var(--text-nav);
     line-height: var(--text-nav--line-height);
+    font-weight: 600;
+    color: var(--color-rot);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;
   }
-  .link-action:hover { text-decoration-thickness: 1.5px; }
+  .link-action:hover { color: var(--color-tiefrot); text-decoration-thickness: 2px; }
   /* Fließtext-Links */
-  .link { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
-  .link:hover { text-decoration-thickness: 1.5px; }
+  .link { color: var(--color-rot); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+  .link:hover { color: var(--color-tiefrot); text-decoration-thickness: 2px; }
 
   /* Navigation: 44 × 44px Klickfläche */
   .nav-link {
@@ -224,12 +222,13 @@
     text-decoration: none;
   }
   .nav-link:hover, .nav-link[aria-current]:not([aria-current="false"]) {
+    color: var(--color-rot);
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.35em;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.45em;
   }
 
-  /* Buttons (A6) – flach, scharfkantig, keine festen Breiten */
+  /* Buttons – flach, kleine Rundung, Rot nur hier als Fläche */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -237,22 +236,24 @@
     gap: var(--spacing-8);
     min-height: var(--spacing-48);
     padding: var(--spacing-12) var(--spacing-24);
-    font-family: var(--font-mier-a);
+    font-family: var(--font-open-sans);
     font-size: var(--text-nav);
+    font-weight: 600;
     line-height: 1.25;
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--color-oxblood-ink);
+    border: 1px solid var(--color-rot);
+    border-radius: var(--radius-knopf);
     cursor: pointer;
-    transition: background-color 150ms ease, color 150ms ease;
+    transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
   }
-  .btn-primary { background: var(--color-oxblood-ink); color: var(--color-cream-paper); }
-  .btn-primary:hover { background: var(--color-cream-paper); color: var(--color-oxblood-ink); }
-  .btn-outline { background: transparent; color: var(--color-oxblood-ink); }
-  .btn-outline:hover { background: var(--color-oxblood-ink); color: var(--color-cream-paper); }
+  .btn-primary { background: var(--color-rot); color: #ffffff; }
+  .btn-primary:hover { background: var(--color-tiefrot); border-color: var(--color-tiefrot); }
+  .btn-outline { background: transparent; color: var(--color-rot); }
+  .btn-outline:hover { background: var(--color-rot); color: #ffffff; }
   .btn-compact { min-height: var(--spacing-44); padding: var(--spacing-8) var(--spacing-16); }
 
-  /* Formularfelder */
+  /* Formularfelder – Rahmen in Tiefgrau (≥ 3 : 1, WCAG 1.4.11) */
   .field {
     width: 100%;
     min-height: var(--spacing-48);
@@ -260,6 +261,7 @@
     background: var(--color-cream-paper);
     color: var(--color-oxblood-ink);
     border: 1px solid var(--color-oxblood-ink);
+    border-radius: var(--radius-knopf);
     font-size: var(--text-body);
   }
   .field::placeholder { color: var(--color-oxblood-subtle); opacity: 1; }
@@ -269,7 +271,7 @@
   .menue[open] .menue-zeichen { transform: rotate(45deg); }
   .menue-zeichen { display: inline-block; font-size: var(--text-subheading); line-height: 1; transition: transform 150ms ease; }
 
-  /* Fließtext aus Markdown (Seiteninhalte) – Abstände aus der Export-Skala */
+  /* Fließtext aus Markdown (Seiteninhalte) */
   .inhalt { max-width: var(--container-text); }
   .inhalt > * + * { margin-top: var(--spacing-16); }
   .inhalt h2 { margin-top: var(--spacing-60); }
@@ -277,14 +279,15 @@
   .inhalt h2 + *, .inhalt h3 + * { margin-top: var(--spacing-16); }
   .inhalt ul { list-style: none; padding: 0; }
   .inhalt ul > li { position: relative; padding-left: var(--spacing-24); }
-  .inhalt ul > li::before { content: "–"; position: absolute; left: 0; }
+  .inhalt ul > li::before { content: "–"; position: absolute; left: 0; color: var(--color-rot); }
   .inhalt ol { list-style: decimal; padding-left: var(--spacing-24); }
+  .inhalt ol > li::marker { color: var(--color-rot); font-weight: 600; }
   .inhalt li + li { margin-top: var(--spacing-8); }
-  .inhalt a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
-  .inhalt a:hover { text-decoration-thickness: 1.5px; }
-  .inhalt hr { border: 0; border-top: 1px solid var(--color-oxblood-ink); margin-block: var(--spacing-40); }
+  .inhalt a { color: var(--color-rot); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+  .inhalt a:hover { color: var(--color-tiefrot); text-decoration-thickness: 2px; }
+  .inhalt hr { border: 0; border-top: 1px solid var(--color-linie); margin-block: var(--spacing-40); }
   .inhalt table { width: 100%; border-collapse: collapse; font-size: var(--text-nav); }
-  .inhalt th, .inhalt td { text-align: left; padding: var(--spacing-8) var(--spacing-12) var(--spacing-8) 0; border-bottom: 1px solid var(--color-oxblood-ink); vertical-align: top; hyphens: auto; overflow-wrap: anywhere; }
+  .inhalt th, .inhalt td { text-align: left; padding: var(--spacing-8) var(--spacing-12) var(--spacing-8) 0; border-bottom: 1px solid var(--color-linie); vertical-align: top; hyphens: auto; overflow-wrap: anywhere; }
   .inhalt table { table-layout: fixed; }
 
   /* Hinweis „Seite noch nicht übersetzt“: nur sichtbar, wenn die URL auf ihn zeigt (#uebersetzung-fehlt-xx) */
@@ -298,6 +301,7 @@
     place-items: center;
     background: var(--color-aged-linen);
     color: var(--color-oxblood-ink);
+    border-radius: var(--radius-bild);
   }
 }
 

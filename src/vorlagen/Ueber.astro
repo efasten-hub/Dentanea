@@ -29,7 +29,7 @@ const zitat = (p: Publikation) => `${p.autoren}. ${p.titel} ${p.quelle}.${p.zusa
       <Foto bild="portraet-dr-adali" sprache={sprache} format="3/4" prioritaet sizes="(min-width: 768px) 35vw, 100vw" />
     </div>
 
-    {daten.antwort && <p class="intro mt-48 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
+    {daten.antwort && <p class="intro mt-48 max-w-[52rem] border-l border-linie pl-24">{daten.antwort}</p>}
 
     {/* GEO-Kernsatz – identisch mit Footer und llms.txt (src/i18n → geo.kernsatz) */}
     <section class="sektion-kopf mt-60" aria-label={t(sprache, "llms.fakten")}>
@@ -43,9 +43,9 @@ const zitat = (p: Publikation) => `${p.autoren}. ${p.titel} ${p.quelle}.${p.zusa
       <p class="label">{t(sprache, "ueber.qualifikationen")}</p>
       <div>
         <h2 id="quali-titel">{t(sprache, "ueber.qualifikationen")}</h2>
-        <ul class="mt-24 border-t border-oxblood-ink">
+        <ul class="mt-24 border-t border-linie">
           {site.qualifikationen.map((q) => (
-            <li class="border-b border-oxblood-ink py-16">
+            <li class="border-b border-linie py-16">
               <p class="kategorie" lang="de">{q.titel} ({q.kuerzel})</p>
               <p class="mt-4 text-nav"><a class="link" href={q.url} lang="de" rel="noopener">{q.gesellschaft}</a></p>
             </li>
@@ -67,9 +67,9 @@ const zitat = (p: Publikation) => `${p.autoren}. ${p.titel} ${p.quelle}.${p.zusa
       <div>
         <h2 id="publikationen-titel">{t(sprache, "ueber.publikationen")}</h2>
         <p class="caption mt-8">{t(sprache, "ueber.publikationen_hinweis")}</p>
-        <ol class="mt-24 border-t border-oxblood-ink">
+        <ol class="mt-24 border-t border-linie">
           {publikationen.map((p) => (
-            <li class="grid gap-x-24 border-b border-oxblood-ink py-12 text-nav sm:grid-cols-[64px_1fr]">
+            <li class="grid gap-x-24 border-b border-linie py-12 text-nav sm:grid-cols-[64px_1fr]">
               <span class="caption">{p.jahr}</span>
               <span lang="en">{zitat(p)}{p.doi && <> <a class="link" href={`https://doi.org/${p.doi}`} rel="noopener">DOI {p.doi}</a></>}</span>
             </li>

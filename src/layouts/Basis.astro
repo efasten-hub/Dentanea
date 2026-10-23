@@ -54,9 +54,9 @@ const istArtikel = routen[seitenId]?.typ === "ratgeber";
 const artikelDaten = istArtikel ? (await getEntry("seiten", `${sprache}/${seitenId}`))?.data : undefined;
 // Türkische Seiten brauchen sofort die latin-ext-Schnitte (ğ ş ı İ)
 const preloads = [
-  "libre-caslon-display-latin-400-normal",
-  "inter-latin-400-normal",
-  ...(sprache === "tr" ? ["inter-latin-ext-400-normal", "libre-caslon-display-latin-ext-400-normal"] : []),
+  "open-sans-latin-400-normal",
+  "open-sans-latin-600-normal",
+  ...(sprache === "tr" ? ["open-sans-latin-ext-400-normal", "open-sans-latin-ext-600-normal"] : []),
 ];
 ---
 <!doctype html>
@@ -104,7 +104,7 @@ const preloads = [
     <Header sprache={sprache} seitenId={seitenId} alternativen={alternativen} />
 
     {fehlend.map((a) => (
-      <div id={`uebersetzung-fehlt-${a.sprache}`} class="hinweis-ziel border-b border-oxblood-ink bg-aged-linen" lang={a.sprache} role="note">
+      <div id={`uebersetzung-fehlt-${a.sprache}`} class="hinweis-ziel border-b border-linie bg-aged-linen" lang={a.sprache} role="note">
         <p class="container-page py-12 text-nav">{t(a.sprache, "sprachen.nicht_uebersetzt")}</p>
       </div>
     ))}

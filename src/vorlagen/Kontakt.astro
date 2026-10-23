@@ -70,7 +70,7 @@ const [vorDatenschutz, nachDatenschutz] = t(sprache, "formular.datenschutz_hinwe
 
     <section class="mt-60" aria-labelledby="karte-titel">
       <h2 id="karte-titel" class="sr-only">{t(sprache, "anfahrt.karte_titel")}</h2>
-      <div class="karte foto-folgt aspect-[4/3] w-full border border-oxblood-ink md:aspect-[21/9]" data-karte={kartenUrl} data-titel={`${t(sprache, "anfahrt.karte_titel")}: ${site.adresse.strasse}`}>
+      <div class="karte foto-folgt aspect-[4/3] w-full border border-linie md:aspect-[21/9]" data-karte={kartenUrl} data-titel={`${t(sprache, "anfahrt.karte_titel")}: ${site.adresse.strasse}`}>
         <div class="max-w-text p-24 text-center">
           <p class="text-nav">{t(sprache, "anfahrt.karte_hinweis")}</p>
           <button type="button" class="btn btn-outline mt-16" data-karte-laden>{t(sprache, "anfahrt.karte_laden")}</button>
@@ -85,7 +85,7 @@ const [vorDatenschutz, nachDatenschutz] = t(sprache, "formular.datenschutz_hinwe
         <h2 id="anfrage-titel">{t(sprache, "formular.titel")}</h2>
         <p class="mt-16">{t(sprache, "formular.einleitung")}</p>
 
-        <div id="anfrage-fehler" class="hinweis-ziel mt-24 border border-oxblood-ink bg-aged-linen p-16" role="alert">
+        <div id="anfrage-fehler" class="hinweis-ziel mt-24 border border-linie bg-aged-linen p-16" role="alert">
           <p>{t(sprache, "formular.fehler_allgemein", { telefon: site.telefon_anzeige })}</p>
         </div>
 
@@ -134,7 +134,7 @@ const [vorDatenschutz, nachDatenschutz] = t(sprache, "formular.datenschutz_hinwe
             <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off" />
           </div>
           <div class="flex items-start gap-12">
-            <input class="mt-4 h-24 w-24 shrink-0 accent-oxblood-ink" id="f-einwilligung" name="einwilligung" type="checkbox" value="ja" required />
+            <input class="mt-4 h-24 w-24 shrink-0 accent-rot" id="f-einwilligung" name="einwilligung" type="checkbox" value="ja" required />
             <label for="f-einwilligung" class="text-nav">{t(sprache, "formular.einwilligung")}</label>
           </div>
           <p class="caption">{vorDatenschutz}<a class="link" href={datenschutz}>{t(sprache, "termin.datenschutzerklaerung")}</a>{nachDatenschutz}</p>

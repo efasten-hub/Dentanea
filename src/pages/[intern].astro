@@ -76,7 +76,7 @@ const imManifest = Object.entries(manifest as unknown as Record<string, M>).filt
                     const v = k.vorschau ? vorschauen[`../../bilder/kandidaten/${k.vorschau}`]?.default : undefined;
                     const gewaehlt = pos.auswahl === i || pos.auswahl === k.id;
                     return (
-                      <li class:list={["border p-12", gewaehlt ? "border-oxblood-ink" : "border-warm-stone"]}>
+                      <li class:list={["border p-12", gewaehlt ? "border-linie" : "border-warm-stone"]}>
                         <p class="label">Nr. {i}{gewaehlt && " · ausgewählt"}</p>
                         {v ? <Image src={v} alt={k.beschreibung ?? ""} width={640} class="mt-8 aspect-[3/2] w-full object-cover" /> : <div class="foto-folgt mt-8 aspect-[3/2]"><span class="caption">keine Vorschau</span></div>}
                         <p class="mt-8 text-nav">{k.beschreibung}</p>

@@ -74,14 +74,14 @@ const schwerpunkte = [
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="preload" href="/fonts/libre-caslon-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/open-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/open-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin />
   </head>
   <body class="pb-[calc(57px+env(safe-area-inset-bottom))] md:pb-0">
     <a href="#inhalt" class="sr-only focus:not-sr-only focus:absolute focus:left-16 focus:top-16 focus:z-50 focus:bg-cream-paper focus:p-12">Zum Inhalt springen</a>
 
     <!-- ===================== Header (A8) ===================== -->
-    <header class="border-b border-oxblood-ink">
+    <header class="border-b border-linie">
       <div class="container-page flex flex-wrap items-center justify-between gap-x-32 gap-y-4 py-12">
         <a href="#" class="inline-flex min-h-44 items-center gap-12 no-underline">
           <img src={logo.src} width="44" height="44" alt="" />
@@ -98,21 +98,21 @@ const schwerpunkte = [
           </a>
         </div>
       </div>
-      <details class="menue border-t border-oxblood-ink lg:hidden">
+      <details class="menue border-t border-linie lg:hidden">
         <summary class="container-page label flex min-h-48 cursor-pointer list-none items-center justify-between">
           <span>Menü</span><span aria-hidden="true" class="menue-zeichen">+</span>
         </summary>
-        <nav aria-label="Hauptnavigation (mobil)" class="container-page border-t border-oxblood-ink pb-24">
+        <nav aria-label="Hauptnavigation (mobil)" class="container-page border-t border-linie pb-24">
           <ul>
             {nav.map((n, i) => (
-              <li class="border-b border-oxblood-ink"><a class="nav-link min-h-48 w-full justify-start" href="#" aria-current={i === 0 ? "page" : undefined}>{n}</a></li>
+              <li class="border-b border-linie"><a class="nav-link min-h-48 w-full justify-start" href="#" aria-current={i === 0 ? "page" : undefined}>{n}</a></li>
             ))}
           </ul>
           <Sprachumschalter aktuell="de" alternativen={alternativen} label="Sprache wählen (Menü)" class="mt-16" />
           <a href={tel} class="btn btn-outline mt-16 w-full">030 44 26 84 3 anrufen</a>
         </nav>
       </details>
-      <nav aria-label="Hauptnavigation" class="hidden border-t border-oxblood-ink lg:block">
+      <nav aria-label="Hauptnavigation" class="hidden border-t border-linie lg:block">
         <ul class="container-page flex flex-wrap gap-x-24 py-4">
           {nav.map((n, i) => (
             <li><a class="nav-link" href="#" aria-current={i === 0 ? "page" : undefined}>{n}</a></li>
@@ -142,7 +142,7 @@ const schwerpunkte = [
       </section>
 
       <!-- Vertrauensleiste -->
-      <section aria-label="Qualifikationen" class="border-y border-oxblood-ink">
+      <section aria-label="Qualifikationen" class="border-y border-linie">
         <ul class="container-page flex flex-wrap items-center gap-x-16 gap-y-4 py-20 text-nav">
           <li>Charité</li><li aria-hidden="true">·</li>
           <li>DGPro</li><li aria-hidden="true">·</li>
@@ -219,8 +219,8 @@ const schwerpunkte = [
             <p class="mt-16 max-w-text text-oxblood-muted">Alle Tokens des Exports 1:1. Dusty Clay ist für Text gesperrt (3,3 : 1); dafür zwei geprüfte Oxblood-Abstufungen.</p>
             <ul class="mt-40 grid gap-x-24 sm:grid-cols-2 lg:grid-cols-4">
               {farben.map((f) => (
-                <li class="border-t border-oxblood-ink py-24">
-                  <div class:list={["mb-16 h-80 border border-oxblood-ink", f.bg]}></div>
+                <li class="border-t border-linie py-24">
+                  <div class:list={["mb-16 h-80 border border-linie", f.bg]}></div>
                   <h3>{f.name}</h3>
                   <p class="caption mt-4">{f.hex} · <code>{f.token}</code></p>
                   <p class="mt-8 text-nav">{f.rolle}</p>
@@ -240,7 +240,7 @@ const schwerpunkte = [
             <h2>Acht Stufen, nur Gewicht 400</h2>
             <div class="mt-40">
               {stufen.map((s) => (
-                <div class="grid gap-8 border-t border-oxblood-ink py-24 md:grid-cols-[200px_1fr]">
+                <div class="grid gap-8 border-t border-linie py-24 md:grid-cols-[200px_1fr]">
                   <div>
                     <p class="text-nav">{s.name}</p>
                     <p class="caption">{s.groesse}</p>
@@ -252,7 +252,7 @@ const schwerpunkte = [
             <h3 class="mt-60">Sonderzeichen in allen Schnitten</h3>
             <div class="mt-24">
               {zeichenproben.map((z) => (
-                <div lang={z.lang} class="grid gap-12 border-t border-oxblood-ink py-20 md:grid-cols-[60px_1fr]">
+                <div lang={z.lang} class="grid gap-12 border-t border-linie py-20 md:grid-cols-[60px_1fr]">
                   <p class="label">{z.lang.toUpperCase()}</p>
                   <div class="space-y-8">
                     <p class="font-caslon-display text-title">{z.text}</p>
@@ -283,7 +283,7 @@ const schwerpunkte = [
     </main>
 
     <!-- ===================== Footer (A10) ===================== -->
-    <footer class="border-t border-oxblood-ink">
+    <footer class="border-t border-linie">
       <div class="container-page grid gap-32 py-60 md:grid-cols-3">
         <div>
           <p class="font-caslon-ionic text-subheading">Dentanea</p>

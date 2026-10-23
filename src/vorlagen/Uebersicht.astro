@@ -58,7 +58,7 @@ const andere = id === "ratgeber"
       <h1>{daten.titel}</h1>
       {daten.unterzeile && <p class="intro mt-24 text-oxblood-muted">{daten.unterzeile}</p>}
     </header>
-    {daten.antwort && <p class="intro mt-40 max-w-[52rem] border-l border-oxblood-ink pl-24">{daten.antwort}</p>}
+    {daten.antwort && <p class="intro mt-40 max-w-[52rem] border-l border-linie pl-24">{daten.antwort}</p>}
 
     {gruppen.map((g, i) => (
       <section class="sektion-kopf mt-60" aria-labelledby={`gruppe-${i}`}>
@@ -67,7 +67,7 @@ const andere = id === "ratgeber"
           <h2 id={`gruppe-${i}`}>{g.titel}</h2>
           <ul class="mt-24 grid gap-x-40 md:grid-cols-2">
             {g.eintraege.map((e) => (
-              <li class="border-t border-oxblood-ink py-20">
+              <li class="border-t border-linie py-20">
                 <h3><a class="no-underline hover:underline" href={e.href}>{e.titel}</a></h3>
                 {e.kurz && <p class="mt-8 text-nav">{e.kurz}</p>}
               </li>

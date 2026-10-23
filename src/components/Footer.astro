@@ -25,10 +25,10 @@ const kernsatz = t(sprache, "geo.kernsatz", { sprachen: sprachListe(sprache, sit
 const jahr = new Date().getFullYear();
 const ziel = await terminZiel(sprache);
 ---
-<footer class="mt-80 border-t border-oxblood-ink" aria-label={t(sprache, "a11y.fusszeile")}>
+<footer class="mt-80 border-t border-linie" aria-label={t(sprache, "a11y.fusszeile")}>
   <div class="container-page grid gap-40 py-60 md:grid-cols-2 lg:grid-cols-4">
     <div>
-      <p class="font-caslon-ionic text-subheading">{site.praxisname}</p>
+      <p class="wortmarke text-subheading">{site.praxisname}</p>
       <p class="caption">{site.praxiszusatz}</p>
       <address class="mt-16 text-nav not-italic">
         {site.adresse.strasse}<br />

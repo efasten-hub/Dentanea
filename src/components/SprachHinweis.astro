@@ -13,7 +13,7 @@ const { dr_adali, team } = site.gesprochene_sprachen;
 const alle = [...new Set([...dr_adali, ...team])] as Sprache[];
 const vertreten = alle.includes(sprache);
 ---
-<p class:list={["border-l border-oxblood-ink pl-16", klasse]}>
+<p class:list={["border-l border-linie pl-16", klasse]}>
   {vertreten
     ? t(sprache, "sprachen.dr_adali_spricht", { sprachen: sprachListe(sprache, dr_adali) })
     : t(sprache, "sprachen.team_spricht", { sprachen: sprachListe(sprache, alle) })}

@@ -43,7 +43,7 @@ const formatKlasse = { "4/3": "aspect-[4/3]", "3/4": "aspect-[3/4]", "1/1": "asp
     loading={prioritaet ? "eager" : "lazy"}
     fetchpriority={prioritaet ? "high" : "auto"}
     decoding={prioritaet ? "sync" : "async"}
-    class:list={["block w-full object-cover", formatKlasse, klasse]}
+    class:list={["block w-full rounded-bild object-cover", formatKlasse, klasse]}
   />
 ) : (
   <FotoFolgt sprache={sprache} format={format} class={klasse} />
