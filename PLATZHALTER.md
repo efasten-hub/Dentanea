@@ -12,7 +12,7 @@ Die Website geht erst online, wenn keine Markierung mehr offen ist (die automati
 ## In dieser Reihenfolge zum Start
 
 1. **Praxisdaten bestätigen** (Abschnitt 1) – vor allem Sprechzeiten, Ortsangabe, Team und Sprachen
-2. **Name rechtlich prüfen lassen** (Dentaviva / „Denta Vita“) – vor allen Ausgaben für Logo, Schilder, Drucksachen
+2. **Name rechtlich prüfen lassen** (Dentanea) – vor allen Ausgaben für Logo, Schilder, Drucksachen
 3. **Medizinische Texte durch Dr. Adali freigeben**, Prüfdatum eintragen, Preise nennen (Abschnitt 3)
 4. **Werberecht und Rechtstexte** von einer Kanzlei prüfen lassen: `[[PRÜFEN HWG/BO]]`, Impressum, Datenschutz, Formular-Einwilligung (Abschnitt 3)
 5. **Übersetzungen** muttersprachlich prüfen lassen (Abschnitt 4)
@@ -25,9 +25,9 @@ Die Website geht erst online, wenn keine Markierung mehr offen ist (die automati
 
 ## 1. Praxisdaten bestätigen
 
-- [ ] **Praxisname:** „Dentaviva – Zahnarztpraxis Dr. Adali“. Genau so überall verwenden: Website, Google, Doctolib, Jameda, Dr. Flex.
-- [ ] **Name rechtlich prüfen lassen:** In Berlin-Mitte gibt es die Praxis „Denta Vita“ (Oranienburger Straße 37), ein Buchstabe Unterschied. Bitte vor dem Start von einer Anwältin oder einem Anwalt für Markenrecht prüfen lassen.
-- [ ] **Domain:** Bleibt es bei zahnarzt-adali.de? Soll zusätzlich eine Dentaviva-Domain gesichert werden?
+- [ ] **Praxisname:** „Dentanea – Zahnarztpraxis Dr. Adali“. Genau so überall verwenden: Website, Google, Doctolib, Jameda, Dr. Flex.
+- [ ] **Name rechtlich prüfen lassen:** Die Suche nach ähnlichen Namen (DPMA/EUIPO, Praxen in Berlin) ist für „Dentanea“ noch nicht gemacht. Bitte vor dem Start von einer Anwältin oder einem Anwalt für Markenrecht prüfen lassen.
+- [ ] **Domain:** Bleibt es bei zahnarzt-adali.de? Soll zusätzlich eine Dentanea-Domain gesichert werden?
 - [ ] **Ortsangabe:** Die Hausnummer liegt laut Stadtplan im Ortsteil **Prenzlauer Berg**, direkt an der Grenze zu Mitte. Was soll auf der Website stehen: „Berlin-Mitte“, „Prenzlauer Berg“ oder „an der Grenze von Mitte und Prenzlauer Berg“ (derzeitiger Vorschlag)?
 - [ ] **Sprechzeiten von Dr. Adali:** Bitte die genauen Tage und Uhrzeiten nennen. Laut Doctolib sind freie Termine Mo, Di, Do und Fr, nie mittwochs. Die alte Website nennt Mo, Mi und Fr. Die Zeiten stehen im Doctolib-Kalender der Praxis (Doctolib Pro → Einstellungen → Öffnungszeiten).
 - [ ] **Bus und Bahn:** U2 Senefelderplatz (ca. 4 Min.), U2 Rosa-Luxemburg-Platz (ca. 5 Min.), Tram M2 Prenzlauer Allee/Metzer Straße (ca. 8 Min.). Stimmen die Fußwege?
@@ -44,7 +44,7 @@ Die Website geht erst online, wenn keine Markierung mehr offen ist (die automati
 
 Das Profil heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“. Für Google und KI-Assistenten müssen Name, Adresse und Telefon überall **genau gleich** sein.
 
-- [ ] Profilname an den neuen Praxisnamen anpassen (oder ein eigenes Profil für Dentaviva anlegen)
+- [ ] Profilname an den neuen Praxisnamen anpassen (oder ein eigenes Profil für Dentanea anlegen)
 - [ ] Sprachen ergänzen: bisher nur Deutsch und Englisch. Spanisch und Türkisch eintragen.
 - [ ] Parken: „Kostenlose Parkplätze in der Tiefgarage“ statt „in der Nähe“
 - [ ] Profiltext: Das Wort „Spezialistenpraxis“ ist werberechtlich heikel (HWG/Berufsordnung). Bitte prüfen lassen.

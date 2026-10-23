@@ -1,7 +1,7 @@
 ---
 titel: "Aviso legal"
-seo_titel: "Aviso legal | Dentaviva – Dr. Adali"
-beschreibung: "Aviso legal (Impressum) de Dentaviva – clínica dental del Dr. med. dent. Ufuk Adali, Schönhauser Allee 10–11, 10119 Berlín."
+seo_titel: "Aviso legal | Dentanea – Dr. Adali"
+beschreibung: "Aviso legal (Impressum) de Dentanea – clínica dental del Dr. med. dent. Ufuk Adali, Schönhauser Allee 10–11, 10119 Berlín."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

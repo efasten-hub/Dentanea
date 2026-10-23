@@ -1,6 +1,6 @@
 ---
 titel: "Implantate"
-seo_titel: "Zahnimplantate Berlin – 3D-geplant | Dentaviva"
+seo_titel: "Zahnimplantate Berlin – 3D-geplant | Dentanea"
 beschreibung: "Zahnimplantate in Berlin vom zertifizierten Implantologen (DGI): 3D-Planung, Knochenaufbau, Sofortversorgung, Zahnersatz aus eigenem Labor."
 kurz: "Künstliche Zahnwurzeln mit 3D-Planung – vom Einzelzahn bis zur festen Brücke, auf Wunsch mit Sofortversorgung."
 unterzeile: "Feste Zähne auf künstlichen Zahnwurzeln – sorgfältig geplant, schonend eingesetzt."

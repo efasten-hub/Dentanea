@@ -1,6 +1,6 @@
 ---
 titel: "Resin-bonded bridge (Maryland bridge)"
-seo_titel: "Resin-Bonded (Maryland) Bridge in Berlin | Dentaviva"
+seo_titel: "Resin-Bonded (Maryland) Bridge in Berlin | Dentanea"
 beschreibung: "Resin-bonded bridge (Maryland bridge) in Berlin: replace a missing tooth without drilling down neighbouring teeth. Who it suits, procedure and costs."
 kurz: "Replaces a single tooth without drilling down the neighbouring teeth – a gentle alternative to an implant."
 unterzeile: "Replacing a missing tooth without drilling healthy neighbouring teeth."

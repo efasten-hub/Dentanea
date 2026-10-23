@@ -1,6 +1,6 @@
 ---
 titel: "Laboratorio dental propio y odontología digital"
-seo_titel: "Laboratorio dental propio y odontología digital | Dentaviva"
+seo_titel: "Laboratorio dental propio y odontología digital | Dentanea"
 beschreibung: "Laboratorio dental propio con maestro protésico en la clínica: escáner intraoral, CAD/CAM, planificación 3D y radiografía digital. Prótesis precisas."
 kurz: "Maestro protésico en la clínica, escáner intraoral, CAD/CAM y planificación 3D: prótesis precisas y trayectos cortos."
 unterzeile: "Planificación, fabricación y ajuste bajo el mismo techo."

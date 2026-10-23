@@ -1,6 +1,6 @@
 ---
 titel: "Ratgeber"
-seo_titel: "Zahn-Ratgeber: Implantate, Kosten, MIH, CMD | Dentaviva"
+seo_titel: "Zahn-Ratgeber: Implantate, Kosten, MIH, CMD | Dentanea"
 beschreibung: "Verständlich erklärt von Dr. Adali: Implantat oder Klebebrücke, Kosten für Zahnersatz, Kreidezähne bei Kindern, Zähneknirschen, Sofortimplantate."
 unterzeile: "Fragen, die uns in der Sprechstunde oft gestellt werden – ausführlich und verständlich beantwortet."
 uebersetzt: true

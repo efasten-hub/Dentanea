@@ -1,6 +1,6 @@
 ---
 titel: "TMD, teeth grinding and anti-snoring splints"
-seo_titel: "TMD Treatment & Night Splints in Berlin | Dentaviva"
+seo_titel: "TMD Treatment & Night Splints in Berlin | Dentanea"
 beschreibung: "Jaw pain, teeth grinding, headaches or snoring: functional diagnosis and custom-made splints in Berlin. Procedure, duration and costs of TMD treatment."
 kurz: "Jaw pain, teeth grinding, headaches or snoring: finding the cause and treating it with custom-made splints."
 unterzeile: "When your jaw, chewing muscles or sleep cause problems."

@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- *  ZENTRALE PRAXISDATEN – Dentaviva · Zahnarztpraxis Dr. Adali
+ *  ZENTRALE PRAXISDATEN – Dentanea · Zahnarztpraxis Dr. Adali
  * ============================================================================
  *
  *  Alle sprachunabhängigen Angaben der Praxis stehen NUR hier.
@@ -29,11 +29,11 @@ export const site = {
   // Praxis
   // --------------------------------------------------------------------------
   /** Markenname – wird in keiner Sprache übersetzt. */
-  praxisname: "Dentaviva",
+  praxisname: "Dentanea",
   /** Zusatz, der den Namen eindeutig macht (siehe docs/bestandsaufnahme.md, Abschnitt 10). */
   praxiszusatz: "Zahnarztpraxis Dr. Adali",
   /** Vollständiger Name für Google-Profil, Doctolib, Verzeichnisse und Schema.org – überall identisch (NAP). */
-  praxisname_voll: "Dentaviva – Zahnarztpraxis Dr. Adali", // [[PRÜFEN: genaue Schreibweise auch bei Google/Doctolib übernehmen]]
+  praxisname_voll: "Dentanea – Zahnarztpraxis Dr. Adali", // [[PRÜFEN: genaue Schreibweise auch bei Google/Doctolib übernehmen]]
   /** Website-Adresse ohne Schrägstrich am Ende. */
   domain: "https://zahnarzt-adali.de", // [[PRÜFEN: bleibt die Domain trotz neuem Namen?]]
   /** Eigene Praxis seit (Angabe der Praxis, 06.10.2026). */
@@ -263,7 +263,7 @@ export const site = {
     { von: 2026, bis: null, text: "Gastwissenschaftler, Abteilung für Zahnärztliche Prothetik, Alterszahnmedizin und Funktionslehre, Charité" },
     { von: 2021, bis: 2026, text: "Gewähltes Vorstandsmitglied der Zahnärztekammer Berlin, Referat „Aus- und Fortbildung Zahnmedizinische Fachangestellte“" },
     { von: 2026, bis: null, text: "Gewähltes Vorstandsmitglied der Zahnärztekammer Berlin, Referat „Fort- und Weiterbildung Zahnärztinnen und Zahnärzte“" },
-    { von: 2025, bis: null, text: "Eigene Praxis in Berlin-Mitte (Dentaviva)" },
+    { von: 2025, bis: null, text: "Eigene Praxis in Berlin-Mitte (Dentanea)" },
   ],
   orcid: "0000-0001-6557-2841",
 

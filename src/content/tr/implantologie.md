@@ -1,6 +1,6 @@
 ---
 titel: "Diş implantı"
-seo_titel: "Berlin’de 3D Planlı Diş İmplantı | Dentaviva"
+seo_titel: "Berlin’de 3D Planlı Diş İmplantı | Dentanea"
 beschreibung: "Berlin’de DGI sertifikalı implantologdan diş implantı: 3D planlama, kemik ogmentasyonu, hemen yükleme ve kendi laboratuvarımızdan kuronlar. Maliyetler."
 kurz: "3D planlamalı yapay diş kökleri: tek dişten sabit köprüye, mümkünse aynı gün geçici dişle."
 unterzeile: "Yapay kökler üzerinde sabit dişler: özenle planlanır, nazikçe yerleştirilir."

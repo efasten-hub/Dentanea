@@ -1,7 +1,7 @@
 ---
 titel: "Künye"
-seo_titel: "Künye | Dentaviva – Dr. Adali"
-beschreibung: "Dentaviva – Dr. med. dent. Ufuk Adali Diş Kliniği künyesi (Impressum), Schönhauser Allee 10–11, 10119 Berlin."
+seo_titel: "Künye | Dentanea – Dr. Adali"
+beschreibung: "Dentanea – Dr. med. dent. Ufuk Adali Diş Kliniği künyesi (Impressum), Schönhauser Allee 10–11, 10119 Berlin."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

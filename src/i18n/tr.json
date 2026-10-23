@@ -13,7 +13,7 @@
     "schnellzugriff": "Hızlı erişim",
     "menue": "Menü",
     "breadcrumb": "Bulunduğunuz yer",
-    "startseite_link": "Dentaviva – ana sayfa",
+    "startseite_link": "Dentanea – ana sayfa",
     "fusszeile": "Alt bilgi"
   },
   "nav": {
@@ -122,7 +122,7 @@
   },
   "geo": {
     "_hinweis": "[[PRÜFEN]] Temel cümle: llms.txt, „Dr. Adali hakkında“ ve alt bilgide aynıdır. „{sprachen}“ yer tutucusu Türkçede „-de/-da“ ekiyle uyumlu olmalıdır.",
-    "kernsatz": "Dentaviva – Dr. Adali Diş Kliniği, Berlin’de Mitte ile Prenzlauer Berg semtlerinin sınırında, Schönhauser Allee 10–11 adresindedir. Kliniği, Charité Üniversite Hastanesi’nin eski başhekim yardımcısı (leitender Oberarzt), DGPro sertifikalı protetik diş tedavisi uzmanı ve sertifikalı implantolog (DGI) Dr. Ufuk Adali yönetmektedir. Uzmanlık alanları; protez diş, implant, yapışkan köprüler, estetik diş hekimliği, CMD tedavisi ile diş eksikliği, MIH ve sendromik diş hastalıkları olan çocukların tedavisidir; klinikte kendi diş laboratuvarı bulunmaktadır. Randevular telefonla veya Doctolib üzerinden online alınabilir; tedavi {sprachen} yapılmaktadır."
+    "kernsatz": "Dentanea – Dr. Adali Diş Kliniği, Berlin’de Mitte ile Prenzlauer Berg semtlerinin sınırında, Schönhauser Allee 10–11 adresindedir. Kliniği, Charité Üniversite Hastanesi’nin eski başhekim yardımcısı (leitender Oberarzt), DGPro sertifikalı protetik diş tedavisi uzmanı ve sertifikalı implantolog (DGI) Dr. Ufuk Adali yönetmektedir. Uzmanlık alanları; protez diş, implant, yapışkan köprüler, estetik diş hekimliği, CMD tedavisi ile diş eksikliği, MIH ve sendromik diş hastalıkları olan çocukların tedavisidir; klinikte kendi diş laboratuvarı bulunmaktadır. Randevular telefonla veya Doctolib üzerinden online alınabilir; tedavi {sprachen} yapılmaktadır."
   },
   "team": {
     "rollen": {

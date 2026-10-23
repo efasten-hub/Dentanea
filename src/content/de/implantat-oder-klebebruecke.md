@@ -1,6 +1,6 @@
 ---
 titel: "Implantat oder Klebebrücke?"
-seo_titel: "Implantat oder Klebebrücke? Vergleich | Dentaviva"
+seo_titel: "Implantat oder Klebebrücke? Vergleich | Dentanea"
 beschreibung: "Ein Zahn fehlt: Implantat oder Klebebrücke? Vor- und Nachteile, Haltbarkeit, Eignung für Jugendliche, Kosten und Krankenkasse im Vergleich."
 kurz: "Wenn ein einzelner Zahn fehlt, sind Implantat und Klebebrücke die beiden schonendsten festen Lösungen. Wann passt was?"
 unterzeile: "Zwei feste Lösungen für einen fehlenden Zahn – und wie Sie die passende finden."

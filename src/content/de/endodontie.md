@@ -1,6 +1,6 @@
 ---
 titel: "Wurzelkanalbehandlung (Endodontie)"
-seo_titel: "Wurzelkanalbehandlung in Berlin | Dentaviva"
+seo_titel: "Wurzelkanalbehandlung in Berlin | Dentanea"
 beschreibung: "Wurzelkanalbehandlung in Berlin: entzündeten Zahn erhalten, mit maschineller Aufbereitung und digitalem Röntgen. Ablauf, Alternativen, Kosten."
 kurz: "Einen entzündeten Zahn erhalten – mit maschineller Aufbereitung, gründlicher Desinfektion und digitalem Röntgen."
 unterzeile: "Ein entzündeter Zahn lässt sich oft erhalten."

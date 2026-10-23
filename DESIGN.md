@@ -446,7 +446,7 @@ Der Export kennt nur Textlinks („there are no filled buttons“). Für die Pra
 
 ### A8 Header, Navigation, Logo
 
-- **Abweichung vom Export** (dort: Navigation ohne Logo, Wortmarke im Inhalt). Der Header zeigt links das Logo-Monogramm und die **Serif-Wortmarke „Dentaviva“** (24px, Libre Caslon Text), darunter in Caption-Größe „Zahnarztpraxis Dr. Adali“. Der Zusatz grenzt den Namen von ähnlich klingenden Praxen ab, z. B. „Denta Vita“ in Berlin-Mitte (siehe `docs/bestandsaufnahme.md`, Abschnitt 10).
+- **Abweichung vom Export** (dort: Navigation ohne Logo, Wortmarke im Inhalt). Der Header zeigt links das Logo-Monogramm und die **Serif-Wortmarke „Dentanea“** (24px, Libre Caslon Text), darunter in Caption-Größe „Zahnarztpraxis Dr. Adali“. Der Zusatz grenzt den Namen von ähnlich klingenden Praxen ab (siehe `docs/bestandsaufnahme.md`, Abschnitt 10).
 - **Logo: [[PLATZHALTER]].** Bis zum finalen Logo steht ein Monogramm „D“ aus Libre Caslon Display, als Vektorpfad in Oxblood mit 1px-Haarlinienrahmen (`src/assets/logo/logo-platzhalter.svg`). Favicon und App-Icon zeigen dasselbe „D“ in Cream auf Oxblood (`public/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`). Das finale Logo muss ebenfalls in Oxblood/Cream funktionieren, einfarbig und ohne Verlauf.
 - Das alte Logo (Zahn mit „A“, Magenta) entfällt mit dem neuen Namen. Archiv: `docs/alte-website/logo-alt-magenta.png`.
 - **Zweizeiliger Header ab 1024px:**

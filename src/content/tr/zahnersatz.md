@@ -1,6 +1,6 @@
 ---
 titel: "Protez diş: kuron, köprü ve protezler"
-seo_titel: "Berlin’de Kuron, Köprü ve Protez | Dentaviva"
+seo_titel: "Berlin’de Kuron, Köprü ve Protez | Dentanea"
 beschreibung: "Berlin’de kuron, kısmi kuron, köprü ve protezler: dijital olarak planlanır, kendi laboratuvarımızda üretilir. Süreç, dayanıklılık ve maliyetler."
 kurz: "Kısmi kuron, kuron, köprü ve protezler: dijital olarak planlanır ve kendi laboratuvarımızda üretilir."
 unterzeile: "Hasarlı veya eksik dişlerin yerine: hassas, doğal görünümlü ve bakımı kolay."

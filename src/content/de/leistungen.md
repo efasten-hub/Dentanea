@@ -1,6 +1,6 @@
 ---
 titel: "Leistungen"
-seo_titel: "Leistungen: Zahnersatz, Implantate, Ästhetik | Dentaviva"
+seo_titel: "Leistungen: Zahnersatz, Implantate, Ästhetik | Dentanea"
 beschreibung: "Zahnersatz, Implantate, Klebebrücken, Ästhetik, CMD-Schienen, Kinderzahnersatz, MIH, Zahnreinigung, Wurzel- und Zahnfleischbehandlung in Berlin."
 unterzeile: "Von der Vorsorge bis zum komplexen Zahnersatz – mit Schwerpunkt auf Prothetik und Implantologie."
 antwort: "In unserer Praxis bekommen Sie die gesamte Zahnmedizin aus einer Hand. Unsere Schwerpunkte sind Zahnersatz, Implantate und Klebebrücken, ästhetische Behandlungen, Kiefergelenkbeschwerden (CMD) sowie Kinder und Jugendliche mit fehlenden oder geschwächten Zähnen."

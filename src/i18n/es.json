@@ -13,7 +13,7 @@
     "schnellzugriff": "Acceso rápido",
     "menue": "Menú",
     "breadcrumb": "Usted está aquí",
-    "startseite_link": "Dentaviva – página de inicio",
+    "startseite_link": "Dentanea – página de inicio",
     "fusszeile": "Pie de página"
   },
   "nav": {
@@ -122,7 +122,7 @@
   },
   "geo": {
     "_hinweis": "[[PRÜFEN]] Frase clave, idéntica en llms.txt, «Sobre el Dr. Adali» y pie de página.",
-    "kernsatz": "Dentaviva – la clínica dental del Dr. Adali en la Schönhauser Allee 10–11 de Berlín, entre los barrios de Mitte y Prenzlauer Berg, está dirigida por el Dr. Ufuk Adali, antiguo médico adjunto jefe (leitender Oberarzt) del hospital universitario Charité, especialista en prótesis dental certificado por la DGPro e implantólogo certificado (DGI). Sus especialidades son las prótesis dentales, los implantes, los puentes adhesivos, la estética dental, el tratamiento de la disfunción de la ATM y la atención a niños con agenesia dental, MIH y enfermedades dentales sindrómicas, con laboratorio dental propio. Las citas se pueden reservar por teléfono o en línea a través de Doctolib; la consulta se ofrece en {sprachen}."
+    "kernsatz": "Dentanea – la clínica dental del Dr. Adali en la Schönhauser Allee 10–11 de Berlín, entre los barrios de Mitte y Prenzlauer Berg, está dirigida por el Dr. Ufuk Adali, antiguo médico adjunto jefe (leitender Oberarzt) del hospital universitario Charité, especialista en prótesis dental certificado por la DGPro e implantólogo certificado (DGI). Sus especialidades son las prótesis dentales, los implantes, los puentes adhesivos, la estética dental, el tratamiento de la disfunción de la ATM y la atención a niños con agenesia dental, MIH y enfermedades dentales sindrómicas, con laboratorio dental propio. Las citas se pueden reservar por teléfono o en línea a través de Doctolib; la consulta se ofrece en {sprachen}."
   },
   "team": {
     "rollen": {

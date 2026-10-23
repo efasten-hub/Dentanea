@@ -1,6 +1,6 @@
 ---
 titel: "Ästhetische Zahnmedizin: Veneers, Bleaching, Aligner"
-seo_titel: "Veneers, Bleaching & Aligner in Berlin | Dentaviva"
+seo_titel: "Veneers, Bleaching & Aligner in Berlin | Dentanea"
 beschreibung: "Ästhetische Zahnmedizin in Berlin: Veneers mit Vorschau (Mock-up), Bleaching unter zahnärztlicher Kontrolle und Aligner wie Invisalign. Ablauf und Kosten."
 kurz: "Veneers mit Vorschau am eigenen Mund, Bleaching unter zahnärztlicher Kontrolle und Aligner – realistisch geplant und substanzschonend."
 unterzeile: "Schönere Zähne – realistisch geplant und so schonend wie möglich."

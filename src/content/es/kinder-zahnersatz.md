@@ -1,6 +1,6 @@
 ---
 titel: "Prótesis dental en niños y adolescentes"
-seo_titel: "Dientes ausentes en niños: prótesis infantil | Dentaviva"
+seo_titel: "Dientes ausentes en niños: prótesis infantil | Dentanea"
 beschreibung: "Dientes ausentes en niños y adolescentes: agenesias, dientes conoides, pérdida por accidente. Soluciones que respetan el crecimiento y costes en Berlín."
 kurz: "Agenesias, dientes conoides o pérdida por un accidente: soluciones que respetan el crecimiento, en coordinación con el ortodoncista."
 unterzeile: "Dientes ausentes en niños: soluciones que crecen con ellos."

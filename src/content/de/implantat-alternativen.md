@@ -1,6 +1,6 @@
 ---
 titel: "Alternativen zum Implantat"
-seo_titel: "Alternativen zum Implantat: Brücke & Prothese | Dentaviva"
+seo_titel: "Alternativen zum Implantat: Brücke & Prothese | Dentanea"
 beschreibung: "Kein Implantat möglich oder gewünscht? Klebebrücke, Brücke und Teilprothese im Vergleich: Vor- und Nachteile, Haltbarkeit, Pflege und Kosten."
 kurz: "Wenn ein Implantat nicht möglich oder nicht gewünscht ist: Klebebrücke, Brücke oder Teilprothese im Vergleich."
 unterzeile: "Wenn ein Implantat nicht passt: Welche Lösungen es gibt und was für sie spricht."

@@ -1,6 +1,6 @@
 ---
 titel: "Oral surgery and bone grafting"
-seo_titel: "Oral Surgery, Wisdom Teeth & Sinus Lift Berlin | Dentaviva"
+seo_titel: "Oral Surgery, Wisdom Teeth & Sinus Lift Berlin | Dentanea"
 beschreibung: "Oral surgery in Berlin: extractions, wisdom teeth, apicoectomy, bone grafting and sinus lift. Gentle procedures with clear information on costs."
 kurz: "Extractions, wisdom teeth, apicoectomy, bone grafting and sinus lift – gentle and well planned."
 unterzeile: "Surgical procedures in the mouth – well planned and as gentle as possible."

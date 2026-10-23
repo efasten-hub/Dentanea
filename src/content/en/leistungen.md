@@ -1,6 +1,6 @@
 ---
 titel: "Treatments"
-seo_titel: "Dental Treatments in Berlin: Implants, Crowns | Dentaviva"
+seo_titel: "Dental Treatments in Berlin: Implants, Crowns | Dentanea"
 beschreibung: "Crowns, bridges, implants, bonded bridges, cosmetic dentistry, TMD splints, children’s prosthetics, MIH, cleaning, root canal and gum care in Berlin."
 unterzeile: "From prevention to complex restorations – with a focus on prosthodontics and implants."
 antwort: "We offer complete dental care in one place. Our key areas are crowns, bridges and dentures, implants and resin-bonded bridges, cosmetic treatments, jaw joint problems (TMD) and children and teenagers with missing or weakened teeth."

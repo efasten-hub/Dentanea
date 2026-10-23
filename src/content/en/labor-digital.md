@@ -1,6 +1,6 @@
 ---
 titel: "In-house dental lab and digital dentistry"
-seo_titel: "In-House Dental Lab & Digital Dentistry Berlin | Dentaviva"
+seo_titel: "In-House Dental Lab & Digital Dentistry Berlin | Dentanea"
 beschreibung: "In-house dental lab with a master dental technician: intraoral scanner, CAD/CAM, 3D planning and digital X-rays. Short distances, precise restorations."
 kurz: "A master dental technician on site, intraoral scanner, CAD/CAM and 3D planning – for precise restorations and short distances."
 unterzeile: "Planning, production and fine-tuning under one roof."

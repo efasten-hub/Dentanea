@@ -1,6 +1,6 @@
 ---
 titel: "Puente adhesivo (puente Maryland)"
-seo_titel: "Puente adhesivo (Maryland) en Berlín | Dentaviva"
+seo_titel: "Puente adhesivo (Maryland) en Berlín | Dentanea"
 beschreibung: "Puente adhesivo (puente Maryland) en Berlín: reponer un diente sin tallar los dientes vecinos. Para quién es adecuado, proceso y costes."
 kurz: "Repone un solo diente sin tallar los dientes vecinos: una alternativa conservadora al implante."
 unterzeile: "Reponer un diente ausente sin tallar los dientes sanos de al lado."

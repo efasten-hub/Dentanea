@@ -1,6 +1,6 @@
 ---
 titel: "Empastes del color del diente"
-seo_titel: "Empastes estéticos de composite en Berlín | Dentaviva"
+seo_titel: "Empastes estéticos de composite en Berlín | Dentanea"
 beschreibung: "Empastes de composite del color del diente en Berlín: eliminar la caries con cuidado y restaurar con aspecto natural. Qué cubre el seguro desde 2025."
 kurz: "Eliminar la caries con cuidado y reconstruir el diente con composite de aspecto natural."
 unterzeile: "Tratar la caries con cuidado, con empastes que no se notan."

@@ -1,7 +1,7 @@
 ---
 titel: "Gracias por su solicitud."
-seo_titel: "Solicitud enviada | Dentaviva"
-beschreibung: "Su solicitud a Dentaviva – clínica dental del Dr. Adali se ha enviado."
+seo_titel: "Solicitud enviada | Dentanea"
+beschreibung: "Su solicitud a Dentanea – clínica dental del Dr. Adali se ha enviado."
 unterzeile: "Hemos recibido su mensaje y normalmente le respondemos en dos días laborables."
 uebersetzt: true
 uebersetzung_geprueft: false

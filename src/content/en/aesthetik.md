@@ -1,6 +1,6 @@
 ---
 titel: "Cosmetic dentistry: veneers, whitening, aligners"
-seo_titel: "Veneers, Teeth Whitening & Aligners Berlin | Dentaviva"
+seo_titel: "Veneers, Teeth Whitening & Aligners Berlin | Dentanea"
 beschreibung: "Cosmetic dentistry in Berlin: veneers with a mock-up preview, whitening under dental supervision and clear aligners such as Invisalign. Procedure, costs."
 kurz: "Veneers with a preview in your own mouth, whitening under dental supervision and aligners – realistic planning that protects your teeth."
 unterzeile: "A nicer smile – realistically planned and as gentle as possible."

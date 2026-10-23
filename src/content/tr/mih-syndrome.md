@@ -1,6 +1,6 @@
 ---
 titel: "Tebeşir dişler (MIH), konik dişler ve kalıtsal diş hastalıkları"
-seo_titel: "Tebeşir Diş (MIH) ve Amelogenezis İmperfekta | Dentaviva"
+seo_titel: "Tebeşir Diş (MIH) ve Amelogenezis İmperfekta | Dentanea"
 beschreibung: "Tebeşir dişler (MIH), amelogenezis ve dentinogenezis imperfekta, konik dişler: Berlin’de disiplinlerarası, yaşa uygun ve nazik tedavi."
 kurz: "Tebeşir dişler (MIH), amelogenezis ve dentinogenezis imperfekta, konik dişler: ağrıyı gidermek, dişleri korumak, görünümü iyileştirmek."
 unterzeile: "Dişler baştan zayıf olduğunda: çocuklar, gençler ve yetişkinler için nazik yardım."

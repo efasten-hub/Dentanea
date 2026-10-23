@@ -1,9 +1,9 @@
 ---
 titel: "Klinik ve ekip"
-seo_titel: "Klinik ve Ekip – Schönhauser Allee, Berlin | Dentaviva"
+seo_titel: "Klinik ve Ekip – Schönhauser Allee, Berlin | Dentanea"
 beschreibung: "Berlin Schönhauser Allee 10–11’deki diş kliniğimiz: kendi laboratuvarımız, dijital donanım, hijyen, asansör ve yeraltı otoparkında ücretsiz park."
 unterzeile: "Mitte ile Prenzlauer Berg sınırında, kendi laboratuvarı ve dijital donanımı olan bir klinik."
-antwort: "Dentaviva, Schönhauser Allee 10–11 adresinde, 2. kattadır (A girişi, solda) ve asansörle ulaşılabilir. Binanın yeraltı otoparkında ücretsiz park yeri vardır. Kliniğin diş teknisyeni ustasıyla kendi diş laboratuvarı bulunur."
+antwort: "Dentanea, Schönhauser Allee 10–11 adresinde, 2. kattadır (A girişi, solda) ve asansörle ulaşılabilir. Binanın yeraltı otoparkında ücretsiz park yeri vardır. Kliniğin diş teknisyeni ustasıyla kendi diş laboratuvarı bulunur."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

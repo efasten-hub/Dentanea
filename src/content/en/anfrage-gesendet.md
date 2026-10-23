@@ -1,7 +1,7 @@
 ---
 titel: "Thank you for your request."
-seo_titel: "Request sent | Dentaviva"
-beschreibung: "Your request to Dentaviva – Dr. Adali’s dental practice has been sent."
+seo_titel: "Request sent | Dentanea"
+beschreibung: "Your request to Dentanea – Dr. Adali’s dental practice has been sent."
 unterzeile: "We have received your message and will usually reply within two working days."
 uebersetzt: true
 uebersetzung_geprueft: false

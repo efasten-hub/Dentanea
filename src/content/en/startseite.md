@@ -1,8 +1,8 @@
 ---
 titel: "University-level dentistry."
-seo_titel: "English-Speaking Dentist in Berlin-Mitte | Dentaviva"
-beschreibung: "Dentaviva – Dr. Adali’s dental practice at Schönhauser Allee 10–11, Berlin: implants, crowns and bridges, TMD and children’s dentistry. Book online."
-unterzeile: "Dentaviva is the practice of Dr. Ufuk Adali, senior consultant at Charité university hospital until 2026. We plan carefully, explain clearly and make crowns, bridges and dentures in our own lab."
+seo_titel: "English-Speaking Dentist in Berlin-Mitte | Dentanea"
+beschreibung: "Dentanea – Dr. Adali’s dental practice at Schönhauser Allee 10–11, Berlin: implants, crowns and bridges, TMD and children’s dentistry. Book online."
+unterzeile: "Dentanea is the practice of Dr. Ufuk Adali, senior consultant at Charité university hospital until 2026. We plan carefully, explain clearly and make crowns, bridges and dentures in our own lab."
 uebersetzt: true
 uebersetzung_geprueft: false
 bild: "hero-atmosphaere"

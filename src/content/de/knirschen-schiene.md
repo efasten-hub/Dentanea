@@ -1,6 +1,6 @@
 ---
 titel: "Zähneknirschen und Kieferschmerzen"
-seo_titel: "Zähneknirschen & Kieferschmerzen: Was hilft? | Dentaviva"
+seo_titel: "Zähneknirschen & Kieferschmerzen: Was hilft? | Dentanea"
 beschreibung: "Zähneknirschen (Bruxismus) und Kieferschmerzen: Ursachen, Anzeichen, was eine Aufbissschiene leistet und welche Übungen helfen. Von Dr. Adali erklärt."
 kurz: "Warum wir knirschen, woran man es merkt und was eine Schiene leisten kann – und was nicht."
 unterzeile: "Ursachen, Anzeichen und was wirklich hilft."

@@ -1,6 +1,6 @@
 ---
 titel: "Gum disease treatment (periodontics)"
-seo_titel: "Gum Disease (Periodontitis) Treatment Berlin | Dentaviva"
+seo_titel: "Gum Disease (Periodontitis) Treatment Berlin | Dentanea"
 beschreibung: "Periodontitis treatment in Berlin: diagnosis, deep cleaning of gum pockets and supportive aftercare. Procedure, duration and what insurance covers."
 kurz: "Stopping periodontitis: deep cleaning of gum pockets and aftercare that keeps the result stable."
 unterzeile: "Recognising gum inflammation early and keeping it under control."

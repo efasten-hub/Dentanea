@@ -1,6 +1,6 @@
 ---
 titel: "Estetik diş hekimliği: lamina, beyazlatma, şeffaf plak"
-seo_titel: "Berlin’de Lamina, Diş Beyazlatma ve Aligner | Dentaviva"
+seo_titel: "Berlin’de Lamina, Diş Beyazlatma ve Aligner | Dentanea"
 beschreibung: "Berlin’de estetik diş hekimliği: ön izlemeli lamina (mock-up), diş hekimi kontrolünde beyazlatma ve Invisalign gibi şeffaf plaklar. Süreç ve maliyetler."
 kurz: "Kendi ağzınızda ön izlemeli lamina, diş hekimi kontrolünde beyazlatma ve şeffaf plaklar: gerçekçi ve dişleri koruyan planlama."
 unterzeile: "Daha güzel bir gülüş: gerçekçi planlanmış ve mümkün olduğunca koruyucu."

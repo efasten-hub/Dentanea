@@ -1,6 +1,6 @@
 ---
 titel: "Implantes dentales"
-seo_titel: "Implantes dentales en Berlín, planificados en 3D | Dentaviva"
+seo_titel: "Implantes dentales en Berlín, planificados en 3D | Dentanea"
 beschreibung: "Implantes dentales en Berlín con un implantólogo certificado (DGI): planificación 3D, regeneración ósea, carga inmediata y coronas de nuestro laboratorio."
 kurz: "Raíces artificiales con planificación 3D: desde un solo diente hasta puentes fijos, con carga inmediata cuando es posible."
 unterzeile: "Dientes fijos sobre raíces artificiales: planificados con cuidado, colocados con delicadeza."

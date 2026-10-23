@@ -1,6 +1,6 @@
 ---
 titel: "Dental implants"
-seo_titel: "Dental Implants in Berlin – 3D-Planned | Dentaviva"
+seo_titel: "Dental Implants in Berlin – 3D-Planned | Dentanea"
 beschreibung: "Dental implants in Berlin by a DGI-certified implantologist: 3D planning, bone grafting, immediate restorations, crowns from our in-house lab."
 kurz: "Artificial tooth roots with 3D planning – from single teeth to fixed bridges, with immediate restoration where possible."
 unterzeile: "Fixed teeth on artificial roots – carefully planned, gently placed."

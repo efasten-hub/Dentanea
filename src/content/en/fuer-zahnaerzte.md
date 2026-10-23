@@ -1,6 +1,6 @@
 ---
 titel: "For referring dentists"
-seo_titel: "Referrals: Prosthodontics & Implants Berlin | Dentaviva"
+seo_titel: "Referrals: Prosthodontics & Implants Berlin | Dentanea"
 beschreibung: "For dentists and orthodontists: refer patients for prosthodontics, implants and paediatric or rare-condition cases. Process and report back to you."
 unterzeile: "Prosthodontics, implants, paediatric and rare-condition cases – with a report back to your practice."
 antwort: "You can refer patients to us for individual treatment steps or for a second opinion. After treatment you receive a report, and your patient returns to you for ongoing care."

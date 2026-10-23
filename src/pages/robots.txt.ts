@@ -27,7 +27,7 @@ const block = (agents: string[]) => [...agents.map((a) => `User-agent: ${a}`), "
 export const GET: APIRoute = () =>
   new Response(
     [
-      "# Dentaviva – Zahnarztpraxis Dr. Adali",
+      "# Dentanea – Zahnarztpraxis Dr. Adali",
       "# Suchmaschinen und KI-Assistenten sind willkommen. Zusammenfassung für KI: /llms.txt",
       "",
       ...block(["*"]),

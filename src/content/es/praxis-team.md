@@ -1,9 +1,9 @@
 ---
 titel: "Clínica y equipo"
-seo_titel: "Clínica y equipo – Schönhauser Allee, Berlín | Dentaviva"
+seo_titel: "Clínica y equipo – Schönhauser Allee, Berlín | Dentanea"
 beschreibung: "Nuestra clínica dental en la Schönhauser Allee 10–11 de Berlín: laboratorio propio, equipamiento digital, higiene, ascensor y aparcamiento gratuito."
 unterzeile: "Una clínica entre Mitte y Prenzlauer Berg, con laboratorio propio y equipamiento digital."
-antwort: "Dentaviva está en la Schönhauser Allee 10–11, en la 2.ª planta (entrada A, a la izquierda), con acceso en ascensor. En el garaje subterráneo del edificio hay aparcamiento gratuito. La clínica cuenta con laboratorio dental propio y un maestro protésico."
+antwort: "Dentanea está en la Schönhauser Allee 10–11, en la 2.ª planta (entrada A, a la izquierda), con acceso en ascensor. En el garaje subterráneo del edificio hay aparcamiento gratuito. La clínica cuenta con laboratorio dental propio y un maestro protésico."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

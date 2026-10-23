@@ -1,6 +1,6 @@
 ---
 titel: "Häufige Fragen"
-seo_titel: "FAQ: Termin, Kosten, Sprachen, Anfahrt | Dentaviva"
+seo_titel: "FAQ: Termin, Kosten, Sprachen, Anfahrt | Dentanea"
 beschreibung: "Antworten auf häufige Fragen: Online-Termin über Doctolib, Kosten und Krankenkasse, Behandlung auf Deutsch, Englisch, Spanisch, Türkisch, Anfahrt."
 unterzeile: "Termin, Kosten, Behandlung und Anfahrt – kurz beantwortet."
 uebersetzt: true

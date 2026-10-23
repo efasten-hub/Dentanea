@@ -1,7 +1,7 @@
 ---
 titel: "Accessibility statement"
-seo_titel: "Accessibility | Dentaviva – Dr. Adali"
-beschreibung: "Accessibility statement for the Dentaviva website: target WCAG 2.2 level AA, known limitations and how to give feedback."
+seo_titel: "Accessibility | Dentanea – Dr. Adali"
+beschreibung: "Accessibility statement for the Dentanea website: target WCAG 2.2 level AA, known limitations and how to give feedback."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

@@ -1,6 +1,6 @@
 ---
 titel: "Dientes de tiza (HIM), dientes conoides y enfermedades dentales hereditarias"
-seo_titel: "Dientes de tiza (HIM) y amelogénesis imperfecta | Dentaviva"
+seo_titel: "Dientes de tiza (HIM) y amelogénesis imperfecta | Dentanea"
 beschreibung: "Dientes de tiza (HIM/MIH), amelogénesis y dentinogénesis imperfecta, dientes conoides: tratamiento cuidadoso en Berlín, interdisciplinar y según la edad."
 kurz: "Dientes de tiza (HIM), amelogénesis y dentinogénesis imperfecta, dientes conoides: aliviar el dolor, proteger los dientes, mejorar el aspecto."
 unterzeile: "Cuando los dientes están debilitados desde el principio: ayuda cuidadosa para niños, adolescentes y adultos."

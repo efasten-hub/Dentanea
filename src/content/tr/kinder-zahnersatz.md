@@ -1,6 +1,6 @@
 ---
 titel: "Çocuk ve gençlerde protez diş"
-seo_titel: "Çocuklarda Eksik Dişler ve Protez | Dentaviva"
+seo_titel: "Çocuklarda Eksik Dişler ve Protez | Dentanea"
 beschreibung: "Çocuk ve gençlerde eksik dişler: doğuştan eksik ve konik dişler, kaza sonrası diş kaybı. Büyümeyi gözeten çözümler ve Berlin’de maliyetler."
 kurz: "Doğuştan eksik dişler, konik dişler veya kazada kaybedilen dişler: ortodontistle uyumlu, büyümeyi gözeten çözümler."
 unterzeile: "Çocuklarda eksik dişler: onlarla birlikte büyüyen çözümler."

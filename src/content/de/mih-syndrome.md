@@ -1,6 +1,6 @@
 ---
 titel: "Kreidezähne (MIH), Zapfenzähne und angeborene Zahnerkrankungen"
-seo_titel: "Kreidezähne (MIH) & Amelogenesis imperfecta | Dentaviva"
+seo_titel: "Kreidezähne (MIH) & Amelogenesis imperfecta | Dentanea"
 beschreibung: "Kreidezähne (MIH), Amelogenesis und Dentinogenesis imperfecta, Zapfenzähne: schonende Behandlung in Berlin, interdisziplinär und altersgerecht."
 kurz: "Kreidezähne (MIH), Amelogenesis und Dentinogenesis imperfecta, Zapfenzähne: Schmerzen lindern, Zähne schützen, Aussehen verbessern."
 unterzeile: "Wenn Zähne von Anfang an geschwächt sind – schonende Hilfe für Kinder, Jugendliche und Erwachsene."

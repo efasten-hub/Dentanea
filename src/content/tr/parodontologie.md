@@ -1,6 +1,6 @@
 ---
 titel: "Diş eti tedavisi (periodontoloji)"
-seo_titel: "Berlin’de Diş Eti (Periodontitis) Tedavisi | Dentaviva"
+seo_titel: "Berlin’de Diş Eti (Periodontitis) Tedavisi | Dentanea"
 beschreibung: "Berlin’de periodontitis tedavisi: teşhis, diş eti ceplerinin derin temizliği ve destekleyici bakım. Süreç, süre ve sigortanın karşıladıkları."
 kurz: "Periodontitisi durdurmak: diş eti ceplerinin derin temizliği ve sonucu koruyan düzenli bakım."
 unterzeile: "Diş eti iltihabını erken fark etmek ve kalıcı olarak kontrol altına almak."

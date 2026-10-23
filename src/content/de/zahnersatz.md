@@ -1,6 +1,6 @@
 ---
 titel: "Zahnersatz: Kronen, Brücken und Prothesen"
-seo_titel: "Zahnersatz Berlin: Kronen, Brücken, Prothesen | Dentaviva"
+seo_titel: "Zahnersatz Berlin: Kronen, Brücken, Prothesen | Dentanea"
 beschreibung: "Zahnersatz in Berlin: Kronen, Teilkronen, Brücken und Prothesen, digital geplant und im eigenen Labor gefertigt. Ablauf, Haltbarkeit und Kosten."
 kurz: "Teilkronen, Kronen, Brücken und Prothesen – digital geplant und im eigenen Labor gefertigt."
 unterzeile: "Ersatz für beschädigte oder fehlende Zähne – passgenau, natürlich wirkend und gut zu pflegen."

@@ -1,6 +1,6 @@
 ---
 titel: "Oralchirurgie und Knochenaufbau"
-seo_titel: "Oralchirurgie, Weisheitszähne & Sinuslift | Dentaviva"
+seo_titel: "Oralchirurgie, Weisheitszähne & Sinuslift | Dentanea"
 beschreibung: "Oralchirurgie in Berlin: Zahnentfernung, Weisheitszähne, Wurzelspitzenresektion, Knochenaufbau und Sinuslift. Schonend, mit klarer Aufklärung."
 kurz: "Zahnentfernung, Weisheitszähne, Wurzelspitzenresektion, Knochenaufbau und Sinuslift – schonend und gut geplant."
 unterzeile: "Chirurgische Eingriffe im Mund – gut geplant und so schonend wie möglich."

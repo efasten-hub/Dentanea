@@ -1,6 +1,6 @@
 ---
 titel: "Prótesis dentales: coronas, puentes y dentaduras"
-seo_titel: "Coronas, puentes y prótesis dentales en Berlín | Dentaviva"
+seo_titel: "Coronas, puentes y prótesis dentales en Berlín | Dentanea"
 beschreibung: "Coronas, incrustaciones, puentes y prótesis en Berlín, planificados digitalmente y fabricados en nuestro laboratorio. Proceso, duración y costes."
 kurz: "Incrustaciones, coronas, puentes y prótesis, planificados digitalmente y fabricados en nuestro laboratorio."
 unterzeile: "Reponer dientes dañados o ausentes: con precisión, aspecto natural y fácil cuidado."

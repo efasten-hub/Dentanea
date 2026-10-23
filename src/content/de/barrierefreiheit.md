@@ -1,7 +1,7 @@
 ---
 titel: "Erklärung zur Barrierefreiheit"
-seo_titel: "Barrierefreiheit | Dentaviva – Zahnarztpraxis Dr. Adali"
-beschreibung: "Erklärung zur Barrierefreiheit der Website von Dentaviva: Ziel WCAG 2.2 Stufe AA, bekannte Einschränkungen und Kontakt für Rückmeldungen."
+seo_titel: "Barrierefreiheit | Dentanea – Zahnarztpraxis Dr. Adali"
+beschreibung: "Erklärung zur Barrierefreiheit der Website von Dentanea: Ziel WCAG 2.2 Stufe AA, bekannte Einschränkungen und Kontakt für Rückmeldungen."
 uebersetzt: true
 uebersetzung_geprueft: true
 ---

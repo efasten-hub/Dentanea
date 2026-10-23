@@ -1,6 +1,6 @@
 ---
 titel: "Ağız cerrahisi ve kemik ogmentasyonu"
-seo_titel: "Berlin’de Ağız Cerrahisi ve 20 Yaş Dişi | Dentaviva"
+seo_titel: "Berlin’de Ağız Cerrahisi ve 20 Yaş Dişi | Dentanea"
 beschreibung: "Berlin’de ağız cerrahisi: diş çekimi, 20 yaş dişleri, kök ucu rezeksiyonu, kemik ogmentasyonu ve sinüs lifting. Özenli işlemler, açık bilgilendirme."
 kurz: "Diş çekimi, 20 yaş dişleri, kök ucu rezeksiyonu, kemik ogmentasyonu ve sinüs lifting: özenli ve iyi planlanmış."
 unterzeile: "Ağız içindeki cerrahi işlemler: iyi planlanmış ve mümkün olduğunca nazik."

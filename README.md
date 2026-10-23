@@ -1,6 +1,6 @@
-# Dentaviva – Website der Zahnarztpraxis Dr. Adali
+# Dentanea – Website der Zahnarztpraxis Dr. Adali
 
-Statische, viersprachige Website (Deutsch, Englisch, Spanisch, Türkisch) für **Dentaviva – Zahnarztpraxis Dr. Adali**, Schönhauser Allee 10–11, 10119 Berlin.
+Statische, viersprachige Website (Deutsch, Englisch, Spanisch, Türkisch) für **Dentanea – Zahnarztpraxis Dr. Adali**, Schönhauser Allee 10–11, 10119 Berlin.
 
 - **Technik:** [Astro](https://astro.build) (statisch) + Tailwind CSS v4. Es läuft kein Node-Server: Das Ergebnis ist ein Ordner mit HTML-, CSS- und Bilddateien für das Hetzner-Webhosting (Apache). Nur das Anfrageformular nutzt ein kleines PHP-Skript.
 - **Design:** verbindlich in [`DESIGN.md`](DESIGN.md) (Tokens 1:1 aus dem Refero-Export, Abweichungen für die Arztpraxis dokumentiert).
@@ -133,7 +133,7 @@ Die Website wird automatisch per **GitHub Action** (`.github/workflows/deploy.ym
    |---|---|
    | `SFTP_HOST` | `www123.your-server.de` |
    | `SFTP_PORT` | `222` |
-   | `SFTP_BENUTZER` | `dentaviva` |
+   | `SFTP_BENUTZER` | `dentanea` |
    | `SFTP_PASSWORT` | (Passwort aus der konsoleH; keine Anführungszeichen im Passwort) |
    | `SFTP_ZIEL` | `/public_html` (Web-Verzeichnis der Domain) |
 

@@ -140,7 +140,7 @@ for (const [schl, e] of eintraege) {
     if (verboten.length) warn("Bilder", `${schl}: Stockfoto an unzulässiger Position – ${verboten.join(", ")}`);
     if (e.einwilligung_dokumentiert) warn("Bilder", `${schl}: Stockfoto mit Patienteneinwilligung? Bitte Quelle prüfen`);
     const altText = Object.values(e.alt ?? {}).join(" ").toLowerCase();
-    if (/\b(unser\w*|our|nuestr\w*|bizim\w*|dentaviva)\b|praxis dr/.test(altText)) warn("Bilder", `${schl}: Stockfoto-Alt-Text behauptet Praxisbezug`);
+    if (/\b(unser\w*|our|nuestr\w*|bizim\w*|dentanea)\b|praxis dr/.test(altText)) warn("Bilder", `${schl}: Stockfoto-Alt-Text behauptet Praxisbezug`);
   }
 }
 const BILD = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
@@ -152,7 +152,7 @@ infos.push(`Stockfotos im Einsatz: ${stockAnzahl} von ${eintraege.length} Bilder
 
 // ---------------------------------------------------------------- Ausgabe
 const bereiche = [...new Set(warnungen.map((w) => w.bereich))];
-console.log("\n┌─ Prüfbericht Website Dentaviva ─────────────────────────────");
+console.log("\n┌─ Prüfbericht Website Dentanea ─────────────────────────────");
 if (!warnungen.length) console.log("│ ✓ Keine offenen Punkte.");
 for (const b of bereiche) {
   console.log(`│\n│ ⚠ ${b}`);

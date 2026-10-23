@@ -1,6 +1,6 @@
 ---
 titel: "What do crowns, bridges and dentures cost?"
-seo_titel: "Cost of Crowns, Bridges & Dentures in Germany | Dentaviva"
+seo_titel: "Cost of Crowns, Bridges & Dentures in Germany | Dentanea"
 beschreibung: "Fixed subsidy, bonus booklet, hardship rule, own share and GOZ: how costs for dental prosthetics in Germany are made up and how to read your cost plan."
 kurz: "Fixed subsidy, bonus booklet, own share, GOZ: how costs are made up in Germany and how to read your treatment and cost plan."
 unterzeile: "Fixed subsidy, bonus booklet and own share – clearly explained."

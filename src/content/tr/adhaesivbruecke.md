@@ -1,6 +1,6 @@
 ---
 titel: "Yapışkan köprü (Maryland köprü)"
-seo_titel: "Berlin’de Yapışkan Köprü (Maryland) | Dentaviva"
+seo_titel: "Berlin’de Yapışkan Köprü (Maryland) | Dentanea"
 beschreibung: "Berlin’de yapışkan köprü (Maryland köprü): komşu dişleri kesmeden eksik dişi tamamlama. Kimler için uygun, süreç ve maliyetler."
 kurz: "Komşu dişleri kesmeden tek bir dişi tamamlar: implanta koruyucu bir alternatif."
 unterzeile: "Sağlıklı komşu dişleri kesmeden eksik dişi tamamlamak."

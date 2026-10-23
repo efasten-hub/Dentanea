@@ -1,9 +1,9 @@
 ---
 titel: "Praxis & Team"
-seo_titel: "Praxis & Team – Schönhauser Allee Berlin | Dentaviva"
+seo_titel: "Praxis & Team – Schönhauser Allee Berlin | Dentanea"
 beschreibung: "Unsere Zahnarztpraxis in der Schönhauser Allee 10–11: eigenes Dentallabor, digitale Ausstattung, Hygiene, Aufzug und Parkplätze in der Tiefgarage."
 unterzeile: "Eine Praxis an der Grenze von Mitte und Prenzlauer Berg – mit eigenem Labor und digitaler Ausstattung."
-antwort: "Dentaviva liegt in der Schönhauser Allee 10–11, im 2. Obergeschoss (Aufgang A, links), erreichbar mit dem Aufzug. Im Haus gibt es kostenlose Parkplätze in der Tiefgarage. Zur Praxis gehört ein eigenes Dentallabor mit Zahntechnikermeister."
+antwort: "Dentanea liegt in der Schönhauser Allee 10–11, im 2. Obergeschoss (Aufgang A, links), erreichbar mit dem Aufzug. Im Haus gibt es kostenlose Parkplätze in der Tiefgarage. Zur Praxis gehört ein eigenes Dentallabor mit Zahntechnikermeister."
 uebersetzt: true
 uebersetzung_geprueft: true
 ---

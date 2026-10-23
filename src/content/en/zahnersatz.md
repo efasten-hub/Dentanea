@@ -1,6 +1,6 @@
 ---
 titel: "Crowns, bridges and dentures"
-seo_titel: "Crowns, Bridges & Dentures in Berlin | Dentaviva"
+seo_titel: "Crowns, Bridges & Dentures in Berlin | Dentanea"
 beschreibung: "Crowns, partial crowns, bridges and dentures in Berlin, digitally planned and made in our in-house lab. Procedure, durability and costs explained."
 kurz: "Partial crowns, crowns, bridges and dentures – digitally planned and made in our own lab."
 unterzeile: "Replacing damaged or missing teeth – precise, natural-looking and easy to care for."

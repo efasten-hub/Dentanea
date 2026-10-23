@@ -1,7 +1,7 @@
 ---
 titel: "Gizlilik politikası"
-seo_titel: "Gizlilik Politikası | Dentaviva – Dr. Adali"
-beschreibung: "Dentaviva diş kliniği gizlilik politikası: çerez ve takip yok, Almanya’da barındırma, Doctolib, talep formu ve veri koruma haklarınız."
+seo_titel: "Gizlilik Politikası | Dentanea – Dr. Adali"
+beschreibung: "Dentanea diş kliniği gizlilik politikası: çerez ve takip yok, Almanya’da barındırma, Doctolib, talep formu ve veri koruma haklarınız."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---
@@ -13,7 +13,7 @@ Verilerinizin korunması bizim için önemlidir; özellikle bir diş kliniği sa
 ## 1. Veri sorumlusu
 
 Dr. med. dent. Ufuk Adali\
-Dentaviva – Zahnarztpraxis Dr. Adali\
+Dentanea – Zahnarztpraxis Dr. Adali\
 Schönhauser Allee 10–11, 10119 Berlin, Almanya\
 Telefon: +49 30 44 26 84 3 · E-posta: kontakt@zahnarzt-adali.de
 

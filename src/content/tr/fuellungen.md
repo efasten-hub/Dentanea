@@ -1,6 +1,6 @@
 ---
 titel: "Diş renginde dolgular"
-seo_titel: "Berlin’de Beyaz Dolgu (Kompozit) | Dentaviva"
+seo_titel: "Berlin’de Beyaz Dolgu (Kompozit) | Dentanea"
 beschreibung: "Berlin’de diş renginde kompozit dolgular: çürüğü özenle temizleme, doğal görünümlü katmanlı dolgular. 2025’ten beri yasal sigortanın karşıladıkları."
 kurz: "Çürüğü özenle temizlemek ve dişi doğal görünümlü kompozitle yeniden oluşturmak."
 unterzeile: "Çürüğü özenle tedavi etmek, fark edilmeyen dolgularla."

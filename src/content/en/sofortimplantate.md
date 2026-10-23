@@ -1,6 +1,6 @@
 ---
 titel: "Teeth in a day – what is possible?"
-seo_titel: "Teeth in a Day: Immediate Implants Explained | Dentaviva"
+seo_titel: "Teeth in a Day: Immediate Implants Explained | Dentanea"
 beschreibung: "Teeth in a day: what immediate implant placement and loading mean, who is suitable, what the risks are and what it costs in Germany."
 kurz: "Immediate placement and immediate restoration: who “teeth in a day” is suitable for – and what matters."
 unterzeile: "Immediate implant placement and restoration – possibilities and limits."

@@ -1,8 +1,8 @@
 ---
 titel: "Odontología de nivel universitario."
-seo_titel: "Dentista en Berlín que habla español | Dentaviva"
-beschreibung: "Dentaviva – clínica dental del Dr. Adali en la Schönhauser Allee 10–11 de Berlín: implantes, prótesis, puentes adhesivos y odontopediatría. Cita en línea."
-unterzeile: "Dentaviva es la clínica del Dr. Ufuk Adali, médico adjunto jefe en la Charité de Berlín hasta 2026. Le atiende en español, planifica con cuidado y fabrica las prótesis en su propio laboratorio."
+seo_titel: "Dentista en Berlín que habla español | Dentanea"
+beschreibung: "Dentanea – clínica dental del Dr. Adali en la Schönhauser Allee 10–11 de Berlín: implantes, prótesis, puentes adhesivos y odontopediatría. Cita en línea."
+unterzeile: "Dentanea es la clínica del Dr. Ufuk Adali, médico adjunto jefe en la Charité de Berlín hasta 2026. Le atiende en español, planifica con cuidado y fabrica las prótesis en su propio laboratorio."
 uebersetzt: true
 uebersetzung_geprueft: false
 bild: "hero-atmosphaere"

@@ -1,7 +1,7 @@
 ---
 titel: "Talebiniz için teşekkür ederiz."
-seo_titel: "Talep gönderildi | Dentaviva"
-beschreibung: "Dentaviva – Dr. Adali Diş Kliniği’ne talebiniz gönderildi."
+seo_titel: "Talep gönderildi | Dentanea"
+beschreibung: "Dentanea – Dr. Adali Diş Kliniği’ne talebiniz gönderildi."
 unterzeile: "Mesajınızı aldık; genellikle iki iş günü içinde yanıt veririz."
 uebersetzt: true
 uebersetzung_geprueft: false

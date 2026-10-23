@@ -1,6 +1,6 @@
 ---
 titel: "Für überweisende Zahnärztinnen und Zahnärzte"
-seo_titel: "Überweisung Prothetik & Implantologie Berlin | Dentaviva"
+seo_titel: "Überweisung Prothetik & Implantologie Berlin | Dentanea"
 beschreibung: "Für Zahnärztinnen, Zahnärzte und Kieferorthopäden: Überweisung zu Prothetik, Implantologie sowie Kinder- und Syndromfällen. Ablauf und Rückbericht."
 unterzeile: "Prothetik, Implantologie, Kinder- und Syndromfälle – mit Rückbericht an Ihre Praxis."
 antwort: "Sie können uns Patientinnen und Patienten für einzelne Behandlungsschritte oder für eine Zweitmeinung überweisen. Nach der Behandlung erhalten Sie einen Bericht, und Ihre Patientin oder Ihr Patient kehrt für die weitere Betreuung zu Ihnen zurück."

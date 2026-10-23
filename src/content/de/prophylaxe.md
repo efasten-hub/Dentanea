@@ -1,6 +1,6 @@
 ---
 titel: "Prophylaxe und professionelle Zahnreinigung"
-seo_titel: "Professionelle Zahnreinigung (PZR) Berlin | Dentaviva"
+seo_titel: "Professionelle Zahnreinigung (PZR) Berlin | Dentanea"
 beschreibung: "Professionelle Zahnreinigung (PZR) in Berlin: Beläge entfernen, polieren, fluoridieren, persönliche Pflegetipps. Ablauf, Häufigkeit und Kosten."
 kurz: "Beläge entfernen, polieren, fluoridieren und persönliche Pflegetipps – damit Zähne, Zahnfleisch und Implantate gesund bleiben."
 unterzeile: "Gesunde Zähne und gesundes Zahnfleisch – ein Leben lang."

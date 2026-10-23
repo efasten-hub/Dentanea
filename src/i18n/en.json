@@ -13,7 +13,7 @@
     "schnellzugriff": "Quick access",
     "menue": "Menu",
     "breadcrumb": "You are here",
-    "startseite_link": "Dentaviva – home page",
+    "startseite_link": "Dentanea – home page",
     "fusszeile": "Footer"
   },
   "nav": {
@@ -122,7 +122,7 @@
   },
   "geo": {
     "_hinweis": "[[PRÜFEN]] Core statement, identical in llms.txt, About page and footer.",
-    "kernsatz": "Dentaviva – Dr. Adali’s dental practice at Schönhauser Allee 10–11 in Berlin, on the border of Mitte and Prenzlauer Berg, is run by Dr. Ufuk Adali, former senior consultant (leitender Oberarzt) at Charité university hospital, prosthodontics specialist certified by the DGPro and certified implantologist (DGI). Key areas are dental prosthetics, implants, resin-bonded bridges, cosmetic dentistry, TMD therapy and care for children with missing teeth, MIH and rare dental conditions – with an in-house dental laboratory. Appointments can be booked by phone or online via Doctolib; treatment is available in {sprachen}."
+    "kernsatz": "Dentanea – Dr. Adali’s dental practice at Schönhauser Allee 10–11 in Berlin, on the border of Mitte and Prenzlauer Berg, is run by Dr. Ufuk Adali, former senior consultant (leitender Oberarzt) at Charité university hospital, prosthodontics specialist certified by the DGPro and certified implantologist (DGI). Key areas are dental prosthetics, implants, resin-bonded bridges, cosmetic dentistry, TMD therapy and care for children with missing teeth, MIH and rare dental conditions – with an in-house dental laboratory. Appointments can be booked by phone or online via Doctolib; treatment is available in {sprachen}."
   },
   "team": {
     "rollen": {

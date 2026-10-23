@@ -1,8 +1,8 @@
 ---
 titel: "Zahnmedizin auf universitärem Niveau."
-seo_titel: "Zahnarzt Berlin-Mitte & Prenzlauer Berg | Dentaviva"
-beschreibung: "Dentaviva – Zahnarztpraxis Dr. Adali, Schönhauser Allee 10–11: Zahnersatz, Implantate, Klebebrücken, CMD und Kinderzahnmedizin. Termin online buchen."
-unterzeile: "Dentaviva ist die Praxis von Dr. Ufuk Adali, bis 2026 leitender Oberarzt an der Charité. Wir planen sorgfältig, erklären verständlich und fertigen Zahnersatz im eigenen Labor."
+seo_titel: "Zahnarzt Berlin-Mitte & Prenzlauer Berg | Dentanea"
+beschreibung: "Dentanea – Zahnarztpraxis Dr. Adali, Schönhauser Allee 10–11: Zahnersatz, Implantate, Klebebrücken, CMD und Kinderzahnmedizin. Termin online buchen."
+unterzeile: "Dentanea ist die Praxis von Dr. Ufuk Adali, bis 2026 leitender Oberarzt an der Charité. Wir planen sorgfältig, erklären verständlich und fertigen Zahnersatz im eigenen Labor."
 uebersetzt: true
 uebersetzung_geprueft: true
 bild: "hero-atmosphaere"

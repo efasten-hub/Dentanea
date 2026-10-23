@@ -1,6 +1,6 @@
 ---
 titel: "Preguntas frecuentes"
-seo_titel: "Preguntas frecuentes: citas, costes, idiomas | Dentaviva"
+seo_titel: "Preguntas frecuentes: citas, costes, idiomas | Dentanea"
 beschreibung: "Respuestas a preguntas frecuentes: cita en línea con Doctolib, costes y seguros, atención en español, alemán, inglés y turco, cómo llegar y aparcar."
 unterzeile: "Citas, costes, tratamientos y cómo llegar, en pocas palabras."
 uebersetzt: true

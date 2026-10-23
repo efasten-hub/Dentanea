@@ -1,6 +1,6 @@
 ---
 titel: "Root canal treatment (endodontics)"
-seo_titel: "Root Canal Treatment in Berlin | Dentaviva"
+seo_titel: "Root Canal Treatment in Berlin | Dentanea"
 beschreibung: "Root canal treatment in Berlin: saving an inflamed tooth with rotary instruments and digital X-rays. Procedure, alternatives and costs explained."
 kurz: "Saving an inflamed tooth – with rotary instruments, thorough disinfection and digital X-rays."
 unterzeile: "An inflamed tooth can often be saved."

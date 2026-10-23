@@ -1,6 +1,6 @@
 ---
 titel: "Eigenes Dentallabor und digitale Zahnmedizin"
-seo_titel: "Eigenes Dentallabor & digitale Zahnmedizin | Dentaviva"
+seo_titel: "Eigenes Dentallabor & digitale Zahnmedizin | Dentanea"
 beschreibung: "Eigenes Dentallabor mit Zahntechnikermeister in der Praxis: Intraoralscanner, CAD/CAM, 3D-Planung, digitales Röntgen. Kurze Wege, präziser Zahnersatz."
 kurz: "Zahntechnikermeister im Haus, Intraoralscanner, CAD/CAM und 3D-Planung – für präzisen Zahnersatz und kurze Wege."
 unterzeile: "Planung, Fertigung und Abstimmung unter einem Dach."

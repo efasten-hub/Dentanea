@@ -1,6 +1,6 @@
 ---
 titel: "Feste Zähne an einem Tag – was ist möglich?"
-seo_titel: "Feste Zähne an einem Tag: Sofortimplantate | Dentaviva"
+seo_titel: "Feste Zähne an einem Tag: Sofortimplantate | Dentanea"
 beschreibung: "Feste Zähne an einem Tag: Was Sofortimplantation und Sofortbelastung bedeuten, für wen sie infrage kommen, welche Risiken es gibt und was das kostet."
 kurz: "Sofortimplantation und Sofortversorgung: Für wen „feste Zähne an einem Tag“ infrage kommen – und was dabei wichtig ist."
 unterzeile: "Sofortimplantation und Sofortversorgung – Möglichkeiten und Grenzen."

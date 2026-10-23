@@ -1,6 +1,6 @@
 ---
 titel: "Estética dental: carillas, blanqueamiento y alineadores"
-seo_titel: "Carillas, blanqueamiento y alineadores en Berlín | Dentaviva"
+seo_titel: "Carillas, blanqueamiento y alineadores en Berlín | Dentanea"
 beschreibung: "Estética dental en Berlín: carillas con vista previa (mock-up), blanqueamiento bajo control odontológico y alineadores como Invisalign. Proceso y costes."
 kurz: "Carillas con vista previa en su boca, blanqueamiento bajo control odontológico y alineadores: planificación realista que cuida sus dientes."
 unterzeile: "Una sonrisa más bonita, planificada de forma realista y lo más conservadora posible."

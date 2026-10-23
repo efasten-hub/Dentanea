@@ -1,7 +1,7 @@
 ---
 titel: "Legal notice"
-seo_titel: "Legal Notice | Dentaviva – Dr. Adali"
-beschreibung: "Legal notice (Impressum) of Dentaviva – Dr. med. dent. Ufuk Adali’s dental practice, Schönhauser Allee 10–11, 10119 Berlin."
+seo_titel: "Legal Notice | Dentanea – Dr. Adali"
+beschreibung: "Legal notice (Impressum) of Dentanea – Dr. med. dent. Ufuk Adali’s dental practice, Schönhauser Allee 10–11, 10119 Berlin."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---

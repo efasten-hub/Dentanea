@@ -1,7 +1,7 @@
 ---
 titel: "Impressum"
-seo_titel: "Impressum | Dentaviva – Zahnarztpraxis Dr. Adali"
-beschreibung: "Impressum der Zahnarztpraxis Dentaviva – Dr. med. dent. Ufuk Adali, Schönhauser Allee 10–11, 10119 Berlin."
+seo_titel: "Impressum | Dentanea – Zahnarztpraxis Dr. Adali"
+beschreibung: "Impressum der Zahnarztpraxis Dentanea – Dr. med. dent. Ufuk Adali, Schönhauser Allee 10–11, 10119 Berlin."
 uebersetzt: true
 uebersetzung_geprueft: true
 ---

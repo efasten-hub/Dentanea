@@ -1,9 +1,9 @@
 ---
 titel: "Dr. Ufuk Adali"
-seo_titel: "Dr. Ufuk Adali – Berlin’de Diş Hekimi | Dentaviva"
+seo_titel: "Dr. Ufuk Adali – Berlin’de Diş Hekimi | Dentanea"
 beschreibung: "Dr. Ufuk Adali: 2026’ya kadar Charité’de sorumlu başhekim yardımcısı, protez uzmanı (DGPro), sertifikalı implantolog (DGI). Kariyer ve yayınlar."
 unterzeile: "Diş hekimi, protez uzmanı (DGPro), sertifikalı implantolog (DGI)"
-antwort: "Dr. Ufuk Adali diş hekimliğini Charité – Universitätsmedizin Berlin’de okudu ve uzun yıllar orada hasta tedavi etti, ders verdi ve araştırma yaptı; son olarak 2026’ya kadar Protetik Diş Tedavisi, Geriatrik Diş Hekimliği ve Fonksiyon Bozuklukları Bölümü’nde sorumlu başhekim yardımcısı (leitender Oberarzt) olarak görev yaptı. 2025’ten beri Berlin’de kendi kliniği Dentaviva’yı yönetiyor."
+antwort: "Dr. Ufuk Adali diş hekimliğini Charité – Universitätsmedizin Berlin’de okudu ve uzun yıllar orada hasta tedavi etti, ders verdi ve araştırma yaptı; son olarak 2026’ya kadar Protetik Diş Tedavisi, Geriatrik Diş Hekimliği ve Fonksiyon Bozuklukları Bölümü’nde sorumlu başhekim yardımcısı (leitender Oberarzt) olarak görev yaptı. 2025’ten beri Berlin’de kendi kliniği Dentanea’yı yönetiyor."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---
@@ -23,7 +23,7 @@ uebersetzung_geprueft: false
 - **2026’dan beri:** Aynı bölümde misafir bilim insanı
 - **2021–2026:** Berlin Diş Hekimleri Odası (Zahnärztekammer Berlin) seçilmiş yönetim kurulu üyesi, diş hekimi asistanlarının (Zahnmedizinische Fachangestellte) eğitiminden sorumlu
 - **2026’dan beri:** Berlin Diş Hekimleri Odası seçilmiş yönetim kurulu üyesi, diş hekimlerinin sürekli eğitiminden sorumlu
-- **2025’ten beri:** Kendi kliniği Dentaviva, Schönhauser Allee, Berlin
+- **2025’ten beri:** Kendi kliniği Dentanea, Schönhauser Allee, Berlin
 
 ## Niteliklerin anlamı
 

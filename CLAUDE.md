@@ -1,4 +1,4 @@
-# Projekt: Dentaviva – Website der Zahnarztpraxis Dr. Adali
+# Projekt: Dentanea – Website der Zahnarztpraxis Dr. Adali
 
 Statische Astro-Website (Astro 7, Tailwind v4) in vier Sprachen (DE, EN, ES, TR) für Hetzner-Webhosting (Apache). Ausführliche Anleitung: `README.md`. Offene Punkte der Praxis: `PLATZHALTER.md`. Design verbindlich: `DESIGN.md`.
 

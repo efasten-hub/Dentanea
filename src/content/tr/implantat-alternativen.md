@@ -1,6 +1,6 @@
 ---
 titel: "İmplanta alternatifler"
-seo_titel: "Diş İmplantına Alternatifler – Berlin | Dentaviva"
+seo_titel: "Diş İmplantına Alternatifler – Berlin | Dentanea"
 beschreibung: "İmplant mümkün değil veya istenmiyor mu? Yapışkan köprü, klasik köprü ve kısmi protez karşılaştırması: avantajlar, dezavantajlar, bakım ve maliyetler."
 kurz: "İmplant mümkün değilse veya istenmiyorsa: yapışkan köprü, köprü veya kısmi protez karşılaştırması."
 unterzeile: "İmplant uygun olmadığında: seçenekler ve lehlerinde olanlar."

@@ -1,6 +1,6 @@
 ---
 titel: "Tratamientos"
-seo_titel: "Tratamientos dentales en Berlín | Dentaviva"
+seo_titel: "Tratamientos dentales en Berlín | Dentanea"
 beschreibung: "Coronas, puentes, implantes, puentes adhesivos, estética, férulas para ATM, prótesis infantil, HIM, limpieza, endodoncia y periodoncia en Berlín."
 unterzeile: "De la prevención a la rehabilitación compleja, con especial atención a la prótesis dental y los implantes."
 antwort: "En nuestra clínica encontrará toda la odontología en un mismo lugar. Nuestras especialidades son las prótesis dentales, los implantes y puentes adhesivos, la estética dental, los trastornos de la articulación temporomandibular (ATM) y los niños y adolescentes con dientes ausentes o debilitados."

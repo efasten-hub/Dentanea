@@ -1,6 +1,6 @@
 ---
 titel: "Alternatives to dental implants"
-seo_titel: "Alternatives to Dental Implants in Berlin | Dentaviva"
+seo_titel: "Alternatives to Dental Implants in Berlin | Dentanea"
 beschreibung: "No implant possible or wanted? Resin-bonded bridge, conventional bridge and partial denture compared: pros and cons, durability, care and costs."
 kurz: "If an implant is not possible or not wanted: resin-bonded bridge, bridge or partial denture compared."
 unterzeile: "When an implant does not fit: the options and what speaks for them."

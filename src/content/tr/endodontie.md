@@ -1,6 +1,6 @@
 ---
 titel: "Kanal tedavisi (endodonti)"
-seo_titel: "Berlin’de Kanal Tedavisi | Dentaviva"
+seo_titel: "Berlin’de Kanal Tedavisi | Dentanea"
 beschreibung: "Berlin’de kanal tedavisi: iltihaplı dişi döner aletler ve dijital röntgenle kurtarmak. Süreç, alternatifler ve maliyetler."
 kurz: "İltihaplı bir dişi kurtarmak: döner aletler, titiz dezenfeksiyon ve dijital röntgenle."
 unterzeile: "İltihaplı bir diş çoğu zaman kurtarılabilir."

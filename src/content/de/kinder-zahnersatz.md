@@ -1,6 +1,6 @@
 ---
 titel: "Zahnersatz bei Kindern und Jugendlichen"
-seo_titel: "Zahnersatz für Kinder: Nichtanlagen & Unfall | Dentaviva"
+seo_titel: "Zahnersatz für Kinder: Nichtanlagen & Unfall | Dentanea"
 beschreibung: "Fehlende Zähne bei Kindern und Jugendlichen: Nichtanlagen, Zapfenzähne, Zahnverlust nach Unfall. Wachstumsgerechte Lösungen und Kosten."
 kurz: "Nichtanlagen, Zapfenzähne oder Zahnverlust nach einem Unfall: wachstumsgerechte Lösungen in Abstimmung mit der Kieferorthopädie."
 unterzeile: "Fehlende Zähne bei Kindern – Lösungen, die mitwachsen."

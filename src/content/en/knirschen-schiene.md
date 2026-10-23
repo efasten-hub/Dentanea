@@ -1,6 +1,6 @@
 ---
 titel: "Teeth grinding and jaw pain"
-seo_titel: "Teeth Grinding & Jaw Pain: What Helps? | Dentaviva"
+seo_titel: "Teeth Grinding & Jaw Pain: What Helps? | Dentanea"
 beschreibung: "Teeth grinding (bruxism) and jaw pain: causes, signs, what an occlusal splint can do and which exercises help. Explained by Dr. Adali."
 kurz: "Why we grind, how to notice it and what a splint can – and cannot – do."
 unterzeile: "Causes, signs and what really helps."

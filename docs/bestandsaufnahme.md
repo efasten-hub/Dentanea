@@ -95,7 +95,7 @@ Dr. Kleinert: Dr. Thorsten Kleinert hat eine eigene Praxis an derselben Adresse 
 
 ## 8. Offene Fragen an die Praxis
 
-1. ~~Praxisname~~ → erledigt: **„Dentaviva“** (06.10.2026, ersetzt „Primadent“; siehe Abschnitte 9 und 10)
+1. ~~Praxisname~~ → erledigt: **„Dentanea“** (23.10.2026, ersetzt „Dentaviva“, das am 06.10.2026 „Primadent“ ersetzt hatte; siehe Abschnitte 9 und 10)
 2. **Sprechzeiten von Dr. Adali**: offen (siehe Abschnitt 11)
 3. ~~Sprachen~~ → **Dr. Adali spricht Deutsch, Englisch, Spanisch und Türkisch.**
 4. ~~Seit wann~~ → 2025
@@ -108,7 +108,7 @@ Dr. Kleinert: Dr. Thorsten Kleinert hat eine eigene Praxis an derselben Adresse 
 
 | Frage | Antwort | Folge für die Website |
 |---|---|---|
-| Praxisname | ~~„Primadent“~~ → **„Dentaviva“** (Nachtrag 06.10.2026) | Neuer Name überall identisch (Website, Google, Doctolib, Verzeichnisse). Doctolib heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“ und muss angepasst werden. ⚠️ Namenskonflikte siehe Abschnitt 10. |
+| Praxisname | ~~„Primadent“~~ → ~~„Dentaviva“~~ (06.10.2026) → **„Dentanea“** (23.10.2026) | Neuer Name überall identisch (Website, Google, Doctolib, Verzeichnisse). Doctolib heißt noch „Praxisgemeinschaft Dr. Adali / Dr. Kleinert“ und muss angepasst werden. ⚠️ Namenskonflikte siehe Abschnitt 10. |
 | Sprechzeiten Dr. Adali | offen | siehe Abschnitt 11 |
 | Türkisch/Spanisch im Team | **ja: Dr. Adali spricht DE, EN, ES, TR** (Nachtrag) | ES- und TR-Versionen ohne Hinweis „nur Deutsch/Englisch“. Offen ist, **wer** welche Sprache spricht (für Team-Seite und `knowsLanguage`). Doctolib nennt bisher nur Deutsch und Englisch, das muss ergänzt werden. |
 | Eigene Praxis seit | **2025** | `praxis_seit: 2025`. Die Aussagen „seit 2011“ der alten Seite entfallen. |
@@ -116,11 +116,15 @@ Dr. Kleinert: Dr. Thorsten Kleinert hat eine eigene Praxis an derselben Adresse 
 | Galeriefotos | **Stock** | entfernt (siehe Abschnitt 6) |
 | Parken | **„kostenlose Parkplätze in der Tiefgarage“** | so in `site.ts`, bei Doctolib angleichen |
 
-## 10. Name „Dentaviva“: ähnliche Namen ⚠️
+## 10. Praxisname: ähnliche Namen ⚠️
+
+**Aktueller Name: „Dentanea“** (23.10.2026). Für diesen Namen ist die Suche nach ähnlichen Namen noch nicht gemacht. Vor Livegang: Websuche, DPMA/EUIPO, Praxen und Labore in Berlin. [[PRÜFEN juristisch vor Livegang]]
 
 Der zunächst gewählte Name „Primadent“ wurde verworfen. Das Berliner Dentallabor „Labor Primadent Zahntechnik“ sowie Praxen in Bremen und Backnang tragen ihn bereits.
 
-Für **„Dentaviva“** gibt es keinen exakten Treffer (Websuche, 06.10.2026), aber **klanglich sehr ähnliche Namen in derselben Branche**:
+Auch „Dentaviva“ (06.10.2026) wurde ersetzt. Die folgende Prüfung bezieht sich auf diesen früheren Namen.
+
+Für **„Dentaviva“** gab es keinen exakten Treffer (Websuche, 06.10.2026), aber **klanglich sehr ähnliche Namen in derselben Branche**:
 
 | Wer | Ort | Ähnlichkeit |
 |---|---|---|
@@ -129,9 +133,9 @@ Für **„Dentaviva“** gibt es keinen exakten Treffer (Websuche, 06.10.2026), 
 | Dentavida | Augsburg | ein Buchstabe |
 
 Risiken:
-- **Kennzeichenrecht:** „Dentaviva“ und „Denta Vita“ unterscheiden sich in einem Buchstaben, in derselben Branche und im selben Bezirk. Das spricht für **Verwechslungsgefahr** (§§ 5, 15 MarkenG), und der ältere Name hat Vorrang. Vor Livegang ist eine juristische Prüfung inklusive Recherche bei DPMA/EUIPO dringend empfohlen. [[PRÜFEN juristisch vor Livegang]]
+- **Kennzeichenrecht:** „Dentaviva“ und „Denta Vita“ unterscheiden sich in einem Buchstaben, in derselben Branche und im selben Bezirk. Das spricht für **Verwechslungsgefahr** (§§ 5, 15 MarkenG), und der ältere Name hat Vorrang. Vor Livegang ist eine juristische Prüfung inklusive Recherche bei DPMA/EUIPO dringend empfohlen. (Durch den Wechsel zu „Dentanea“ hinfällig; die neue Prüfung steht oben in diesem Abschnitt.)
 - **Auffindbarkeit:** Suchmaschinen korrigieren „Dentaviva“ teils zu „Dentavita“. Der Zusatz „Zahnarztpraxis Dr. Adali“ ist daher in Titel, Schema.org, Google-Profil und Doctolib wichtig.
-- **Domain:** zahnarzt-adali.de bleibt. Ob dentaviva.de bzw. dentaviva-berlin.de frei sind, ist noch zu prüfen. [[PRÜFEN]]
+- **Domain:** zahnarzt-adali.de bleibt. Ob dentanea.de bzw. dentanea-berlin.de frei sind, ist noch zu prüfen. [[PRÜFEN]]
 - **Logo:** Das alte „A“-Logo entfällt. Bis zum finalen Logo gilt ein Platzhalter-Monogramm „D“.
 
 ## 11. Sprechzeiten: was die Quellen zeigen

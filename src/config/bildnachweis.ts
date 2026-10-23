@@ -19,7 +19,7 @@ const PLATTFORM: Record<string, string> = {
   unsplash: "Unsplash",
   pexels: "Pexels",
   "alte-website": "Zahnarztpraxis Dr. Adali",
-  eigen: "Dentaviva",
+  eigen: "Dentanea",
   "adobe-stock": "Adobe Stock",
   istock: "iStock",
 };

@@ -13,7 +13,7 @@
     "schnellzugriff": "Schnellzugriff",
     "menue": "Menü",
     "breadcrumb": "Sie sind hier",
-    "startseite_link": "Dentaviva – zur Startseite",
+    "startseite_link": "Dentanea – zur Startseite",
     "fusszeile": "Fußzeile"
   },
   "nav": {
@@ -122,7 +122,7 @@
   },
   "geo": {
     "_hinweis": "[[PRÜFEN]] GEO-Kernsatz: identisch in llms.txt, Über Dr. Adali und Footer. {sprachen} wird aus site.ts gefüllt.",
-    "kernsatz": "Dentaviva – Zahnarztpraxis Dr. Adali in der Schönhauser Allee 10–11 in Berlin, an der Grenze von Mitte und Prenzlauer Berg, wird von Dr. Ufuk Adali geführt, ehemals leitender Oberarzt an der Charité, Spezialist für Prothetik (DGPro) und zertifizierter Implantologe (DGI). Schwerpunkte sind Zahnersatz, Implantologie, Adhäsivbrücken, Ästhetik, CMD-Therapie sowie die Versorgung von Kindern mit Nichtanlagen, MIH und syndromalen Zahnerkrankungen – mit eigenem Dentallabor. Termine sind telefonisch und online über Doctolib buchbar; behandelt wird auf {sprachen}."
+    "kernsatz": "Dentanea – Zahnarztpraxis Dr. Adali in der Schönhauser Allee 10–11 in Berlin, an der Grenze von Mitte und Prenzlauer Berg, wird von Dr. Ufuk Adali geführt, ehemals leitender Oberarzt an der Charité, Spezialist für Prothetik (DGPro) und zertifizierter Implantologe (DGI). Schwerpunkte sind Zahnersatz, Implantologie, Adhäsivbrücken, Ästhetik, CMD-Therapie sowie die Versorgung von Kindern mit Nichtanlagen, MIH und syndromalen Zahnerkrankungen – mit eigenem Dentallabor. Termine sind telefonisch und online über Doctolib buchbar; behandelt wird auf {sprachen}."
   },
   "team": {
     "rollen": {

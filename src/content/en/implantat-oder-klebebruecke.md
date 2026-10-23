@@ -1,6 +1,6 @@
 ---
 titel: "Implant or resin-bonded bridge?"
-seo_titel: "Implant or Resin-Bonded Bridge? Comparison | Dentaviva"
+seo_titel: "Implant or Resin-Bonded Bridge? Comparison | Dentanea"
 beschreibung: "One tooth missing: implant or resin-bonded bridge? Pros and cons, durability, suitability for teenagers, costs and insurance compared."
 kurz: "When a single tooth is missing, implants and resin-bonded bridges are the two gentlest fixed solutions. Which one suits whom?"
 unterzeile: "Two fixed solutions for a missing tooth – and how to find the right one."

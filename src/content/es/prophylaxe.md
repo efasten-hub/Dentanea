@@ -1,6 +1,6 @@
 ---
 titel: "Prevención y limpieza dental profesional"
-seo_titel: "Limpieza dental profesional en Berlín | Dentaviva"
+seo_titel: "Limpieza dental profesional en Berlín | Dentanea"
 beschreibung: "Limpieza dental profesional y prevención en Berlín: eliminar placa y sarro, pulir, aplicar flúor y consejos personales. Proceso, frecuencia y costes."
 kurz: "Eliminar placa y sarro, pulir, aplicar flúor y consejos personales: para mantener sanos dientes, encías e implantes."
 unterzeile: "Dientes y encías sanos para toda la vida."

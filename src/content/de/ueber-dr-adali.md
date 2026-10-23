@@ -1,9 +1,9 @@
 ---
 titel: "Dr. Ufuk Adali"
-seo_titel: "Dr. Ufuk Adali – Zahnarzt in Berlin | Dentaviva"
+seo_titel: "Dr. Ufuk Adali – Zahnarzt in Berlin | Dentanea"
 beschreibung: "Dr. med. dent. Ufuk Adali: bis 2026 leitender Oberarzt an der Charité, Spezialist für Prothetik (DGPro), zertifizierter Implantologe (DGI)."
 unterzeile: "Zahnarzt, Spezialist für Prothetik (DGPro), zertifizierter Implantologe (DGI)"
-antwort: "Dr. Ufuk Adali hat Zahnmedizin an der Charité – Universitätsmedizin Berlin studiert und dort viele Jahre behandelt, gelehrt und geforscht, zuletzt bis 2026 als leitender Oberarzt in der Abteilung für Zahnärztliche Prothetik, Alterszahnmedizin und Funktionslehre. Seit 2025 führt er seine eigene Praxis Dentaviva in Berlin."
+antwort: "Dr. Ufuk Adali hat Zahnmedizin an der Charité – Universitätsmedizin Berlin studiert und dort viele Jahre behandelt, gelehrt und geforscht, zuletzt bis 2026 als leitender Oberarzt in der Abteilung für Zahnärztliche Prothetik, Alterszahnmedizin und Funktionslehre. Seit 2025 führt er seine eigene Praxis Dentanea in Berlin."
 uebersetzt: true
 uebersetzung_geprueft: true
 ---
@@ -23,7 +23,7 @@ Gute Zahnmedizin beginnt mit Zuhören und einer gründlichen Untersuchung. Ich e
 - **Seit 2026:** Gastwissenschaftler in derselben Abteilung
 - **2021–2026:** Gewähltes Vorstandsmitglied der Zahnärztekammer Berlin, Leiter des Referats „Aus- und Fortbildung Zahnmedizinische Fachangestellte“
 - **Seit 2026:** Gewähltes Vorstandsmitglied der Zahnärztekammer Berlin, Leiter des Referats „Fort- und Weiterbildung Zahnärztinnen und Zahnärzte“
-- **Seit 2025:** Eigene Praxis Dentaviva in der Schönhauser Allee, Berlin
+- **Seit 2025:** Eigene Praxis Dentanea in der Schönhauser Allee, Berlin
 
 ## Was die Qualifikationen bedeuten
 

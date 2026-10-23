@@ -1,6 +1,6 @@
 ---
 titel: "Kendi diş laboratuvarımız ve dijital diş hekimliği"
-seo_titel: "Kendi Diş Laboratuvarımız ve Dijital Tedavi | Dentaviva"
+seo_titel: "Kendi Diş Laboratuvarımız ve Dijital Tedavi | Dentanea"
 beschreibung: "Klinikte diş teknisyeni ustasıyla kendi laboratuvarımız: ağız içi tarayıcı, CAD/CAM, 3D planlama ve dijital röntgen. Kısa yollar, hassas protezler."
 kurz: "Klinikte diş teknisyeni ustası, ağız içi tarayıcı, CAD/CAM ve 3D planlama: hassas protezler ve kısa yollar."
 unterzeile: "Planlama, üretim ve ince ayar aynı çatı altında."

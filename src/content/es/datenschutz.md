@@ -1,7 +1,7 @@
 ---
 titel: "Política de privacidad"
-seo_titel: "Política de privacidad | Dentaviva – Dr. Adali"
-beschreibung: "Política de privacidad de la clínica Dentaviva: sin cookies ni seguimiento, alojamiento en Alemania, Doctolib, formulario de solicitud y sus derechos."
+seo_titel: "Política de privacidad | Dentanea – Dr. Adali"
+beschreibung: "Política de privacidad de la clínica Dentanea: sin cookies ni seguimiento, alojamiento en Alemania, Doctolib, formulario de solicitud y sus derechos."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---
@@ -13,7 +13,7 @@ La protección de sus datos es importante para nosotros, sobre todo porque una c
 ## 1. Responsable
 
 Dr. med. dent. Ufuk Adali\
-Dentaviva – Zahnarztpraxis Dr. Adali\
+Dentanea – Zahnarztpraxis Dr. Adali\
 Schönhauser Allee 10–11, 10119 Berlín, Alemania\
 Teléfono: +49 30 44 26 84 3 · Correo: kontakt@zahnarzt-adali.de
 

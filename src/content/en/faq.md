@@ -1,6 +1,6 @@
 ---
 titel: "Frequently asked questions"
-seo_titel: "FAQ: Booking, Costs, Languages, Directions | Dentaviva"
+seo_titel: "FAQ: Booking, Costs, Languages, Directions | Dentanea"
 beschreibung: "Answers to common questions: online booking via Doctolib, costs and insurance, treatment in English, German, Spanish and Turkish, directions and parking."
 unterzeile: "Appointments, costs, treatment and directions – answered briefly."
 uebersetzt: true

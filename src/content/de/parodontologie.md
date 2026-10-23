@@ -1,6 +1,6 @@
 ---
 titel: "Zahnfleischbehandlung (Parodontologie)"
-seo_titel: "Parodontitis-Behandlung in Berlin | Dentaviva"
+seo_titel: "Parodontitis-Behandlung in Berlin | Dentanea"
 beschreibung: "Parodontitis behandeln in Berlin: Befund, gründliche Reinigung der Zahnfleischtaschen, Nachsorge (UPT). Ablauf, Dauer und was die Krankenkasse zahlt."
 kurz: "Parodontitis stoppen: gründliche Reinigung der Zahnfleischtaschen und eine Nachsorge, die das Ergebnis sichert."
 unterzeile: "Zahnfleischentzündungen früh erkennen und dauerhaft in den Griff bekommen."

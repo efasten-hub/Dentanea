@@ -1,6 +1,6 @@
 ---
 titel: "Cirugía oral y regeneración ósea"
-seo_titel: "Cirugía oral y muelas del juicio en Berlín | Dentaviva"
+seo_titel: "Cirugía oral y muelas del juicio en Berlín | Dentanea"
 beschreibung: "Cirugía oral en Berlín: extracciones, muelas del juicio, apicectomía, regeneración ósea y elevación de seno. Intervenciones cuidadosas y bien explicadas."
 kurz: "Extracciones, muelas del juicio, apicectomía, regeneración ósea y elevación de seno: cuidadosos y bien planificados."
 unterzeile: "Intervenciones quirúrgicas en la boca, bien planificadas y lo más cuidadosas posible."

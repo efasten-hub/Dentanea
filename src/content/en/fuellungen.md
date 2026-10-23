@@ -1,6 +1,6 @@
 ---
 titel: "Tooth-coloured fillings"
-seo_titel: "Tooth-Coloured (Composite) Fillings Berlin | Dentaviva"
+seo_titel: "Tooth-Coloured (Composite) Fillings Berlin | Dentanea"
 beschreibung: "Tooth-coloured composite fillings in Berlin: gentle removal of decay, natural-looking layered fillings. What German statutory insurance covers since 2025."
 kurz: "Gently removing decay and rebuilding the tooth with natural-looking composite."
 unterzeile: "Treating decay gently – with fillings you cannot see."

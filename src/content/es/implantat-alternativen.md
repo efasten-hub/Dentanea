@@ -1,6 +1,6 @@
 ---
 titel: "Alternativas al implante"
-seo_titel: "Alternativas al implante dental en Berlín | Dentaviva"
+seo_titel: "Alternativas al implante dental en Berlín | Dentanea"
 beschreibung: "¿Implante imposible o no deseado? Puente adhesivo, puente convencional y prótesis parcial comparados: ventajas, inconvenientes, duración, cuidado y costes."
 kurz: "Si un implante no es posible o no se desea: puente adhesivo, puente o prótesis parcial comparados."
 unterzeile: "Cuando un implante no encaja: las opciones y lo que habla a su favor."

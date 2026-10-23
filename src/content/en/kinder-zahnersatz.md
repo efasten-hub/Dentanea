@@ -1,6 +1,6 @@
 ---
 titel: "Dental prosthetics for children and teenagers"
-seo_titel: "Missing Teeth in Children: Prosthetic Care | Dentaviva"
+seo_titel: "Missing Teeth in Children: Prosthetic Care | Dentanea"
 beschreibung: "Missing teeth in children and teenagers: congenitally missing or peg-shaped teeth, tooth loss after accidents. Growth-friendly solutions and costs."
 kurz: "Congenitally missing teeth, peg-shaped teeth or tooth loss after an accident: growth-friendly solutions coordinated with the orthodontist."
 unterzeile: "Missing teeth in children – solutions that grow with them."

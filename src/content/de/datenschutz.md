@@ -1,7 +1,7 @@
 ---
 titel: "Datenschutzerklärung"
-seo_titel: "Datenschutz | Dentaviva – Zahnarztpraxis Dr. Adali"
-beschreibung: "Datenschutzerklärung der Zahnarztpraxis Dentaviva: keine Cookies, kein Tracking, Hosting in Deutschland, Doctolib, Anfrageformular, Rechte der Betroffenen."
+seo_titel: "Datenschutz | Dentanea – Zahnarztpraxis Dr. Adali"
+beschreibung: "Datenschutzerklärung der Zahnarztpraxis Dentanea: keine Cookies, kein Tracking, Hosting in Deutschland, Doctolib, Anfrageformular, Rechte der Betroffenen."
 uebersetzt: true
 uebersetzung_geprueft: true
 ---
@@ -13,7 +13,7 @@ Der Schutz Ihrer Daten ist uns wichtig – besonders, weil es in einer Zahnarztp
 ## 1. Verantwortlicher
 
 Dr. med. dent. Ufuk Adali\
-Dentaviva – Zahnarztpraxis Dr. Adali\
+Dentanea – Zahnarztpraxis Dr. Adali\
 Schönhauser Allee 10–11, 10119 Berlin\
 Telefon: 030 44 26 84 3 · E-Mail: kontakt@zahnarzt-adali.de
 

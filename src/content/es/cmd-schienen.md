@@ -1,6 +1,6 @@
 ---
 titel: "ATM, bruxismo y férula antirronquidos"
-seo_titel: "Tratamiento de ATM y férulas en Berlín | Dentaviva"
+seo_titel: "Tratamiento de ATM y férulas en Berlín | Dentanea"
 beschreibung: "Dolor mandibular, bruxismo, dolor de cabeza o ronquidos: estudio funcional y férulas a medida en Berlín. Proceso, duración y costes del tratamiento."
 kurz: "Dolor mandibular, bruxismo, dolor de cabeza o ronquidos: aclarar la causa y tratar con férulas a medida."
 unterzeile: "Cuando la mandíbula, los músculos masticatorios o el sueño dan problemas."

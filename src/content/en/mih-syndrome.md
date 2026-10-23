@@ -1,6 +1,6 @@
 ---
 titel: "Chalky teeth (MIH), peg-shaped teeth and inherited dental conditions"
-seo_titel: "MIH (Chalky Teeth) & Amelogenesis Imperfecta | Dentaviva"
+seo_titel: "MIH (Chalky Teeth) & Amelogenesis Imperfecta | Dentanea"
 beschreibung: "Chalky teeth (MIH), amelogenesis and dentinogenesis imperfecta, peg-shaped teeth: gentle treatment in Berlin, interdisciplinary and age-appropriate."
 kurz: "Chalky teeth (MIH), amelogenesis and dentinogenesis imperfecta, peg-shaped teeth: relieving pain, protecting teeth, improving appearance."
 unterzeile: "When teeth are weakened from the start – gentle help for children, teenagers and adults."

@@ -1,6 +1,6 @@
 ---
 titel: "Zahnfarbene Füllungen"
-seo_titel: "Zahnfarbene Füllungen (Komposit) Berlin | Dentaviva"
+seo_titel: "Zahnfarbene Füllungen (Komposit) Berlin | Dentanea"
 beschreibung: "Zahnfarbene Füllungen aus Komposit in Berlin: Karies schonend entfernen, natürlich wirkende Füllungen in Schichttechnik. Was die Kasse seit 2025 zahlt."
 kurz: "Karies schonend entfernen und den Zahn mit natürlich aussehendem Komposit wieder aufbauen."
 unterzeile: "Karies schonend behandeln – mit Füllungen, die man nicht sieht."

@@ -1,6 +1,6 @@
 ---
 titel: "Koruyucu tedavi ve profesyonel diş temizliği"
-seo_titel: "Berlin’de Profesyonel Diş Temizliği | Dentaviva"
+seo_titel: "Berlin’de Profesyonel Diş Temizliği | Dentanea"
 beschreibung: "Berlin’de profesyonel diş temizliği ve koruyucu tedavi: plak ve tartar temizliği, parlatma, flor ve kişisel bakım önerileri. Süreç, sıklık, maliyet."
 kurz: "Plak ve tartarı temizlemek, parlatmak, flor uygulamak ve kişisel öneriler: dişler, diş etleri ve implantlar sağlıklı kalsın."
 unterzeile: "Ömür boyu sağlıklı dişler ve diş etleri."

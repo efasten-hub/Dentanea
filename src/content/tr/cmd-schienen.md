@@ -1,6 +1,6 @@
 ---
 titel: "Çene eklemi (CMD), diş gıcırdatma ve horlama plağı"
-seo_titel: "Berlin’de Çene Eklemi Tedavisi ve Gece Plağı | Dentaviva"
+seo_titel: "Berlin’de Çene Eklemi Tedavisi ve Gece Plağı | Dentanea"
 beschreibung: "Çene ağrısı, diş gıcırdatma, baş ağrısı veya horlama: Berlin’de fonksiyon muayenesi ve kişiye özel plaklar. Süreç, süre ve maliyetler."
 kurz: "Çene ağrısı, diş gıcırdatma, baş ağrısı veya horlama: nedeni bulmak ve kişiye özel plaklarla tedavi etmek."
 unterzeile: "Çene, çiğneme kasları veya uyku sorun çıkardığında."

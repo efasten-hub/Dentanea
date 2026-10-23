@@ -1,6 +1,6 @@
 ---
 titel: "Tedaviler"
-seo_titel: "Berlin’de Diş Tedavileri: İmplant, Protez | Dentaviva"
+seo_titel: "Berlin’de Diş Tedavileri: İmplant, Protez | Dentanea"
 beschreibung: "Berlin’de kuron, köprü, implant, yapışkan köprü, estetik, çene eklemi plakları, çocuklarda protez, MIH, diş temizliği, kanal ve diş eti tedavisi."
 unterzeile: "Koruyucu tedaviden karmaşık protezlere kadar; protez ve implant tedavisine özel ağırlıkla."
 antwort: "Kliniğimizde tüm diş tedavilerini tek bir yerde bulursunuz. Uzmanlık alanlarımız protez diş, implant ve yapışkan köprü, estetik tedaviler, çene eklemi rahatsızlıkları (CMD) ile dişleri eksik veya zayıf olan çocuk ve gençlerdir."

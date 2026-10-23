@@ -1,7 +1,7 @@
 ---
 titel: "Vielen Dank für Ihre Anfrage."
-seo_titel: "Anfrage gesendet | Dentaviva"
-beschreibung: "Ihre Anfrage an Dentaviva – Zahnarztpraxis Dr. Adali wurde gesendet."
+seo_titel: "Anfrage gesendet | Dentanea"
+beschreibung: "Ihre Anfrage an Dentanea – Zahnarztpraxis Dr. Adali wurde gesendet."
 unterzeile: "Wir haben Ihre Nachricht erhalten und melden uns in der Regel innerhalb von zwei Werktagen."
 uebersetzt: true
 uebersetzung_geprueft: true

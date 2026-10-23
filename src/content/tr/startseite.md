@@ -1,8 +1,8 @@
 ---
 titel: "Üniversite düzeyinde diş hekimliği."
-seo_titel: "Berlin’de Türkçe Konuşan Diş Hekimi | Dentaviva"
-beschreibung: "Dentaviva – Dr. Adali Diş Kliniği, Schönhauser Allee 10–11, Berlin: implant, protez diş, yapışkan köprü ve çocuk diş tedavisi. Online randevu alın."
-unterzeile: "Dentaviva, 2026’ya kadar Berlin Charité Üniversite Hastanesi’nde sorumlu başhekim yardımcısı olan Dr. Ufuk Adali’nin kliniğidir. Sizinle Türkçe konuşur, özenle planlar ve protezleri kendi laboratuvarımızda üretiriz."
+seo_titel: "Berlin’de Türkçe Konuşan Diş Hekimi | Dentanea"
+beschreibung: "Dentanea – Dr. Adali Diş Kliniği, Schönhauser Allee 10–11, Berlin: implant, protez diş, yapışkan köprü ve çocuk diş tedavisi. Online randevu alın."
+unterzeile: "Dentanea, 2026’ya kadar Berlin Charité Üniversite Hastanesi’nde sorumlu başhekim yardımcısı olan Dr. Ufuk Adali’nin kliniğidir. Sizinle Türkçe konuşur, özenle planlar ve protezleri kendi laboratuvarımızda üretiriz."
 uebersetzt: true
 uebersetzung_geprueft: false
 bild: "hero-atmosphaere"

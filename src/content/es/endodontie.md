@@ -1,6 +1,6 @@
 ---
 titel: "Endodoncia (tratamiento de conductos)"
-seo_titel: "Endodoncia en Berlín | Dentaviva"
+seo_titel: "Endodoncia en Berlín | Dentanea"
 beschreibung: "Endodoncia en Berlín: conservar un diente inflamado con instrumentación rotatoria y radiografía digital. Proceso, alternativas y costes."
 kurz: "Conservar un diente inflamado con instrumentación rotatoria, desinfección minuciosa y radiografía digital."
 unterzeile: "A menudo, un diente inflamado se puede conservar."

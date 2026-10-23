@@ -1,6 +1,6 @@
 ---
 titel: "Seeing a dentist in Berlin: how the German system works"
-seo_titel: "Dentist in Berlin: How the German System Works | Dentaviva"
+seo_titel: "Dentist in Berlin: How the German System Works | Dentanea"
 beschreibung: "New to Germany? How dental care works in Berlin: statutory and private insurance, EHIC, fixed subsidy, bonus booklet, costs, booking and emergencies."
 kurz: "Statutory or private insurance, EHIC, fixed subsidy, bonus booklet: what international patients need to know about dental care in Germany."
 unterzeile: "Insurance, costs, appointments and emergencies – explained for international patients."

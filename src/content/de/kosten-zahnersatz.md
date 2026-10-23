@@ -1,6 +1,6 @@
 ---
 titel: "Was kostet Zahnersatz?"
-seo_titel: "Was kostet Zahnersatz? Festzuschuss & Bonusheft | Dentaviva"
+seo_titel: "Was kostet Zahnersatz? Festzuschuss & Bonusheft | Dentanea"
 beschreibung: "Festzuschuss, Bonusheft, Härtefall, Eigenanteil und GOZ: So setzen sich die Kosten für Zahnersatz zusammen und so lesen Sie Ihren Heil- und Kostenplan."
 kurz: "Festzuschuss, Bonusheft, Eigenanteil, GOZ: Wie sich die Kosten zusammensetzen und wie Sie Ihren Heil- und Kostenplan lesen."
 unterzeile: "Festzuschuss, Bonusheft und Eigenanteil – verständlich erklärt."

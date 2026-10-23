@@ -1,7 +1,7 @@
 ---
 titel: "Privacy policy"
-seo_titel: "Privacy Policy | Dentaviva – Dr. Adali"
-beschreibung: "Privacy policy of Dentaviva dental practice: no cookies, no tracking, hosting in Germany, Doctolib, request form and your data protection rights."
+seo_titel: "Privacy Policy | Dentanea – Dr. Adali"
+beschreibung: "Privacy policy of Dentanea dental practice: no cookies, no tracking, hosting in Germany, Doctolib, request form and your data protection rights."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---
@@ -13,7 +13,7 @@ Protecting your data matters to us – especially because a dental practice deal
 ## 1. Controller
 
 Dr. med. dent. Ufuk Adali\
-Dentaviva – Zahnarztpraxis Dr. Adali\
+Dentanea – Zahnarztpraxis Dr. Adali\
 Schönhauser Allee 10–11, 10119 Berlin, Germany\
 Phone: +49 30 44 26 84 3 · Email: kontakt@zahnarzt-adali.de
 

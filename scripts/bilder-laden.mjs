@@ -44,7 +44,7 @@ if (existsSync(join(WURZEL, ".env"))) {
 const schluessel = (k) => (env[k] && !env[k].startsWith("[[") ? env[k] : null);
 
 function curl(url, { header = [], datei = null } = {}) {
-  const args = ["-sS", "-L", "--fail", "-A", "Mozilla/5.0 (Website Dentaviva, Bildauswahl)", ...header.flatMap((h) => ["-H", h])];
+  const args = ["-sS", "-L", "--fail", "-A", "Mozilla/5.0 (Website Dentanea, Bildauswahl)", ...header.flatMap((h) => ["-H", h])];
   if (datei) args.push("-o", datei);
   args.push(url);
   return execFileSync("curl", args, { encoding: datei ? undefined : "utf8", maxBuffer: 64 * 1024 * 1024 });

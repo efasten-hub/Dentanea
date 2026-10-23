@@ -1,6 +1,6 @@
 ---
 titel: "CMD, Zähneknirschen und Schnarchschiene"
-seo_titel: "CMD-Therapie & Schienen in Berlin | Dentaviva"
+seo_titel: "CMD-Therapie & Schienen in Berlin | Dentanea"
 beschreibung: "Kieferschmerzen, Knirschen, Kopfschmerzen oder Schnarchen: Funktionsdiagnostik und individuelle Schienen in Berlin. Ablauf, Dauer und Kosten."
 kurz: "Kieferschmerzen, Knirschen, Kopfschmerzen oder Schnarchen: Ursachen klären und mit individuellen Schienen behandeln."
 unterzeile: "Wenn Kiefer, Kaumuskeln oder der Schlaf Probleme machen."

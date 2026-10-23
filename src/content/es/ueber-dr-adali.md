@@ -1,9 +1,9 @@
 ---
 titel: "Dr. Ufuk Adali"
-seo_titel: "Dr. Ufuk Adali – dentista en Berlín | Dentaviva"
+seo_titel: "Dr. Ufuk Adali – dentista en Berlín | Dentanea"
 beschreibung: "Dr. Ufuk Adali: médico adjunto jefe en la Charité hasta 2026, especialista en prótesis (DGPro) e implantólogo certificado (DGI). Trayectoria."
 unterzeile: "Dentista, especialista en prótesis dental (DGPro), implantólogo certificado (DGI)"
-antwort: "El Dr. Ufuk Adali estudió Odontología en la Charité – Universitätsmedizin Berlin y allí trató pacientes, enseñó e investigó durante muchos años, por último hasta 2026 como médico adjunto jefe (leitender Oberarzt) en el Departamento de Prótesis Dental, Odontología Geriátrica y Trastornos Craneomandibulares. Desde 2025 dirige su propia clínica, Dentaviva, en Berlín."
+antwort: "El Dr. Ufuk Adali estudió Odontología en la Charité – Universitätsmedizin Berlin y allí trató pacientes, enseñó e investigó durante muchos años, por último hasta 2026 como médico adjunto jefe (leitender Oberarzt) en el Departamento de Prótesis Dental, Odontología Geriátrica y Trastornos Craneomandibulares. Desde 2025 dirige su propia clínica, Dentanea, en Berlín."
 uebersetzt: true
 uebersetzung_geprueft: false
 ---
@@ -23,7 +23,7 @@ La buena odontología empieza por escuchar y explorar a fondo. Explico los halla
 - **Desde 2026:** científico invitado en el mismo departamento
 - **2021–2026:** miembro electo de la junta directiva del Colegio de Odontólogos de Berlín (Zahnärztekammer Berlin), responsable de la formación de auxiliares dentales (Zahnmedizinische Fachangestellte)
 - **Desde 2026:** miembro electo de la junta directiva del Colegio de Odontólogos de Berlín, responsable de la formación continuada de dentistas
-- **Desde 2025:** clínica propia, Dentaviva, Schönhauser Allee, Berlín
+- **Desde 2025:** clínica propia, Dentanea, Schönhauser Allee, Berlín
 
 ## Qué significan las cualificaciones
 

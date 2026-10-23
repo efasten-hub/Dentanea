@@ -1,6 +1,6 @@
 ---
 titel: "Klebebrücke (Adhäsivbrücke)"
-seo_titel: "Klebebrücke / Marylandbrücke Berlin | Dentaviva"
+seo_titel: "Klebebrücke / Marylandbrücke Berlin | Dentanea"
 beschreibung: "Klebebrücke (Adhäsivbrücke, Marylandbrücke) in Berlin: einen fehlenden Zahn ersetzen, ohne Nachbarzähne zu beschleifen. Für wen geeignet, Ablauf, Kosten."
 kurz: "Ersetzt einen einzelnen Zahn, ohne die Nachbarzähne zu beschleifen – eine schonende Alternative zum Implantat."
 unterzeile: "Einen fehlenden Zahn ersetzen, ohne gesunde Nachbarzähne zu beschleifen."

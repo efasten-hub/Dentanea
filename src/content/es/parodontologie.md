@@ -1,6 +1,6 @@
 ---
 titel: "Periodoncia (tratamiento de encías)"
-seo_titel: "Tratamiento de la periodontitis en Berlín | Dentaviva"
+seo_titel: "Tratamiento de la periodontitis en Berlín | Dentanea"
 beschreibung: "Tratamiento de la periodontitis en Berlín: diagnóstico, limpieza profunda de las bolsas y mantenimiento. Proceso, duración y qué cubre el seguro."
 kurz: "Frenar la periodontitis: limpieza profunda de las bolsas periodontales y un mantenimiento que asegura el resultado."
 unterzeile: "Detectar a tiempo la inflamación de las encías y controlarla de forma duradera."

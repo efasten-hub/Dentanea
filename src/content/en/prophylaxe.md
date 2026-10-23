@@ -1,6 +1,6 @@
 ---
 titel: "Prevention and professional teeth cleaning"
-seo_titel: "Professional Teeth Cleaning in Berlin | Dentaviva"
+seo_titel: "Professional Teeth Cleaning in Berlin | Dentanea"
 beschreibung: "Professional teeth cleaning and prevention in Berlin: removing plaque and tartar, polishing, fluoride and care tips. Procedure, frequency and costs."
 kurz: "Removing plaque and tartar, polishing, fluoride and personal tips – to keep teeth, gums and implants healthy."
 unterzeile: "Healthy teeth and gums – for life."

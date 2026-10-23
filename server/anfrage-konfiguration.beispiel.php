@@ -20,7 +20,7 @@ return [
     'empfaenger' => 'kontakt@zahnarzt-adali.de',
     // Absender: Postfach auf derselben Domain, sonst landet die Mail im Spam
     'absender' => 'website@zahnarzt-adali.de',
-    'absender_name' => 'Website Dentaviva',
+    'absender_name' => 'Website Dentanea',
     'smtp' => [
         'host' => 'smtp.strato.de',
         'port' => 465,

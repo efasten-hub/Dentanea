@@ -1,6 +1,6 @@
 ---
 titel: "Sık sorulan sorular"
-seo_titel: "SSS: Randevu, Maliyet, Diller, Ulaşım | Dentaviva"
+seo_titel: "SSS: Randevu, Maliyet, Diller, Ulaşım | Dentanea"
 beschreibung: "Sık sorulan sorulara yanıtlar: Doctolib ile online randevu, maliyetler ve sigorta, Türkçe, Almanca, İngilizce ve İspanyolca tedavi, ulaşım ve park."
 unterzeile: "Randevu, maliyet, tedavi ve ulaşım – kısaca yanıtlandı."
 uebersetzt: true
