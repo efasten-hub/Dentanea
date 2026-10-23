@@ -17,11 +17,12 @@
  */
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const WURZEL = fileURLToPath(new URL("..", import.meta.url));
 const DIST = process.env.TEST_DIST ?? join(WURZEL, "dist");
-const { site } = await import(join(WURZEL, "src/config/site.ts"));
+// import() braucht unter Windows eine file://-URL statt eines Pfads mit Laufwerksbuchstaben
+const { site } = await import(pathToFileURL(join(WURZEL, "src/config/site.ts")).href);
 const DOMAIN = site.domain.replace(/\/$/, "");
 
 const fehler = [];

@@ -17,15 +17,16 @@
  */
 import { readFileSync, readdirSync, statSync, existsSync, writeFileSync } from "node:fs";
 import { join, relative, extname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { parse as parseYaml } from "yaml";
 
 const WURZEL = fileURLToPath(new URL("..", import.meta.url));
 const pfadRel = (p) => relative(WURZEL, p);
 const args = new Set(process.argv.slice(2));
 
-const { routen, pfad } = await import(join(WURZEL, "src/i18n/routen.ts"));
-const { site } = await import(join(WURZEL, "src/config/site.ts"));
+// import() braucht unter Windows eine file://-URL statt eines Pfads mit Laufwerksbuchstaben
+const { routen, pfad } = await import(pathToFileURL(join(WURZEL, "src/i18n/routen.ts")).href);
+const { site } = await import(pathToFileURL(join(WURZEL, "src/config/site.ts")).href);
 
 const warnungen = [];
 const infos = [];

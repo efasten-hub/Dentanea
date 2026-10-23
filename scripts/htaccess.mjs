@@ -10,10 +10,11 @@
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const WURZEL = fileURLToPath(new URL("..", import.meta.url));
-const { site } = await import(join(WURZEL, "src/config/site.ts"));
+// import() braucht unter Windows eine file://-URL statt eines Pfads mit Laufwerksbuchstaben
+const { site } = await import(pathToFileURL(join(WURZEL, "src/config/site.ts")).href);
 
 const quelle = { script: ["'self'"], frame: ["https://www.openstreetmap.org"], connect: ["'self'"], img: ["'self'", "data:"] };
 if (site.terminbuchung.aktiv && site.terminbuchung.modus === "widget") {
