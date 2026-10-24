@@ -82,7 +82,7 @@ So geht es: Seite lesen, Korrekturen notieren, danach in der Datei `uebersetzung
 
 <!-- AUTO:UEBERSETZUNGEN:START -->
 
-_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-15._
+_Automatisch erzeugt mit `npm run pruefen -- --schreiben` am 2026-10-24._
 
 **English** – zu prüfen: 32
 
@@ -193,19 +193,19 @@ Diese Liste füllt sich in Phase 3 aus dem Bildmanifest (`src/assets/fotos/bilde
 
 <!-- AUTO:STOCKFOTOS:START -->
 
-- [ ] **hero-atmosphaere** (unsplash, Barney Goodman) – verwendet: Startseite Hero
-- [ ] **zahnersatz** (unsplash, Bogdan condr) – verwendet: Leistung Zahnersatz, Schwerpunkt-Raster, Zielgruppe Zahnverlust
-- [ ] **implantologie** (unsplash, Harold Hisona) – verwendet: Leistung Implantologie, Schwerpunkt-Raster, Ratgeber Sofortimplantate
-- [ ] **adhaesivbruecke** (unsplash, Ozkan Guner) – verwendet: Leistung Klebebrücke, Leistung Implantat-Alternativen, Ratgeber Implantat oder Klebebrücke
-- [ ] **aesthetik** (unsplash, Oliver Sharp) – verwendet: Leistung Ästhetik, Schwerpunkt-Raster, Zielgruppe Ästhetik
-- [ ] **cmd-schienen** (unsplash, Aleksandar Kurešević) – verwendet: Leistung CMD & Schienen, Schwerpunkt-Raster, Zielgruppe CMD, Ratgeber Knirschen
-- [ ] **zahnerhalt** (unsplash, Ozkan Guner) – verwendet: Leistung Endodontie, Leistung Parodontologie, Leistung Füllungen, Leistung Prophylaxe
-- [ ] **oralchirurgie** (unsplash, Ozkan Guner) – verwendet: Leistung Oralchirurgie
-- [ ] **kinder** (unsplash, Jon Flobrant) – verwendet: Leistung Zahnersatz bei Kindern, Leistung MIH & Syndrome, Zielgruppe Eltern, Ratgeber MIH
-- [ ] **labor-digital** (unsplash, Adrian Sulyok) – verwendet: Leistung Dentallabor & digital, Startseite Labor-Sektion
-- [ ] **international** (unsplash, Priscilla Du Preez 🇨🇦) – verwendet: Zielgruppe International, Ratgeber Deutsches System
-- [ ] **ratgeber-kosten** (unsplash, Isaac Smith) – verwendet: Ratgeber Kosten Zahnersatz
-- [ ] **praxis-atmosphaere** (unsplash, Katja Ano) – verwendet: Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet
+- [ ] **hero-atmosphaere** (unsplash, Tim Mossholder) – verwendet: Startseite Hero
+- [ ] **zahnersatz** (unsplash, Rachel S) – verwendet: Leistung Zahnersatz, Schwerpunkt-Raster, Zielgruppe Zahnverlust
+- [ ] **implantologie** (unsplash, David Jack) – verwendet: Leistung Implantologie, Schwerpunkt-Raster, Ratgeber Sofortimplantate
+- [ ] **adhaesivbruecke** (unsplash, Josias Garibay) – verwendet: Leistung Klebebrücke, Leistung Implantat-Alternativen, Ratgeber Implantat oder Klebebrücke
+- [ ] **aesthetik** (unsplash, Gabrielle Henderson) – verwendet: Leistung Ästhetik, Schwerpunkt-Raster, Zielgruppe Ästhetik
+- [ ] **cmd-schienen** (unsplash, Diana Shchurova) – verwendet: Leistung CMD & Schienen, Schwerpunkt-Raster, Zielgruppe CMD, Ratgeber Knirschen
+- [ ] **zahnerhalt** (unsplash, Wenny Chen) – verwendet: Leistung Endodontie, Leistung Parodontologie, Leistung Füllungen, Leistung Prophylaxe
+- [ ] **oralchirurgie** (unsplash, Roman Kraft) – verwendet: Leistung Oralchirurgie
+- [ ] **kinder** (unsplash, John Marfe Bitoon) – verwendet: Leistung Zahnersatz bei Kindern, Leistung MIH & Syndrome, Zielgruppe Eltern, Ratgeber MIH
+- [ ] **labor-digital** (unsplash, Ozkan Guner) – verwendet: Leistung Dentallabor & digital, Startseite Labor-Sektion
+- [ ] **international** (unsplash, Sincerely Media) – verwendet: Zielgruppe International, Ratgeber Deutsches System
+- [ ] **ratgeber-kosten** (unsplash, Diogo Albuquerque) – verwendet: Ratgeber Kosten Zahnersatz
+- [ ] **praxis-atmosphaere** (unsplash, Annie Spratt) – verwendet: Praxis & Team – ergänzend, nie als „unsere Praxis“ beschriftet
 
 <!-- AUTO:STOCKFOTOS:ENDE -->
 
